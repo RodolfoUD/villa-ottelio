@@ -2,18 +2,19 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx,html}",
+    "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'ottelio-gold': '#D4AF37',
-        'ottelio-dark': '#1A1A1A',
+        'villa-gold': '#B8860B', // Oro scuro per i titoli
+        'villa-black': '#050505', // Nero profondo per sfondi
+        'villa-soft': '#F5F5F5',  // Grigio chiarissimo per testi leggibili
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['"Inter"', 'Helvetica', 'Arial', 'sans-serif'],
-      }
+        'serif': ['Playfair Display', 'serif'], // Font elegante per titoli
+        'sans': ['Inter', 'sans-serif'],        // Font moderno per testi lunghi
+      },
     },
   },
   plugins: [],

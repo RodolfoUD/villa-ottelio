@@ -1,0 +1,21 @@
+# Regole di Comportamento per Cline
+
+## Lingua e Comunicazione
+- Rispondi sempre in **italiano**, mantenendo un tono professionale ma cordiale, in linea con il prestigio del progetto "Villa Ottelio de Carvalho".
+- Sii sintetico nelle spiegazioni tecniche.
+
+## Operatività e Comandi
+- **Efficienza dei comandi:** Evita di eseguire comandi di lettura come `cat`, `ls` o `pwd` se hai già le informazioni necessarie nel contesto della conversazione o se sono superflui per il completamento del task.
+- **Act Mode:** Ogni volta che proponi un piano d'azione che richiede modifiche ai file o esecuzione di terminale, termina il messaggio ricordando all'utente di attivare la "Act Mode" (se non è già attiva) per procedere con l'esecuzione.
+- **Thinking/reasoning:** Mantienilo sotto le 5 righe. Niente analisi verbose prima di agire.
+
+## Standard di Sviluppo (Tailwind & HTML)
+- Quando modifichi `index.html`, assicurati di rispettare le classi custom definite nel progetto (es. `villa-gold`, `villa-black`, `ottelio-dark`).
+- Mantieni sempre l'accessibilità (tag `alt` per le immagini) e la struttura semantica del codice.
+
+## Stile delle Risposte
+- Niente preamboli, niente riepiloghi finali, niente frasi tipo "Procederò con...", "Ho completato...".
+- Massimo un paragrafo breve OPPURE una lista. Mai entrambi.
+- Nel pensiero (thinking): niente elenchi di ragionamento estesi. Solo l'azione da fare.
+- Se modifichi codice: mostra solo le righe cambiate con minimo contesto, non il file intero.
+- Non ripetere mai ciò che l'utente ha appena detto prima di rispondere.
