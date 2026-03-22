@@ -75,7 +75,8 @@
         </div>
 
         <div class="w-full">
-            <form id="villaForm" class="space-y-6">
+            <form id="villaForm" name="contatti" method="POST" data-netlify="true" netlify-honeypot="trappola" class="space-y-6">
+                <input type="hidden" name="form-name" value="contatti">
                 <input type="text" name="trappola" style="display:none !important" tabindex="-1" autocomplete="off">
                 <input type="text" name="nome" placeholder="Nome e Cognome" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
                 <input type="email" name="email" placeholder="Email" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
@@ -110,30 +111,9 @@
 
 <script>
 document.getElementById('villaForm').addEventListener('submit', function(e) {
-    e.preventDefault();
     const b = document.getElementById('btnS');
-    const originalText = b.innerHTML;
     b.innerHTML = "INVIO IN CORSO...";
     b.disabled = true;
-
-    const url = 'https://script.google.com/macros/s/AKfycbwlYf05ShHowYcsX-uzap1Hz0471E3jwlA5Ayfy0a0yjQkQjeCjWPYF58Wp2f4bL3rVw/exec';
-
-    fetch(url, { 
-        method: 'POST', 
-        mode: 'no-cors', 
-        body: new FormData(this) 
-    })
-    .then(() => {
-        alert("Messaggio inviato correttamente! La ricontatteremo al più presto.");
-        this.reset();
-        b.innerHTML = originalText;
-        b.disabled = false;
-    })
-    .catch(err => {
-        alert("Errore tecnico nell'invio. Riprova più tardi.");
-        b.innerHTML = originalText;
-        b.disabled = false;
-    });
 });
 </script>
 
