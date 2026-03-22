@@ -23,7 +23,7 @@
 </head>
 <body class="bg-villa-black text-white font-sans antialiased">
 
-<header class="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300 h-20 flex items-center justify-between px-6">
+<header class="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center justify-between px-6">
     <a href="index.html" class="text-2xl font-serif tracking-widest text-gray-900 uppercase">Villa Ottelio</a>
     <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide text-gray-600 uppercase">
       <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
@@ -35,22 +35,22 @@
     </nav>
 </header>
 
-  <header class="relative h-[40vh] flex items-center justify-center overflow-hidden pt-24">
+<header class="relative h-[40vh] flex items-center justify-center overflow-hidden pt-24">
     <img src="../../public/assets/placeholders/contact-hero.png" alt="Contatti Villa Ottelio" class="absolute inset-0 w-full h-full object-cover opacity-40">
     <div class="relative z-10 text-center px-4 mt-20">
       <h1 class="font-serif text-4xl md:text-5xl text-villa-gold mb-4 uppercase tracking-widest">Trattativa Riservata</h1>
       <p class="text-sm md:text-base italic max-w-xl mx-auto text-villa-soft opacity-80">Tre secoli di storia attendono una nuova visione. Iniziate il vostro percorso di acquisizione richiedendo un incontro privato con la proprietà.</p>
     </div>
-  </header>
+</header>
 
-  <section class="py-24 bg-villa-black">
+<section class="py-24 bg-villa-black">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
         
         <div>
           <h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">Richiedi il Dossier</h2>
           <div class="space-y-6 text-lg text-villa-soft/70 mb-10 leading-relaxed">
-            <p>La vendita è curata personalmente dalla famiglia proprietaria, affiancata da consulenti specializzati in Dimore Storiche Vincolate. Le visite sono organizzate esclusivamente in forma privata e su appuntamento.</p>
+            <p>La vendita è curata personalmente dalla famiglia proprietaria. Le visite sono organizzate esclusivamente in forma privata e su appuntamento.</p>
             
             <div class="bg-villa-gold/5 p-6 border border-villa-gold/20">
               <h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-4">Logistica e Distanze:</h4>
@@ -75,65 +75,28 @@
         </div>
 
         <div class="w-full">
-        <form id="villaForm" class="space-y-6">
-    <input type="text" name="trappola" style="display:none !important" tabindex="-1" autocomplete="off">
-    
-    <input type="text" name="nome" placeholder="Nome e Cognome" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
-    <input type="email" name="email" placeholder="Email" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
-    <input type="tel" name="telefono" placeholder="Telefono" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
-    
-    <select name="profilo" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none bg-villa-black text-white">
-        <option value="" disabled selected>Seleziona Profilo...</option>
-        <option value="Privato">Privato</option>
-        <option value="Azienda">Azienda</option>
-        <option value="Intermediario">Intermediario</option>
-    </select>
-    
-    <textarea name="messaggio" placeholder="Il tuo messaggio" rows="4" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none resize-none"></textarea>
-    
-    <div class="flex items-start">
-        <input type="checkbox" id="privacy" required class="mt-1 accent-villa-gold">
-        <label for="privacy" class="ml-3 text-sm text-villa-soft/70">Acconsento al trattamento dei dati personali.</label>
-    </div>
-
-    <button type="submit" id="btnS" class="w-full bg-villa-gold text-villa-black font-bold py-4 uppercase tracking-widest hover:bg-white transition-colors">Invia Richiesta</button>
-</form>
-
-<script>
-document.getElementById('villaForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const b = document.getElementById('btnS');
-    const originalText = b.innerHTML;
-    b.innerHTML = "INVIO IN CORSO...";
-    b.disabled = true;
-
-    // URL della tua Versione 2
-    const url = 'https://script.google.com/macros/s/AKfycbwlYf05ShHowYcsX-uzap1Hz0471E3jwlA5Ayfy0a0yjQkQjeCjWPYF58Wp2f4bL3rVw/exec';
-
-    fetch(url, { 
-        method: 'POST', 
-        mode: 'no-cors', 
-        body: new FormData(this) 
-    })
-    .then(() => {
-        alert("Messaggio inviato correttamente! Controlla l'Excel e la tua email.");
-        this.reset();
-        b.innerHTML = originalText;
-        b.disabled = false;
-    })
-    .catch(err => {
-        console.error(err);
-        alert("Errore tecnico nell'invio. Riprova.");
-        b.innerHTML = originalText;
-        b.disabled = false;
-    });
-});
-</script>
+            <form id="villaForm" class="space-y-6">
+                <input type="text" name="trappola" style="display:none !important" tabindex="-1" autocomplete="off">
+                <input type="text" name="nome" placeholder="Nome e Cognome" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
+                <input type="email" name="email" placeholder="Email" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
+                <input type="tel" name="telefono" placeholder="Telefono" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none">
+                <select name="profilo" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none bg-villa-black text-white">
+                    <option value="" disabled selected>Seleziona Profilo...</option>
+                    <option value="Privato">Privato</option>
+                    <option value="Azienda">Azienda</option>
+                    <option value="Intermediario">Intermediario</option>
+                </select>
+                <textarea name="messaggio" placeholder="Il tuo messaggio" rows="4" required class="w-full bg-transparent border-b border-villa-gold/30 py-3 outline-none resize-none"></textarea>
+                <div class="flex items-start">
+                    <input type="checkbox" id="privacy" required class="mt-1 accent-villa-gold">
+                    <label for="privacy" class="ml-3 text-sm text-villa-soft/70">Acconsento al trattamento dei dati personali.</label>
+                </div>
+                <button type="submit" id="btnS" class="w-full bg-villa-gold text-villa-black font-bold py-4 uppercase tracking-widest hover:bg-white transition-colors">Invia Richiesta</button>
+            </form>
         </div>
-
       </div>
     </div>
-  </section>
+</section>
 
 <footer class="w-full bg-stone-50 border-t border-gray-200 py-12 mt-20">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
@@ -149,22 +112,26 @@ document.getElementById('villaForm').addEventListener('submit', function(e) {
 document.getElementById('villaForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const b = document.getElementById('btnS');
+    const originalText = b.innerHTML;
     b.innerHTML = "INVIO IN CORSO...";
     b.disabled = true;
 
-    // URL DEL TUO SCRIPT (VERIFICATO)
     const url = 'https://script.google.com/macros/s/AKfycbwlYf05ShHowYcsX-uzap1Hz0471E3jwlA5Ayfy0a0yjQkQjeCjWPYF58Wp2f4bL3rVw/exec';
 
-    fetch(url, { method: 'POST', body: new FormData(this) })
-    .then(res => {
+    fetch(url, { 
+        method: 'POST', 
+        mode: 'no-cors', 
+        body: new FormData(this) 
+    })
+    .then(() => {
         alert("Messaggio inviato correttamente! La ricontatteremo al più presto.");
         this.reset();
-        b.innerHTML = "INVIA RICHIESTA ACCREDITAMENTO";
+        b.innerHTML = originalText;
         b.disabled = false;
     })
     .catch(err => {
-        alert("Errore nell'invio. Riprova più tardi.");
-        b.innerHTML = "INVIA RICHIESTA ACCREDITAMENTO";
+        alert("Errore tecnico nell'invio. Riprova più tardi.");
+        b.innerHTML = originalText;
         b.disabled = false;
     });
 });
