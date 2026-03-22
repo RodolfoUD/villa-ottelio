@@ -19,3 +19,42 @@
 - Nel pensiero (thinking): niente elenchi di ragionamento estesi. Solo l'azione da fare.
 - Se modifichi codice: mostra solo le righe cambiate con minimo contesto, non il file intero.
 - Non ripetere mai ciò che l'utente ha appena detto prima di rispondere.
+
+# Regole di Sviluppo Villa Ottelio (Project Rules)
+
+## 1. Gestione dei Percorsi (PATHING) - REGOLA CRITICA
+* **MAI** utilizzare percorsi assoluti che iniziano con lo slash `/` (es: `/src/style.css` o `/assets/images/...`).
+* **SEMPRE** utilizzare percorsi relativi per garantire che il sito funzioni sia in locale che sull'hosting online.
+* **LOGICA DEI PERCORSI (da `src/it/*.html`):**
+    - Per CSS e JS: `../style.css` e `../main.js`.
+    - Per immagini in public: `../../public/assets/images/it/nome-file.webp` (o verificare l'esatta struttura della cartella assets).
+    - Per la Favicon: `../../public/favicon.ico`.
+
+## 2. Consistenza Multi-Pagina
+* Qualsiasi modifica strutturale, estetica o di percorso applicata alla Home (`index.html`) deve essere **automaticamente replicata** su tutte le altre pagine della cartella `src/it/` (`dimora.html`, `parco.html`, `vegetazione.html`, `blog.html`, `contatti.html`).
+* Non lasciare mai pagine "orfane" con link rotti o grafiche non caricate.
+
+## 3. Privacy e SEO Pre-Lancio
+* Finché il sito non è dichiarato "Pronto per la pubblicazione", ogni pagina HTML deve contenere il tag:
+  `<meta name="robots" content="noindex, nofollow" />`.
+* Il file `public/robots.txt` deve tassativamente contenere:
+  `User-agent: *`
+  `Disallow: /`
+
+## 4. Esperienza Utente (UX) e Galleria
+* Tutte le immagini dei pilastri e degli interni devono essere cliccabili per l'ingrandimento.
+* Utilizzare la libreria **FSLightbox**.
+* Tutte le immagini che appartengono allo stesso tour visivo devono avere lo stesso attributo `data-fslightbox="main-showcase"`.
+
+## 5. Standard Immagini e SEO
+* Ogni tag `<img>` deve avere:
+    - Attributo `alt=""` descrittivo in italiano.
+    - Classi Tailwind per il caricamento fluido (es: `object-cover`).
+    - Nomi file ottimizzati (es: `architettura-villa-ottelio.webp`).
+
+## 6. Comunicazione con l'Utente
+* Per operazioni di Git (Commit/Push), non fare affidamento sull'interfaccia grafica (UI) di VS Code poiché può variare.
+* Fornire sempre i comandi da terminale diretti:
+    1. `git add .`
+    2. `git commit -m "descrizione"`
+    3. `git push`
