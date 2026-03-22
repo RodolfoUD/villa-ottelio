@@ -71,20 +71,8 @@
           
           <div class="space-y-8">
             <div>
-              <h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">✉️ Email Prioritaria</h4>
-              <span id="protected-email" class="font-medium text-villa-soft/80"></span>
-              <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                  var u = 'rdcservizi';
-                  var d = 'inmemor.com';
-                  var e = document.getElementById('protected-email');
-                  if(e) { e.innerHTML = '<a href="mailto:' + u + '@' + d + '" class="hover:underline">' + u + '@' + d + '</a>'; }
-                });
-              </script>
-            </div>
-            <div>
               <h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">📞 Telefono</h4>
-              <p class="text-villa-soft opacity-80">0039 334 8919985 (Disponibile per urgenze o post-accreditamento)</p>
+              <p class="text-villa-soft opacity-80">0039 334 8919985</p>
             </div>
             <div>
               <h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">📍 Indirizzo</h4>
@@ -94,7 +82,7 @@
         </div>
 
         <div class="w-full max-w-4xl mx-auto px-6 py-16">
-          <form id="contactForm" class="space-y-10">
+          <form id="contactForm" method="POST" action="" class="space-y-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
                 <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Nome e Cognome:</label>
