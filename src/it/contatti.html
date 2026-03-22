@@ -66,7 +66,7 @@
               </ul>
             </div>
 
-            <p class="text-sm italic">Protocollo di Contatto e Accreditamento Al fine di garantire la massima riservatezza e gestire ogni richiesta con la dovuta attenzione, si prega di privilegiare il primo contatto tramite Email o compilando il Form sottostante . Sarà nostra cura ricontattarvi tempestivamente per un colloquio telefonico preliminare e l'invio della documentazione.</p>
+            <p class="text-sm italic">Protocollo di Contatto e Accreditamento: Al fine di garantire la massima riservatezza e gestire ogni richiesta con la dovuta attenzione, si prega di privilegiare il primo contatto compilando il Form sottostante. Sarà nostra cura ricontattarvi tempestivamente per un colloquio telefonico preliminare e l'invio della documentazione.</p>
           </div>
           
           <div class="space-y-8">
@@ -78,29 +78,36 @@
               <h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">📍 Indirizzo</h4>
               <p class="text-villa-gold opacity-80 italic">Località Ottelio 1, 33044 Manzano (UD)</p>
             </div>
+            <div class="mt-8 pt-6 border-t border-villa-gold/20">
+              <p class="text-sm text-villa-soft/80 italic">Per comunicazioni in lingue diverse dall'italiano, si prega di utilizzare il modulo di contatto.</p>
+            </div>
           </div>
         </div>
 
         <div class="w-full max-w-4xl mx-auto px-6 py-16">
-          <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScYPvYHCrAr8rUc0mQZfJV5Xhig6zT_JP6r-GUD7Ej9PshZjg/formResponse" method="POST" target="hidden_iframe" onsubmit="alert('Messaggio inviato con successo. La contatteremo al più presto.');" class="space-y-10">
+          
+          <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { alert('Messaggio inviato con successo. La contatteremo al più presto.'); window.location.reload(); }"></iframe>
+          
+          <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScYPvYHCrAr8rUc0mQZfJV5Xhig6zT_JP6r-GUD7Ej9PshZjg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="space-y-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
-                <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Nome e Cognome:</label>
-                <input type="text" name="entry.274866278" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <label class="block text-sm text-gray-400 uppercase tracking-wide mb-2">Nome e Cognome:</label>
+                <input type="text" name="entry.274866278" required class="w-full border-b border-villa-gold/30 bg-transparent py-3 text-lg text-white focus:outline-none focus:border-villa-gold transition-colors rounded-none">
               </div>
               <div>
-                <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Email:</label>
-                <input type="email" name="entry.1911292388" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <label class="block text-sm text-gray-400 uppercase tracking-wide mb-2">Email:</label>
+                <input type="email" name="entry.1911292388" required class="w-full border-b border-villa-gold/30 bg-transparent py-3 text-lg text-white focus:outline-none focus:border-villa-gold transition-colors rounded-none">
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
-                <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Telefono (Opzionale):</label>
-                <input type="tel" name="entry.480871590" class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <label class="block text-sm text-gray-400 uppercase tracking-wide mb-2">Telefono (Opzionale):</label>
+                <input type="tel" name="entry.480871590" class="w-full border-b border-villa-gold/30 bg-transparent py-3 text-lg text-white focus:outline-none focus:border-villa-gold transition-colors rounded-none">
               </div>
               <div>
-                <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Sono interessato come:</label>
-                <select name="profilo" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors appearance-none cursor-pointer rounded-none text-villa-black md:text-white">
+                <label class="block text-sm text-gray-400 uppercase tracking-wide mb-2">Sono interessato come:</label>
+                <select id="profilo" required class="w-full border-b border-villa-gold/30 bg-transparent py-3 text-lg text-white focus:outline-none focus:border-villa-gold transition-colors appearance-none cursor-pointer rounded-none">
                   <option value="" disabled selected class="text-gray-900">Seleziona... ▼</option>
                   <option value="Privato" class="text-gray-900">Privato</option>
                   <option value="Azienda" class="text-gray-900">Azienda</option>
@@ -109,19 +116,17 @@
               </div>
             </div>
             <div>
-              <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Messaggio:</label>
-              <textarea name="entry.1692654835" rows="4" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors resize-none rounded-none"></textarea>
+              <label class="block text-sm text-gray-400 uppercase tracking-wide mb-2">Messaggio:</label>
+              <textarea name="entry.1692654835" rows="4" required class="w-full border-b border-villa-gold/30 bg-transparent py-3 text-lg text-white focus:outline-none focus:border-villa-gold transition-colors resize-none rounded-none"></textarea>
             </div>
             <div class="flex items-start pt-4">
-              <input type="checkbox" name="privacy" id="privacy" required class="mt-1 w-5 h-5 text-gray-900 border-gray-300 cursor-pointer">
-              <label for="privacy" class="ml-3 text-sm text-gray-600">Ho letto l'informativa sulla Privacy e acconsento al trattamento dei dati. <a href="privacy.html" class="underline hover:text-gray-900">Leggi l'informativa</a></label>
+              <input type="checkbox" id="privacy" required class="mt-1 w-5 h-5 text-gray-900 border-gray-300 cursor-pointer">
+              <label for="privacy" class="ml-3 text-sm text-villa-soft/80">Ho letto l'informativa sulla Privacy e acconsento al trattamento dei dati. <a href="privacy.html" class="text-villa-gold underline hover:text-white transition-colors">Leggi l'informativa</a></label>
             </div>
             <div class="pt-6 text-center md:text-left">
-              <button type="submit" class="w-full md:w-auto px-10 py-4 bg-gray-900 text-white uppercase tracking-widest text-sm hover:bg-gray-800 transition-colors">INVIA RICHIESTA ACCREDITAMENTO</button>
+              <button type="submit" class="w-full md:w-auto px-10 py-4 bg-villa-gold text-villa-black font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors duration-300">INVIA RICHIESTA ACCREDITAMENTO</button>
             </div>
-            <div id="formFeedback" class="hidden mt-4 text-center md:text-left text-sm font-medium"></div>
           </form>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
 
       </div>
