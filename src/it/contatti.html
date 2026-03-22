@@ -82,21 +82,21 @@
         </div>
 
         <div class="w-full max-w-4xl mx-auto px-6 py-16">
-          <form id="contactForm" method="POST" action="" class="space-y-10">
+          <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLScYPvYHCrAr8rUc0mQZfJV5Xhig6zT_JP6r-GUD7Ej9PshZjg/formResponse" method="POST" target="hidden_iframe" onsubmit="alert('Messaggio inviato con successo. La contatteremo al più presto.');" class="space-y-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
                 <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Nome e Cognome:</label>
-                <input type="text" name="nome" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <input type="text" name="entry.274866278" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
               </div>
               <div>
                 <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Email:</label>
-                <input type="email" name="email" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <input type="email" name="entry.1911292388" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
                 <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Telefono (Opzionale):</label>
-                <input type="tel" name="telefono" class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
+                <input type="tel" name="entry.480871590" class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors rounded-none">
               </div>
               <div>
                 <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Sono interessato come:</label>
@@ -110,7 +110,7 @@
             </div>
             <div>
               <label class="block text-sm text-gray-500 uppercase tracking-wide mb-2">Messaggio:</label>
-              <textarea name="messaggio" rows="4" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors resize-none rounded-none"></textarea>
+              <textarea name="entry.1692654835" rows="4" required class="w-full border-b border-gray-300 bg-transparent py-3 text-lg focus:outline-none focus:border-gray-900 transition-colors resize-none rounded-none"></textarea>
             </div>
             <div class="flex items-start pt-4">
               <input type="checkbox" name="privacy" id="privacy" required class="mt-1 w-5 h-5 text-gray-900 border-gray-300 cursor-pointer">
@@ -121,6 +121,7 @@
             </div>
             <div id="formFeedback" class="hidden mt-4 text-center md:text-left text-sm font-medium"></div>
           </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
 
       </div>
@@ -140,30 +141,5 @@
 </footer>
 
   <script type="module" src="../main.js"></script>
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const feedback = document.getElementById('formFeedback');
-      feedback.className = 'block mt-4 text-center text-sm font-medium text-gray-600';
-      feedback.textContent = 'Invio in corso...';
-      
-      const formData = new FormData(this);
-      const data = Object.fromEntries(formData.entries());
-      
-      // Sostituire l'URL qui sotto con l'URL Web App di Google Apps Script
-      const scriptURL = 'INSERIRE_URL_WEBAPP_GOOGLE_QUI'; 
-      
-      fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: formData })
-        .then(response => {
-          feedback.textContent = 'Richiesta inviata con successo. La contatteremo a breve.';
-          feedback.classList.replace('text-gray-600', 'text-green-600');
-          this.reset();
-        })
-        .catch(error => {
-          feedback.textContent = 'Errore di invio. Riprovare o utilizzare il contatto telefonico.';
-          feedback.classList.replace('text-gray-600', 'text-red-600');
-        });
-    });
-  </script>
 </body>
 </html>
