@@ -1,5 +1,3 @@
-import './style.css';
-
 document.addEventListener('DOMContentLoaded', () => {
     // Gestione Menu Mobile
     const mobileMenuButton = document.getElementById('mobile-menu-button');
