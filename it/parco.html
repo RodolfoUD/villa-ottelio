@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esterni e Giardino | Villa Ottelio de Carvalho</title>
+  <meta name="description" content="Il parco e gli esterni di Villa Ottelio de Carvalho: un'oasi protetta tra ulivi, tigli secolari, cappella gentilizia e panorami sui Colli Orientali del Friuli." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.villaottelio.com/it/parco.html" />
+  <link rel="alternate" hreflang="it" href="https://www.villaottelio.com/it/parco.html" />
+  <link rel="alternate" hreflang="en" href="https://www.villaottelio.com/the-park.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.villaottelio.com/the-park.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.villaottelio.com/it/parco.html" />
+  <meta property="og:title" content="Esterni e Giardino | Villa Ottelio de Carvalho" />
+  <meta property="og:description" content="Un'oasi protetta tra ulivi, tigli secolari e i panorami dei Colli Orientali del Friuli." />
+  <meta property="og:image" content="https://www.villaottelio.com/assets/images/shared/esterni/villa-giardino-inverno.webp" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.villaottelio.com/it/parco.html" />
+  <meta property="twitter:title" content="Esterni e Giardino | Villa Ottelio de Carvalho" />
+  <meta property="twitter:image" content="https://www.villaottelio.com/assets/images/shared/esterni/villa-giardino-inverno.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'villa-gold': '#c5a059',
+            'villa-black': '#0a0a0a',
+            'villa-soft': '#e5e1d8',
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="../src/style.css" />
+</head>
+<body class="bg-villa-black text-white font-sans antialiased">
+
+<!-- ========== NAVBAR ========== -->
+<header class="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+    <a href="index.html" class="text-2xl font-serif tracking-widest text-gray-900 uppercase">Villa Ottelio</a>
+
+    <!-- Nav desktop -->
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-gray-600 uppercase">
+      <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+      <a href="dimora.html" class="hover:text-gray-900 transition-colors">La Dimora</a>
+      <a href="parco.html" class="text-villa-gold font-bold pointer-events-none">Il Parco</a>
+      <a href="vegetazione.html" class="hover:text-gray-900 transition-colors">Botanica</a>
+      <a href="blog.html" class="hover:text-gray-900 transition-colors">Diario</a>
+      <a href="investimento.html" class="hover:text-gray-900 transition-colors">Investimento</a>
+      <a href="contatti.html" class="hover:text-gray-900 transition-colors">Contatti</a>
+
+      <!-- Language selector desktop -->
+      <div class="relative inline-block text-left ml-4">
+        <button id="lang-selector-btn" class="flex items-center text-gray-600 hover:text-villa-gold transition-colors focus:outline-none">
+          <span><span class="fi fi-it rounded-sm mr-1"></span> IT</span>
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-24 bg-white border border-gray-100 shadow-lg rounded-sm z-50">
+          <div class="py-1">
+            <a href="parco.html" class="block px-4 py-2 text-xs font-bold text-villa-gold bg-gray-50"><span class="fi fi-it rounded-sm mr-1"></span> IT</a>
+            <a href="../the-park.html" class="block px-4 py-2 text-xs text-gray-600 hover:bg-gray-50 hover:text-villa-gold transition-colors"><span class="fi fi-gb rounded-sm mr-1"></span> EN</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-fr rounded-sm mr-1"></span> FR</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-de rounded-sm mr-1"></span> DE</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-es rounded-sm mr-1"></span> ES</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile: lingua + hamburger -->
+    <div class="flex items-center space-x-4 md:hidden">
+      <div class="relative inline-block text-left">
+        <button id="lang-mobile-btn" class="flex items-center text-gray-900 focus:outline-none text-sm font-bold">
+          <span><span class="fi fi-it rounded-sm mr-1"></span> IT</span>
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id="lang-mobile-dropdown" class="hidden absolute right-0 mt-6 w-24 bg-white border border-gray-100 shadow-lg rounded-sm z-50">
+          <div class="py-1">
+            <a href="parco.html" class="block px-4 py-2 text-xs font-bold text-villa-gold bg-gray-50"><span class="fi fi-it rounded-sm mr-1"></span> IT</a>
+            <a href="../the-park.html" class="block px-4 py-2 text-xs text-gray-600 hover:text-villa-gold"><span class="fi fi-gb rounded-sm mr-1"></span> EN</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-fr rounded-sm mr-1"></span> FR</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-de rounded-sm mr-1"></span> DE</a>
+            <a href="#" class="block px-4 py-2 text-xs text-gray-400 cursor-not-allowed"><span class="fi fi-es rounded-sm mr-1"></span> ES</a>
+          </div>
+        </div>
+      </div>
+      <button id="mobile-menu-button" class="text-gray-900 focus:outline-none" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4">
+    <nav class="flex flex-col space-y-4 text-sm font-medium tracking-wide text-gray-600 uppercase">
+      <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+      <a href="dimora.html" class="hover:text-gray-900 transition-colors">La Dimora</a>
+      <a href="parco.html" class="text-villa-gold font-bold pointer-events-none">Il Parco</a>
+      <a href="vegetazione.html" class="hover:text-gray-900 transition-colors">Botanica</a>
+      <a href="blog.html" class="hover:text-gray-900 transition-colors">Diario</a>
+      <a href="investimento.html" class="hover:text-gray-900 transition-colors">Investimento</a>
+      <a href="contatti.html" class="hover:text-gray-900 transition-colors">Contatti</a>
+    </nav>
+  </div>
+</header>
+<!-- ========== END NAVBAR ========== -->
+
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+  <img src="/assets/images/shared/esterni/villa-giardino-inverno.webp" alt="Vista invernale di Villa Ottelio de Carvalho con alberi secolari e giardino monumentale" class="absolute inset-0 w-full h-full object-cover opacity-50">
+  <div class="relative z-10 text-center px-4 mt-20">
+    <h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Esterni e Giardino</h1>
+    <p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Il lusso del silenzio: un'oasi protetta tra ulivi, tigli secolari e i panorami dei Colli Orientali.</p>
+  </div>
+</section>
+<!-- ========== END HERO ========== -->
+
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+  <div class="container mx-auto px-6">
+
+    <!-- 1. Il Giardino e la Corte Interna -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+      <div class="md:w-1/2">
+        <div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Il lusso del Silenzio</div>
+        <h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. Il Giardino e la Corte Interna</h2>
+        <div class="space-y-4 text-lg leading-relaxed text-villa-soft/80 mb-8">
+          <p>Un'oasi di riservatezza. Il prato interrato di un ettaro, interamente cintato, funge da diaframma naturale tra il mondo esterno e la dimora. Qui, la privacy non è un'opzione, ma la condizione naturale dell'abitare, rendendo la Villa un rifugio sicuro e impenetrabile.</p>
+          <p>L'arrivo alla proprietà è un preludio di pace: percorrendo la strada che sale verso la villa, non è raro incontrare scoiattoli, lepri e caprioli. Una volta varcato l'ingresso, il mondo scompare. Si entra nella corte interna, dove regna una quiete assoluta all'ombra dei Tigli Secolari che dominano il cortile.</p>
+        </div>
+        <a href="vegetazione.html" class="text-villa-gold hover:underline font-bold uppercase tracking-widest text-xs">👉 Scopri la Flora: Dai Tigli Secolari all'Uliveto storico</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/assets/images/shared/esterni/giardino-pozzo-vigneto.webp" alt="Il pozzo storico nel giardino di Villa Ottelio con vista panoramica autunnale sui vigneti" class="w-full h-auto border border-villa-gold/20 shadow-2xl">
+      </div>
+    </div>
+
+    <!-- 2. Il Panorama -->
+    <div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+      <div class="md:w-1/2">
+        <div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Immersi nei Colli Orientali</div>
+        <h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. Il Panorama: Vigneti a perdita d'occhio</h2>
+        <div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+          <p>La posizione dominante della Villa regala uno scenario naturale di rara bellezza. Lo sguardo non incontra ostacoli, ma spazia liberamente sull'arco alpino, maestoso d'inverno con le cime innevate, e si perde sulle colline circostanti. Siamo nel cuore dei Colli Orientali: la proprietà è circondata da un territorio con vigneti di vari proprietari, un paesaggio che cambia colore con le stagioni.</p>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/assets/images/shared/esterni/panorama-vigneti-tramonto.webp" alt="Panorama collinare dei vigneti e uliveti di proprietà di Villa Ottelio al tramonto" class="w-full h-auto border border-villa-gold/20 shadow-2xl">
+      </div>
+    </div>
+
+    <!-- 3. La Barchessa -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+      <div class="md:w-1/2">
+        <div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Spazi per la Convivialità e Affari</div>
+        <h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. La Barchessa e l'Ala Est</h2>
+        <div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+          <p>Non un corpo estraneo, ma un'estensione naturale della dimora. La Barchessa si sviluppa a forma di "L" direttamente attaccata al corpo padronale, accessibile comodamente tramite un passaggio interno. Dotata di un monumentale focolare e di una cucina di servizio dimensionata per 200 coperti, è il cuore pulsante della convivialità.</p>
+          <p>Un hub strategico per il business del lusso: con oltre 1.800 mq totali e questo spazio versatile già integrato, la Villa si presta a diventare una sede aziendale di prestigio o un boutique hotel esclusivo a soli 40 minuti dall'aeroporto.</p>
+
+          <div class="pt-6 border-t border-villa-gold/20">
+            <h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3a. Il Rito del Fuoco</h4>
+            <p class="text-sm">Il cuore della Barchessa è la "Stanza del Caminetto". Non un semplice elemento d'arredo, ma un monumentale focolare perfettamente funzionante, capace di ospitare le persone sedute proprio dentro e attorno al fuoco. È il ritorno a un'esperienza conviviale ormai rarissima: accogliere gli ospiti con il crepitio della legna, chiacchierare scaldati dalla brace e riscoprire un calore umano che la modernità ha dimenticato.</p>
+          </div>
+
+          <div class="pt-6 border-t border-villa-gold/20">
+            <h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3b. Il Pozzo e gli Ulivi</h4>
+            <p class="text-sm">La corte interna è impreziosita da uno dei pozzi storici più belli di tutto il Friuli, un'opera d'arte in pietra che domina lo spazio esterno. Tutt'intorno alla villa, oltre 200 piante di ulivo creano una cornice argentea e produttiva: la raccolta regala ogni anno una produzione di olio extravergine privato di ottima qualità.</p>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/assets/images/shared/esterni/barchessa-facciata-luci.webp" alt="Facciata posteriore della Barchessa di Villa Ottelio illuminata per eventi e business" class="w-full h-auto border border-villa-gold/20 shadow-2xl">
+      </div>
+    </div>
+
+    <!-- 4. La Cappella -->
+    <div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+      <div class="md:w-1/2">
+        <div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Un Gioiello Esclusivo</div>
+        <h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">4. La Cappella di San Gaetano</h2>
+        <div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+          <p>A ovest, parte integrante del complesso e affacciata sulla corte, sorge la Cappella gentilizia di San Gaetano (già documentata nelle visite pastorali del 13 maggio 1701). Non è un semplice annesso, ma un luogo di culto privato e disponibile.</p>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="/assets/images/shared/esterni/cappella-gentilizia.webp" alt="Facciata laterale e campanile della cappella gentilizia privata di Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl">
+      </div>
+    </div>
+
+    <!-- 5. Hub Internazionale -->
+    <div class="bg-villa-gold text-villa-black p-12 shadow-2xl">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-4 text-villa-black/70 font-bold uppercase tracking-widest text-sm text-center">Un Hub Strategico Internazionale</div>
+        <h2 class="font-serif text-3xl mb-8 uppercase tracking-widest text-center">5. Al centro dell'Europa e del Vino d'Eccellenza</h2>
+        <p class="text-xl mb-12 text-center">Villa Ottelio non è solo isolata nel verde, è al centro di una delle aree vinicole più note del Friuli. Circondata dai vigneti dei migliori produttori globali dei Colli Orientali, la Villa garantisce una connessione immediata con l'Europa:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div class="border-l-2 border-villa-black/20 pl-6">
+            <h4 class="font-bold uppercase tracking-widest text-sm mb-2">Venezia</h4>
+            <p class="text-sm">1 ora e 15 min (Cultura e Aeroporto Intercontinentale).</p>
+          </div>
+          <div class="border-l-2 border-villa-black/20 pl-6">
+            <h4 class="font-bold uppercase tracking-widest text-sm mb-2">Trieste / Riviera Adriatica</h4>
+            <p class="text-sm">40 min (Aeroporto e Mare).</p>
+          </div>
+          <div class="border-l-2 border-villa-black/20 pl-6">
+            <h4 class="font-bold uppercase tracking-widest text-sm mb-2">Confine Austriaco/Sloveno</h4>
+            <p class="text-sm">45 min.</p>
+          </div>
+          <div class="border-l-2 border-villa-black/20 pl-6">
+            <h4 class="font-bold uppercase tracking-widest text-sm mb-2">Udine</h4>
+            <p class="text-sm">10 min (Servizi essenziali, Sanità, Scuole Internazionali).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+
+<!-- ========== FOOTER ========== -->
+<footer class="w-full bg-stone-50 border-t border-gray-200 py-12 mt-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+    <div class="mb-4 md:mb-0">&copy; 2026 Villa Ottelio de Carvalho. Tutti i diritti riservati.</div>
+    <div class="flex space-x-6 uppercase tracking-wider">
+      <a href="privacy.html" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+      <a href="contatti.html" class="hover:text-gray-900 transition-colors">Richiedi Visita</a>
+    </div>
+  </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+<script type="module" src="../src/main.js"></script>
+</body>
+</html>
