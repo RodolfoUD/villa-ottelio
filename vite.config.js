@@ -8,6 +8,9 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
+        // ── CSS globale ────────────────────────────────────
+        style:            resolve(__dirname, 'src/style.css'),
+
         // ── EN (root) ──────────────────────────────────────
         main:             resolve(__dirname, 'index.html'),
         the_manor:        resolve(__dirname, 'the-manor.html'),
@@ -29,15 +32,6 @@ export default defineConfig({
         it_contatti:      resolve(__dirname, 'it/contatti.html'),
         it_privacy:       resolve(__dirname, 'it/privacy.html'),
         it_blog_article:  resolve(__dirname, 'it/blog/analisi-mercato-immobiliare.html'),
-
-        // ── DE (future) ────────────────────────────────────
-        // de_index:      resolve(__dirname, 'de/index.html'),
-
-        // ── FR (future) ────────────────────────────────────
-        // fr_index:      resolve(__dirname, 'fr/index.html'),
-
-        // ── ES (future) ────────────────────────────────────
-        // es_index:      resolve(__dirname, 'es/index.html'),
       }
     }
   }
