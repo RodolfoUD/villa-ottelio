@@ -62,15 +62,24 @@
   function loadGA() {
     if (window._gaLoaded) return;
     window._gaLoaded = true;
+    // Aggiorna consenso a granted
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
+    }
     var s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TFTR0GE584';
     document.head.appendChild(s);
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA_ID, { anonymize_ip: true });
+    function gtag_local() { dataLayer.push(arguments); }
+    if (!window.gtag) window.gtag = gtag_local;
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-TFTR0GE584', { anonymize_ip: true });
   }
 
   function setConsent(value) {
