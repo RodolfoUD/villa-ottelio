@@ -233,6 +233,63 @@
   <url><loc>https://www.villaottelio.it/de/kontakt.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.villaottelio.it/de/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
+  <!-- ========== NL — PAGINE PRINCIPALI ========== -->
+
+  <url><loc>https://www.villaottelio.it/nl/index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/landhuis.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/park.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/botanica.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/investering.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/privacybeleid.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- ========== NL — BLOG ARTICOLI ========== -->
+
+  <url><loc>https://www.villaottelio.it/nl/blog/stilte-ommuurde-tuin-luxe.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/fresco-balken-geschiedenis.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/vastgoedmarkt-analyse.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/hybride-architectuur-venetiaans-friuliaans.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/kunstenaars-schrijvers-historische-landgoederen.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/anti-inflatie-asset-cultureel-erfgoed.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/atelier-kunstenaar-licht-inspiratie.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/herfst-lente-kleuren-tuin.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/beschermd-monument-belastingvoordelen.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/restauratiebonus-historische-villa.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/stenen-luiken-wijn-salon.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/monumentale-wijnkelder.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/kapel-san-gaetano-geschiedenis.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/prive-kapellen-heilige-ruimte.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/colli-orientali-friuli-terroir.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/hoofdkantoor-prestigieuze-locatie.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/aftrekbaarheid-onderhoud-monumenten.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/tien-historische-villa-kunstwerken.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/ecobonus-historische-landgoederen.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/hoofdgevel-villa.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/familie-ottelio-notarissen-graven.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/zee-bergen-centrale-ligging.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/extra-vergine-olijfolie-single-estate.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/bezitten-stuk-geschiedenis.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/conservatieve-restauratie.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/roi-historische-villa-relais.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/veiligheid-levenskwaliteit-friuli.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/stilte-nieuwe-luxe-langzaam-leven.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/zolder-zichtbare-balken.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/representatieve-prive-ruimtes-villa.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/beroemde-buren-collio-wijnen.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.villaottelio.it/nl/blog/prive-villa-artistieke-residentie.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
+  <!-- ========== ZH — PAGINE PRINCIPALI ========== -->
+
+  <url><loc>https://www.villaottelio.it/zh/index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/the-estate.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/the-garden.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/nature.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/investment.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.villaottelio.it/zh/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
   <!-- ========== DE — BLOG ARTICOLI ========== -->
 
   <url><loc>https://www.villaottelio.it/de/blog/beruhmte-nachbarn-collio-weine.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
