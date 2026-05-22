@@ -44,8 +44,9 @@ const htmlLang = site[lang]?.htmlLang || 'en';
     {canonical && <link rel="canonical" href={canonical} />}
     <meta name="robots" content="index, follow" />
 
-    <!-- og:* / twitter:* / JSON-LD / hreflang specifici della pagina,
-         preservati verbatim dal sito originale -->
+    <!-- og:* / twitter:* / JSON-LD specifici della pagina, preservati
+         verbatim dal sito originale. Gli hreflang stanno solo nelle
+         sitemap per lingua (sitemap-<lang>.xml), non duplicati qui. -->
     <Fragment set:html={headExtra} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
