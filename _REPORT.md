@@ -44,8 +44,11 @@ sottocartelle `it/ de/ fr/ nl/ zh/`.
 - **URL**: 244 file originali, 244 nel build — 0 mancanti, 0 in più.
 - **canonical**: tutte self-referenti (0 errate); 1 senza canonical =
   file di verifica Google (corretto).
-- **hreflang**: 7 link per pagina (6 lingue + x-default), preservati dai
-  file originali.
+- **hreflang**: dichiarati in un solo posto, le `sitemap-<lang>.xml`
+  (6 lingue + x-default per ogni URL, con self-reference). Rimossi
+  dall'`<head>` HTML per non avere segnali duplicati.
+- **trailing slash**: `loc` sitemap, `canonical` e `og:url` identici —
+  home con `/` finale, pagine `.html` senza. Nessun `/index.html`.
 - **CDN Tailwind**: 0 pagine.
 - Build Astro verde, 243 pagine, `dist/` ≈ 18 MB.
 
