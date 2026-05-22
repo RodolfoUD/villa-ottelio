@@ -1,54 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 const headExtra = `<meta content="website" property="og:type"/>
-<meta content="https://www.villaottelio.it/de/index.html" property="og:url"/>
+<meta property="og:url" content="https://www.villaottelio.it/de/"/>
 <meta content="Villa Ottelio de Carvalho | Historisches Anwesen zum Verkauf im Friaul" property="og:title"/>
 <meta content="Über 100 Fenster mit Blick auf die Geschichte. Ein intaktes Immobilienensemble zwischen venezianischem Adel und friaulischer Tradition." property="og:description"/>
 <meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
 <meta content="summary_large_image" property="twitter:card"/>
-<meta content="https://www.villaottelio.it/de/index.html" property="twitter:url"/>
+<meta property="twitter:url" content="https://www.villaottelio.it/de/"/>
 <meta content="Villa Ottelio de Carvalho | Historisches Anwesen zum Verkauf" property="twitter:title"/>
 <meta content="Erwerben Sie das Privileg von drei Jahrhunderten Geschichte in den Colli Orientali des Friauls." property="twitter:description"/>
 <meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["RealEstateListing", "Place"],
-    "name": "Villa Ottelio de Carvalho",
-    "description": "Nobile Dimora del XVII Secolo nel cuore dei Colli Orientali in Friuli.",
-    "url": "https://www.villaottelio.it/de/index.html",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Località Ottelio 1",
-      "addressLocality": "Manzano",
-      "addressRegion": "UD",
-      "postalCode": "33044",
-      "addressCountry": "IT"
-    },
-    "offers": {
-      "@type": "Offer",
-      "businessFunction": "http://purl.org/goodrelations/v1#Sell",
-      "availability": "https://schema.org/InStock",
-      "itemOffered": {
-        "@type": "SingleFamilyResidence",
-        "numberOfRooms": 35,
-        "floorSize": {
-          "@type": "QuantitativeValue",
-          "value": 1880,
-          "unitCode": "MTK"
-        },
-        "yearBuilt": 1670
-      }
-    }
-  }
-  </script>
-<link href="https://www.villaottelio.it/it/index.html" hreflang="it" rel="alternate"/>
-<link href="https://www.villaottelio.it/index.html" hreflang="en" rel="alternate"/>
-<link href="https://www.villaottelio.it/fr/index.html" hreflang="fr" rel="alternate"/>
-<link href="https://www.villaottelio.it/de/index.html" hreflang="de" rel="alternate"/>
-<link href="https://www.villaottelio.it/nl/index.html" hreflang="nl" rel="alternate"/>
-<link href="https://www.villaottelio.it/zh/index.html" hreflang="zh" rel="alternate"/>
-<link href="https://www.villaottelio.it/index.html" hreflang="x-default" rel="alternate"/>`;
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["RealEstateListing", "Place"], "name": "Villa Ottelio de Carvalho", "description": "Nobile Dimora del XVII Secolo nel cuore dei Colli Orientali in Friuli.", "url": "https://www.villaottelio.it/de/", "address": {"@type": "PostalAddress", "streetAddress": "Località Ottelio 1", "addressLocality": "Manzano", "addressRegion": "UD", "postalCode": "33044", "addressCountry": "IT"}, "offers": {"@type": "Offer", "businessFunction": "http://purl.org/goodrelations/v1#Sell", "availability": "https://schema.org/InStock", "itemOffered": {"@type": "SingleFamilyResidence", "numberOfRooms": 35, "floorSize": {"@type": "QuantitativeValue", "value": 1880, "unitCode": "MTK"}, "yearBuilt": 1670}}}</script>
+<link rel="alternate" hreflang="it" href="https://www.villaottelio.it/it/"/>
+<link rel="alternate" hreflang="en" href="https://www.villaottelio.it/"/>
+<link rel="alternate" hreflang="fr" href="https://www.villaottelio.it/fr/"/>
+<link rel="alternate" hreflang="de" href="https://www.villaottelio.it/de/"/>
+<link rel="alternate" hreflang="nl" href="https://www.villaottelio.it/nl/"/>
+<link rel="alternate" hreflang="zh" href="https://www.villaottelio.it/zh/"/>
+<link rel="alternate" hreflang="x-default" href="https://www.villaottelio.it/"/>`;
 const content = `<!-- ========== NAVBAR ========== -->
 
 <!-- ========== END NAVBAR ========== -->
@@ -227,14 +196,14 @@ const content = `<!-- ========== NAVBAR ========== -->
 <!-- ========== FOOTER ========== -->
 
 <!-- ========== END FOOTER ========== -->`;
-const alternates = { it: 'https://www.villaottelio.it/it/index.html', en: 'https://www.villaottelio.it/index.html', fr: 'https://www.villaottelio.it/fr/index.html', de: 'https://www.villaottelio.it/de/index.html', nl: 'https://www.villaottelio.it/nl/index.html', zh: 'https://www.villaottelio.it/zh/index.html' };
+const alternates = { it: 'https://www.villaottelio.it/it/', en: 'https://www.villaottelio.it/', fr: 'https://www.villaottelio.it/fr/', de: 'https://www.villaottelio.it/de/', nl: 'https://www.villaottelio.it/nl/', zh: 'https://www.villaottelio.it/zh/' };
 ---
 <Layout
   lang="de"
-  pageKey="home"
+  pageKey=""
   title={`Villa Ottelio de Carvalho | Historisches Anwesen zum Verkauf im Friaul`}
   description={`Erwerben Sie das Privileg von drei Jahrhunderten Geschichte. Villa Ottelio de Carvalho: Edler Landsitz aus dem 17. Jahrhundert in den Colli Orientali des Friauls. Privatverkauf.`}
-  canonical="https://www.villaottelio.it/de/index.html"
+  canonical="https://www.villaottelio.it/de/"
   alternates={alternates}
   headExtra={headExtra}
 >

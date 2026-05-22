@@ -1,22 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 const headExtra = `<meta content="website" property="og:type"/>
-<meta content="https://www.villaottelio.it/zh/" property="og:url"/>
+<meta property="og:url" content="https://www.villaottelio.it/zh/"/>
 <meta content="Villa Ottelio de Carvalho | 弗留利出售的历史庄园" property="og:title"/>
 <meta content="超过100扇窗户俯视历史。一个完整的房地产套件，介于威尼斯贵族和弗留利传统之间。" property="og:description"/>
 <meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
 <meta content="summary_large_image" property="twitter:card"/>
-<meta content="https://www.villaottelio.it/zh/" property="twitter:url"/>
+<meta property="twitter:url" content="https://www.villaottelio.it/zh/"/>
 <meta content="Villa Ottelio de Carvalho | 弗留利出售的历史庄园" property="twitter:title"/>
 <meta content="获取三个世纪历史的特权。" property="twitter:description"/>
 <meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
-<link href="https://www.villaottelio.it/it/index.html" hreflang="it" rel="alternate"/>
-<link href="https://www.villaottelio.it/index.html" hreflang="en" rel="alternate"/>
-<link href="https://www.villaottelio.it/fr/index.html" hreflang="fr" rel="alternate"/>
-<link href="https://www.villaottelio.it/de/index.html" hreflang="de" rel="alternate"/>
-<link href="https://www.villaottelio.it/nl/index.html" hreflang="nl" rel="alternate"/>
-<link href="https://www.villaottelio.it/zh/index.html" hreflang="zh" rel="alternate"/>
-<link href="https://www.villaottelio.it/index.html" hreflang="x-default" rel="alternate"/>`;
+<link rel="alternate" hreflang="it" href="https://www.villaottelio.it/it/"/>
+<link rel="alternate" hreflang="en" href="https://www.villaottelio.it/"/>
+<link rel="alternate" hreflang="fr" href="https://www.villaottelio.it/fr/"/>
+<link rel="alternate" hreflang="de" href="https://www.villaottelio.it/de/"/>
+<link rel="alternate" hreflang="nl" href="https://www.villaottelio.it/nl/"/>
+<link rel="alternate" hreflang="zh" href="https://www.villaottelio.it/zh/"/>
+<link rel="alternate" hreflang="x-default" href="https://www.villaottelio.it/"/>`;
 const content = `<!-- ========== NAVBAR ========== -->
 
 <!-- ========== END NAVBAR ========== -->
@@ -87,14 +87,14 @@ const content = `<!-- ========== NAVBAR ========== -->
 <!-- ========== FOOTER ========== -->
 
 <!-- ========== END FOOTER ========== -->`;
-const alternates = { it: 'https://www.villaottelio.it/it/index.html', en: 'https://www.villaottelio.it/index.html', fr: 'https://www.villaottelio.it/fr/index.html', de: 'https://www.villaottelio.it/de/index.html', nl: 'https://www.villaottelio.it/nl/index.html', zh: 'https://www.villaottelio.it/zh/index.html' };
+const alternates = { it: 'https://www.villaottelio.it/it/', en: 'https://www.villaottelio.it/', fr: 'https://www.villaottelio.it/fr/', de: 'https://www.villaottelio.it/de/', nl: 'https://www.villaottelio.it/nl/', zh: 'https://www.villaottelio.it/zh/' };
 ---
 <Layout
   lang="zh"
-  pageKey="home"
+  pageKey=""
   title={`Villa Ottelio de Carvalho | 弗留利出售的历史庄园`}
   description={`获取三个世纪历史的特权。Villa Ottelio de Carvalho：17世纪Colli Orientali del Friuli中心的贵族住宅。保留销售。`}
-  canonical="https://www.villaottelio.it/zh/index.html"
+  canonical="https://www.villaottelio.it/zh/"
   alternates={alternates}
   headExtra={headExtra}
 >

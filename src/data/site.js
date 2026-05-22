@@ -18,7 +18,7 @@ export const site = {
   en: {
     htmlLang: 'en',
     nav: [
-      { key: 'home', label: 'Home', href: '/index.html' },
+      { key: 'home', label: 'Home', href: '/' },
       { key: 'manor', label: 'The Manor', href: '/the-manor.html' },
       { key: 'park', label: 'The Park', href: '/the-park.html' },
       { key: 'nature', label: 'Nature', href: '/nature.html' },
@@ -37,7 +37,7 @@ export const site = {
   it: {
     htmlLang: 'it',
     nav: [
-      { key: 'home', label: 'Home', href: '/it/index.html' },
+      { key: 'home', label: 'Home', href: '/it/' },
       { key: 'manor', label: 'La Dimora', href: '/it/dimora.html' },
       { key: 'park', label: 'Il Parco', href: '/it/parco.html' },
       { key: 'nature', label: 'Botanica', href: '/it/vegetazione.html' },
@@ -56,7 +56,7 @@ export const site = {
   de: {
     htmlLang: 'de',
     nav: [
-      { key: 'home', label: 'Home', href: '/de/index.html' },
+      { key: 'home', label: 'Home', href: '/de/' },
       { key: 'manor', label: 'Das Anwesen', href: '/de/anwesen.html' },
       { key: 'park', label: 'Der Park', href: '/de/park.html' },
       { key: 'nature', label: 'Botanik', href: '/de/botanik.html' },
@@ -75,7 +75,7 @@ export const site = {
   fr: {
     htmlLang: 'fr',
     nav: [
-      { key: 'home', label: 'Home', href: '/fr/index.html' },
+      { key: 'home', label: 'Home', href: '/fr/' },
       { key: 'manor', label: 'Le Manoir', href: '/fr/le-manoir.html' },
       { key: 'park', label: 'Le Parc', href: '/fr/le-parc.html' },
       { key: 'nature', label: 'Botanique', href: '/fr/nature.html' },
@@ -94,7 +94,7 @@ export const site = {
   nl: {
     htmlLang: 'nl',
     nav: [
-      { key: 'home', label: 'Home', href: '/nl/index.html' },
+      { key: 'home', label: 'Home', href: '/nl/' },
       { key: 'manor', label: 'Het Landhuis', href: '/nl/landhuis.html' },
       { key: 'park', label: 'Het Park', href: '/nl/park.html' },
       { key: 'nature', label: 'Botanica', href: '/nl/botanica.html' },
@@ -113,7 +113,7 @@ export const site = {
   zh: {
     htmlLang: 'zh',
     nav: [
-      { key: 'home', label: '首页', href: '/zh/index.html' },
+      { key: 'home', label: '首页', href: '/zh/' },
       { key: 'manor', label: '庄园', href: '/zh/the-estate.html' },
       { key: 'park', label: '花园', href: '/zh/the-garden.html' },
       { key: 'nature', label: '植物学', href: '/zh/nature.html' },
