@@ -1,0 +1,15 @@
+---
+import { site } from '../data/site.js';
+const { lang } = Astro.props;
+const f = site[lang].footer;
+---
+<footer class="w-full bg-stone-50 border-t border-gray-200 py-12 mt-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+    <div class="mb-4 md:mb-0">{f.copyright}</div>
+    <div class="flex space-x-6 uppercase tracking-wider">
+      {f.links.map((l) => (
+        <a class="hover:text-gray-900 transition-colors" href={l.href}>{l.label}</a>
+      ))}
+    </div>
+  </div>
+</footer>

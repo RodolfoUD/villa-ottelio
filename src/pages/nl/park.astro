@@ -1,0 +1,141 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/nl/park.html" property="og:url"/>
+<meta content="Park en Tuin | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Een beschermd oase tussen olijfbomen, eeuwenoude lindebomen en uitzichten over de Colli Orientali del Friuli." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/nl/park.html" property="twitter:url"/>
+<meta content="Park en Tuin | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/parco.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-parc.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/park.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/park.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-garden.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Winteruitzicht op Villa Ottelio de Carvalho met eeuwenoude bomen en monumentale tuin" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/esterni/villa-giardino-inverno.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Park en Tuin</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">De luxe van stilte: een beschermd oase tussen olijfbomen, eeuwenoude lindebomen en uitzichten over de Colli Orientali.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. De Tuin en de Binnenplaats -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">De Luxe van Stilte</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. De Tuin en het Binnenplein</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80 mb-8">
+<p>Een oase van privacy. Het ondergrondse gazon van een hectare, volledig omheind, fungeert als een natuurlijke buffer tussen de buitenwereld en het landgoed. Hier is privacy niet optioneel, maar een natuurlijke voorwaarde van het wonen, wat de Villa een veilig en ondoordringbaar toevluchtsoord maakt.</p>
+<p>De aankomst op het landgoed is een voorbode van vrede: op de weg die naar de villa voert, kom je regelmatig eekhorns, konijnen en reeën tegen. Zodra je de ingang bent gepasseerd, verdwijnt de wereld. Je betreedt het binnenplein, waar absolute rust heerst in de schaduw van de Eeuwenoude Lindebomen die over de binnenplaats domineren.</p>
+</div>
+<a class="text-villa-gold hover:underline font-bold uppercase tracking-widest text-xs" href="/nl/botanica.html">👉 Ontdek de Flora: Van Eeuwenoude Lindebomen tot Historische Olijfgaard</a>
+</div>
+<div class="md:w-1/2">
+<img alt="De historische waterput in de tuin van Villa Ottelio met uitzicht op herfstwijngaarden" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/giardino-pozzo-vigneto.webp"/>
+</div>
+</div>
+<!-- 2. Il Panorama -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Ondergedompeld in de Colli Orientali</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. Het Panorama: Wijngaarden tot in het oneindige</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>De dominante ligging van de Villa biedt een natuurlijk scenarium van zeldzame schoonheid. Het uitzicht wordt niet belemmerd, maar strekt zich vrij uit over de Alpische boog, majestueus in de winter met sneeuwbedekte toppen, en verdwijnt in de omliggende heuvels. We bevinden ons in het hart van de Colli Orientali: het landgoed is omgeven door wijngaarden van verschillende eigenaren, een landschap dat met de seizoenen van kleur verandert.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Heuvelachtig panorama van wijngaarden en olijfbomen van Villa Ottelio bij zonsondergang" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/panorama-vigneti-tramonto.webp"/>
+</div>
+</div>
+<!-- 3. La Barchessa -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Ruimten voor Sociabiliteit en Zakendoen</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. Het Bijgebouw en de Oost-Vleugel</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Geen apart gebouw, maar een natuurlijke voortzetting van het landgoed. Het bijgebouw strekt zich in een "L"-vorm uit, rechtstreeks tegen het hoofdgebouw aangebouwd, gemakkelijk toegankelijk via een interne doorgang. Voorzien van een monumentale haard en een servicekeuken geschikt voor 200 couverts, is het het kloppende hart van gezelligheid.</p>
+<p>Een strategische hub voor luxe zaken: met ruim 1.800 m² totale oppervlakte en deze veelzijdige ruimte al geïntegreerd, is de Villa geschikt om een prestigieus bedrijfscentrum of een exclusief boetiek hotel te worden, slechts 40 minuten van de luchthaven.</p>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3a. Het Ritueel van het Vuur</h4>
+<p class="text-sm">Het hart van het bijgebouw is de "Haardkamer". Niet simpelweg een interieurstuk, maar een monumentaal, volledig functionerend haardstuk, groot genoeg voor mensen om recht in en rond het vuur te zitten. Het is een terugkeer naar een sociaal ritueel dat tegenwoordig zeldzaam is: gasten verwelkomen met het knetteren van het vuurhout, kletsen verwarmd door de sintels en herontdekken van menselijke warmte die de moderniteit is vergeten.</p>
+</div>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3b. De Waterput en de Olijfbomen</h4>
+<p class="text-sm">Het binnenplein wordt versierd met een van de mooiste historische waterputten van heel Friuli, een kunstwerk in steen dat over de buitenruimte domineert. Rond de villa groeien meer dan 200 olijfbomen, die een zilveren en productieve lijst creëren: de jaarlijkse oogst brengt een productie van huiseigen olijfolie van uitstekende kwaliteit op.</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Achtergevel van het bijgebouw van Villa Ottelio verlicht voor evenementen en zaken" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/barchessa-facciata-luci.webp"/>
+</div>
+</div>
+<!-- 4. La Cappella -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Een Exclusief Juweel</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">4. De Kapel van San Gaetano</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>In het westen, onderdeel van het complex en uitkijkend op de binnenplaats, staat de privékapel San Gaetano (al gedocumenteerd in de pastorale bezoeken van 13 mei 1701). Het is geen simpel aanhangsel, maar een plaats van privéaanbidding en beschikbaar voor gebruik.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Zijgevel en klokkentoren van de privékapel van Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/cappella-gentilizia.webp"/>
+</div>
+</div>
+<!-- 5. Hub Internazionale -->
+<div class="bg-villa-gold text-villa-black p-12 shadow-2xl">
+<div class="max-w-4xl mx-auto">
+<div class="mb-4 text-villa-black/70 font-bold uppercase tracking-widest text-sm text-center">Een Strategische Internationale Hub</div>
+<h2 class="font-serif text-3xl mb-8 uppercase tracking-widest text-center">5. In het Hart van Europa en Uitzonderlijke Wijn</h2>
+<p class="text-xl mb-12 text-center">Villa Ottelio is niet alleen geïsoleerd in het groen, het ligt in het hart van een van de meest gerenommeerde wijngebieden van Friuli. Omgeven door wijngaarden van 's werelds beste producenten van de Colli Orientali, garandeert de Villa onmiddellijke verbinding met Europa:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Venetië</h4>
+<p class="text-sm">1 uur en 15 minuten (Cultuur en Internationale Luchthaven).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Triëst / Adriatische Riviera</h4>
+<p class="text-sm">40 minuten (Luchthaven en Zee).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Oostenrijkse / Sloveense Grens</h4>
+<p class="text-sm">45 minuten.</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Udine</h4>
+<p class="text-sm">10 minuten (Essentiële diensten, Gezondheidszorg, Internationale Scholen).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/parco.html', en: 'https://www.villaottelio.it/the-park.html', fr: 'https://www.villaottelio.it/fr/le-parc.html', de: 'https://www.villaottelio.it/de/park.html', nl: 'https://www.villaottelio.it/nl/park.html', zh: 'https://www.villaottelio.it/zh/the-garden.html' };
+---
+<Layout
+  lang="nl"
+  pageKey="park"
+  title={`Park en Tuin | Villa Ottelio de Carvalho`}
+  description={`Het park en de buitenkant van Villa Ottelio de Carvalho: een beschermde oase tussen olijfbomen, eeuwenoude lindebomen, privékapel en uitzichten over de Colli Orientali del Friuli.`}
+  canonical="https://www.villaottelio.it/nl/park.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

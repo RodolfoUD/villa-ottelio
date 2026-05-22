@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/nl/investering.html" property="og:url"/>
+<meta content="Investimento e Business | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Bene storico vincolato, potenziale ricettivo chiavi in mano e incentivi fiscali. Un asset di valore storico nel cuore del Friuli." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/investimento-pozzo-tramonto.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/nl/investering.html" property="twitter:url"/>
+<meta content="Investimento e Business | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/investimento-pozzo-tramonto.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/investimento.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/investment.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/investissement.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/investition.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/investering.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/investment.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/investment.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<div class="absolute inset-0 bg-black/40 z-[1]"></div>
+<img alt="Pozzo storico in ferro battuto di Villa Ottelio de Carvalho al tramonto, simbolo di investimento senza tempo" class="absolute inset-0 w-full h-full object-cover" src="/assets/images/shared/investimento-pozzo-tramonto.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Asset van Historische Waarde</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Een solide, beschermde investering met een hoog ontwikkelingspotentieel.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== SCHEDA TECNICA ========== -->
+<section class="py-24 bg-villa-soft text-villa-black border-t border-villa-gold/20">
+<div class="container mx-auto px-6">
+<div class="max-w-5xl mx-auto mb-20 overflow-x-auto">
+<h2 class="font-serif text-3xl md:text-4xl mb-4 uppercase text-center tracking-widest">Technische Gegevens</h2>
+<p class="text-center italic mb-12 opacity-80 max-w-2xl mx-auto">De verkoop van Villa Ottelio de Carvalho wordt beheerd met een protocol van maximale vertrouwelijkheid. Het volledige documentatiedossier en bezoeken aan het pand zijn beschikbaar na accreditatie.</p>
+<table class="w-full border-collapse border border-villa-gold/20 bg-white shadow-xl">
+<thead>
+<tr class="bg-villa-gold text-villa-black">
+<th class="p-4 border border-villa-gold/30 text-left font-serif uppercase tracking-widest text-sm">Detail</th>
+<th class="p-4 border border-villa-gold/30 text-left font-serif uppercase tracking-widest text-sm">Specificatie</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Typologie</td>
+<td class="p-4 border border-villa-gold/10">Historisch Complex (Hoofdgebouw + Barchessa + Kapel)</td>
+</tr>
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Oppervlakte</td>
+<td class="p-4 border border-villa-gold/10">ca. 1.880 m² nuttig (ca. 2.440 m² commercieel)</td>
+</tr>
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Buitenruimtes</td>
+<td class="p-4 border border-villa-gold/10">Binnenplaats, Tuin en Terrassen (ca. 5.300 m²)</td>
+</tr>
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Indeling</td>
+<td class="p-4 border border-villa-gold/10">Totaal 35 vertrekken (waaronder 5 badkamers)</td>
+</tr>
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Staat van het Dak</td>
+<td class="p-4 border border-villa-gold/10">Volledig vernieuwd (ca. 10 jaar geleden)</td>
+</tr>
+<tr>
+<td class="p-4 border border-villa-gold/10 font-bold uppercase tracking-wider bg-gray-50">Connectiviteit</td>
+<td class="p-4 border border-villa-gold/10">Snel internet (Starlink-dekking actief)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="max-w-4xl mx-auto space-y-16">
+<div>
+<h3 class="font-serif text-2xl text-villa-gold mb-6 uppercase tracking-widest">2. Structurele Focus (Het "Medisch Dossier")</h3>
+<div class="space-y-6 text-lg leading-relaxed opacity-90">
+<h4 class="font-serif text-xl mb-2 uppercase">Een Massieve en Gezonde Structuur</h4>
+<p>Villa Ottelio de Carvalho si presenta con una solidità costruttiva d'altri tempi, mantenuta con cura costante:</p>
+<p><strong>Het Dak:</strong> Dit is de structurele kracht. De bedekking is ongeveer 10 jaar geleden integraal vernieuwd, met respect voor de originele esthetiek maar met garantie voor perfecte dichtheid en bescherming.</p>
+<p><strong>De Muren en het Comfort:</strong> De villa is gebouwd met imposante muren van natuursteen en kasseien (dikte 40 cm) die in de zomer een onbetaalbare natuurlijke koelte garanderen. In de winter warmen de ruimtes, dankzij de gietijzeren radiatoren die de warmte lang vasthouden, goed op voor een optimaal wooncomfort.</p>
+<p><strong>Het Hang- en Sluitwerk:</strong> Het licht speelt de hoofdrol dankzij de meer dan 100 ramen. Om de isolatie te verbeteren, is 96% van de kozijnen vernieuwd met dubbel glas en houten luiken</p>
+</div>
+</div>
+<div>
+<h3 class="font-serif text-2xl text-villa-gold mb-6 uppercase tracking-widest">3. Installatie-upgrade en Fiscale Stimulansen</h3>
+<div class="space-y-6 text-lg leading-relaxed opacity-90">
+<p>Het huidige verwarmingssysteem op olie is, hoewel functionerend, technologisch verouderd. Deze toestand vormt het grootste fiscale voordeel voor de koper. De noodzaak om de verwarmingscentrale te vervangen, geeft onmiddellijk toegang tot staatsstimulansen voor energie-efficiëntie en conservatieve restauratie.</p>
+<p><strong>Investering previsto:</strong> Una stima preliminare per un impianto ibrido ad alta efficienza si attesta tra €50.000 e €75.000.</p>
+<p><strong>Fiscaal herstel:</strong> Tot 65% van de uitgaven is terugvorderbaar via Ecobonus, cumuleerbaar met eventuele regionale subsidies voor Historische Landhuizen (te verifiëren op het moment van het project).</p>
+</div>
+</div>
+<div class="p-8 border border-villa-gold/30 bg-villa-black text-villa-soft shadow-2xl">
+<h3 class="font-serif text-2xl text-villa-gold mb-6 uppercase tracking-widest text-center">4. Het Voorrecht van een Cultureel Goed</h3>
+<div class="space-y-6 text-lg leading-relaxed text-center italic">
+<h4 class="font-serif text-xl not-italic mb-2 uppercase">Een Gecertificeerd Kunstwerk</h4>
+<p>Villa Ottelio de Carvalho is niet zomaar een vastgoedobject, maar een Goed van Historisch-Artistiek Belang erkend door het Ministerie van Cultuur (Toezicht van de Soprintendenza). Deze officiële kennisgeving is de maximale garantie voor authenticiteit en waarde in de loop van de tijd: het certificeert dat het bezit van dit landhuis betekent dat u een onvervangbaar stuk van het Italiaanse artistieke erfgoed bewaart. Het pand maakt volledig deel uit van de selecte kring van Historische Italiaanse Landhuizen, een juridische status die internationaal prestige verleent en de waarde van de investering op de lange termijn beschermt.</p>
+</div>
+</div>
+<div class="pt-16 border-t border-villa-gold/20">
+<h3 class="font-serif text-2xl text-villa-gold mb-8 uppercase tracking-widest text-center">5. Het Volledige Technische Dossier</h3>
+<div class="max-w-3xl mx-auto text-sm">
+<p class="text-center text-lg mb-8 opacity-80 italic">Voor gekwalificeerde beleggers is het Volledige Technische Dossier van Villa Ottelio reeds opgesteld, inclusief:</p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center justify-center"><span class="text-villa-gold mr-2">•</span> Gedetailleerde architectonische plattegronden en bijgewerkte opmetingen.</li>
+<li class="flex items-center justify-center"><span class="text-villa-gold mr-2">•</span> Energieprestatiecertificaat (APE) in afrondingsfase.</li>
+<li class="flex items-center justify-center"><span class="text-villa-gold mr-2">•</span> Volledige kadastrale en stedenbouwkundige documentatie.</li>
+</ul>
+<p class="text-center mt-12 font-bold uppercase tracking-widest text-villa-gold border border-villa-gold p-6">Het Dossier wordt uitsluitend gedeeld tijdens de eerste persoonlijke ontmoeting in de villa, na een geheimhoudingsovereenkomst.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END SCHEDA TECNICA ========== -->
+<!-- ========== ASSET ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-4 text-center uppercase tracking-widest">Waarom het een Uniek Asset is</h2>
+<p class="text-center italic mb-16 text-villa-soft/80 max-w-2xl mx-auto">De verkoop wordt beheerd met een protocol van maximale vertrouwelijkheid. Het dossier en de bezoeken zijn beschikbaar na accreditatie.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+<div class="p-8 border border-villa-gold/10 bg-villa-black/50 backdrop-blur-sm">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">1. Business Unit "Turnkey"</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Meer dan 400 m² moduleerbaar oppervlak met onafhankelijke ingang. De Barchessa is niet alleen een gezellige ruimte, maar een kant-en-klare Business Unit: de hoogte van de plafonds en de structurele integriteit maken onmiddellijke conversie mogelijk naar een luxe showroom, boutique designhotel of representatief hoofdkantoor voor wereldwijde merken, met een onmiddellijk rendement op investering (ROI) potentieel. De huidige indeling omvat reeds een professionele technische onderverdeling met aparte afdelingen voor koken en afwassen en een speciale Barruimte, wat de aanpassingskosten drastisch verlaagt.</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-villa-black/50 backdrop-blur-sm">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">2. Asset Protection (De Historische Bescherming)</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">De bescherming door de Soprintendenza voor Culturele Goederen is uw garantie voor kapitaalbescherming. In een vastgoedmarkt die vaak onderhevig is aan speculatie, is Villa Ottelio de Carvalho een gecertificeerd veilig goed: de onveranderlijkheid van zijn esthetiek bewaart de marktwaarde tegen elke omliggende stedenbouwkundige achteruitgang, waardoor het een "Trophy Property" is die veilig is door de tijd heen.</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-villa-black/50 backdrop-blur-sm">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">3. Historische Lifestyle als Asset</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Een onvindbaar compendium van prestige: de private gewijde kapel en de oude kelders met originele luiken bieden unieke scenario's voor hoogwaardige representatie. Deze ruimtes maken het mogelijk om privé-evenementen, ceremonies of niche wijnproeverijen te hosten in een context van absolute privacy en historische sacraliteit, wat de gepercipieerde waarde van het gehele pand verhoogt in de ogen van partners en klanten.</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-villa-black/50 backdrop-blur-sm">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">4. Time-to-Market</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">In tegenstelling tot typische historische landhuizen die jaren van complexe restauraties vereisen, beschikt Villa Ottelio over onlangs vernieuwde daken en primaire structuren. Dit verkort de "time-to-market" drastisch voor elk residentieel of commercieel project, en elimineert de onzekerheden en verborgen kosten die typisch zijn voor structurele renovaties.</p>
+</div>
+</div>
+<div class="max-w-4xl mx-auto space-y-12 mb-24">
+<div class="p-10 border-l-4 border-villa-gold bg-villa-soft text-villa-black">
+<h3 class="font-serif text-2xl mb-4 uppercase">5. Gecertificeerde en Onderschatte Marktwaarde</h3>
+<p class="text-lg leading-relaxed opacity-90">In het segment van de Beschermde Historische Landhuizen in de regio Triveneto worden vergelijkbare objecten zonder gewijde kapel en met kleinere oppervlaktes getaxeerd boven de €3M. Villa Ottelio, met zijn 2.440 m² commercieel oppervlak en het intacte kapel-barchessa complex, vertegenwoordigt een overnamekans tegen een waarde die lager ligt dan de marktreferenties, dankzij de noodzaak voor installatie-efficiëntie die de koper strategisch kan beheren met fiscale stimulansen.</p>
+</div>
+<div class="p-10 border-l-4 border-villa-gold bg-white text-villa-black">
+<h3 class="font-serif text-2xl mb-4 uppercase">6. Hidden Value (Het Potentieel van de Zolder)</h3>
+<p class="text-lg leading-relaxed opacity-90">De villa verbergt een onmiddellijke waardereserve: de ruime zolderverdieping. Momenteel ongebruikt, biedt het de volumetrie en hoogtes die nodig zijn voor een hoogwaardig herstel tot woonruimte. Het is mogelijk om nog eens 2 of 3 onafhankelijke suites met badkamer te realiseren, ideaal voor het uitbreiden van de gastvrijheidsactiviteiten of voor het creëren van privé-appartementen voor gasten en personeel, waardoor het verkoopbare commerciële oppervlak drastisch toeneemt zonder nieuw land te gebruiken.</p>
+</div>
+<div class="p-10 border-l-4 border-villa-gold bg-villa-gold text-villa-black">
+<h3 class="font-serif text-2xl mb-4 uppercase">7. Onzichtbare Technologie en Representatie</h3>
+<p class="text-lg leading-relaxed mb-6 font-bold uppercase tracking-wide">Historiciteit sluit de toekomst niet uit.</p>
+<div class="space-y-4 text-lg">
+<p>De villa is voorbereid om een volledige Smart Home te worden: camerabewaking op afstand, toegangscontrole, domotica voor klimaat en verbruik, tot aan het geautomatiseerde onderhoud van het park met satellietrobots.</p>
+<p>Het is de ultieme representatieve zetel: stelt u zich voor dat u een raad van bestuur host in de absolute rust van het platteland, een deal sluit voor de brandende haard van de Barchessa en klanten olijfolie aanbiedt die rechtstreeks op het landgoed is geproduceerd. Het gebruik van het krachtige imago van dit landhuis betekent een onmiddellijke verhoging van het prestige van uw eigen merk.</p>
+</div>
+</div>
+</div>
+<!-- FAQ -->
+<div class="max-w-4xl mx-auto py-16 border-t border-villa-gold/20">
+<h2 class="font-serif text-3xl text-villa-gold mb-4 text-center uppercase tracking-widest">Veelgestelde Vragen</h2>
+<p class="text-center italic mb-12 text-villa-soft/80 max-w-2xl mx-auto">La vendita di Villa Ottelio de Carvalho è gestita con protocollo di massima riservatezza. Il dossier documentale completo e le visite alla proprietà sono disponibili previo accreditamento.</p>
+<div class="space-y-8 text-left">
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">Is de villa direct bewoonbaar?</h4>
+<p class="text-villa-soft/80 leading-relaxed">Ja, het pand wordt momenteel bewoond en met zorg onderhouden door de eigenaren. Het is geen "te restaureren ruïne", maar een levend landhuis, klaar om de nieuwe bewoners vanaf de eerste dag te verwelkomen.</p>
+</div>
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">Is het mogelijk om een zwembad aan te leggen?</h4>
+<p class="text-villa-soft/80 leading-relaxed">Het gazon aan de achterzijde biedt een ruime en vlakke natuurlijke zone, beschermd door muren die totale privacy garanderen. Deze ruimte is technisch reeds ideaal voor de aanleg van een infinity pool of een outdoor wellnessruimte, die perfect kan worden geïntegreerd in het groen zonder de historische harmonie van de villa te verstoren.</p>
+</div>
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">Zijn de meubels in de prijs inbegrepen?</h4>
+<p class="text-villa-soft/80 leading-relaxed">Ja. Het pand wordt verkocht inclusief het meubilair. Het gaat om antieke meubelstukken en antiquiteiten die het huis kleden in overeenstemming met de stijl. Dit roerend erfgoed is uitdrukkelijk bij de verkoop inbegrepen, wat het aanbod tot een echt hoogwaardig "turnkey" object maakt.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END ASSET ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->
+<link href="/src/style.css" rel="stylesheet"/>`;
+const alternates = { it: 'https://www.villaottelio.it/it/investimento.html', en: 'https://www.villaottelio.it/investment.html', fr: 'https://www.villaottelio.it/fr/investissement.html', de: 'https://www.villaottelio.it/de/investition.html', nl: 'https://www.villaottelio.it/nl/investering.html', zh: 'https://www.villaottelio.it/zh/investment.html' };
+---
+<Layout
+  lang="nl"
+  pageKey="investment"
+  title={`Investering en Business | Villa Ottelio de Carvalho`}
+  description={`Villa Ottelio de Carvalho als investering: historisch beschermd pand, turnkey gastvrijheidspotentieel, fiscale stimuleringsmaatregelen en technisch dossier op aanvraag.`}
+  canonical="https://www.villaottelio.it/nl/investering.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

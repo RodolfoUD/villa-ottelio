@@ -1,0 +1,97 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/investment.html" property="og:url"/>
+<meta content="投资和商业 | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="受保护的历史资产、钥匙交付式接待潜力和税收激励。Friuli中心的历史价值资产。" property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/investimento-pozzo-tramonto.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/investment.html" property="twitter:url"/>
+<meta content="投资和商业 | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/investimento-pozzo-tramonto.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/investimento.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/investment.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/investissement.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/investition.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/investering.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/investment.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/investment.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<div class="absolute inset-0 bg-black/40 z-[1]"></div>
+<img alt="Villa Ottelio de Carvalho的历史铁锻水井在日落时分，象征无时间的投资" class="absolute inset-0 w-full h-full object-cover" src="/assets/images/shared/investimento-pozzo-tramonto.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">历史价值资产</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">一个坚实、受保护且高发展潜力的投资。</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-soft text-villa-black border-t border-villa-gold/20">
+<div class="container mx-auto px-6">
+<h2 class="font-serif text-3xl md:text-4xl mb-16 uppercase text-center tracking-widest">为什么是独特资产</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24 max-w-5xl mx-auto">
+<div class="p-8 border border-villa-gold/10 bg-white shadow-lg">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">1. 钥匙交付式商业单位</h3>
+<p class="text-sm leading-relaxed text-gray-700">超过400平方米的模块化表面积，带独立入口。附属建筑不仅仅是一个社交空间，而是一个已准备好的商业单位：天花板高度和结构完整性允许立即转换为豪华展厅、设计精品酒店或全球品牌的代表处，具有即时收入潜力（ROI）。当前布局已包括专业分工，减少了适应成本。</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-white shadow-lg">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">2. 资产保护（历史束缚）</h3>
+<p class="text-sm leading-relaxed text-gray-700">文化遗产监督的保护伞是您资本保护的保证。在经常受到投机的房地产市场中，Villa Ottelio de Carvalho是一个经认证的避风港资产：其美学的不可改动性保护其市场价值免受任何周围城市退化的影响。</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-white shadow-lg">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">3. 历史生活方式作为资产</h3>
+<p class="text-sm leading-relaxed text-gray-700">一个无可比拟的声望合成：私人奉献的教堂和原始地板舱口的古老酒窖提供了独特的场景，用于高度代表。这些空间允许在完全隐私和历史神圣性的背景下举办私人活动、仪式或葡萄酒品鉴。</p>
+</div>
+<div class="p-8 border border-villa-gold/10 bg-white shadow-lg">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">4. 市场进入时间</h3>
+<p class="text-sm leading-relaxed text-gray-700">与通常需要多年复杂翻新的典型历史宅邸不同，Villa Ottelio呈现最近翻新的屋顶和初级结构。这大大减少了任何住宅或商业项目的"市场进入时间"，消除了典型结构翻新的不确定性和隐性成本。</p>
+</div>
+</div>
+<div class="max-w-4xl mx-auto p-10 border-l-4 border-villa-gold bg-villa-black text-villa-soft">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">经认证的市场价值和低估</h3>
+<p class="text-lg leading-relaxed opacity-90">在Triveneto受保护历史宅邸的细分市场中，可比的物业，没有奉献的教堂，表面积较小，的报价超过€3M。Villa Ottelio拥有2,440平方米的商业表面和完整的教堂-附属建筑综合体，代表了一个低于市场基准的收购机会。</p>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FAQ ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6 max-w-4xl">
+<h2 class="font-serif text-3xl text-villa-gold mb-16 text-center uppercase tracking-widest">常见问题</h2>
+<div class="space-y-8 text-left">
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">别墅可以立即居住吗？</h4>
+<p class="text-villa-soft/80 leading-relaxed">是的，该物业目前有业主居住并得到精心维护。这不是一个"要翻新的废墟"，而是一个活的住宅，从第一天起就已准备好欢迎新居民。</p>
+</div>
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">可以建造游泳池吗？</h4>
+<p class="text-villa-soft/80 leading-relaxed">后面的草坪拥有宽敞且平坦的自然区域，由保证完全隐私的墙壁保护。这个空间已经在技术上非常适合安装无边际游泳池或户外wellness区域，可以完美地融入绿色中，而不会扰乱别墅的历史和谐。</p>
+</div>
+<div class="bg-villa-black/40 p-8 border border-villa-gold/10">
+<h4 class="font-bold text-villa-gold uppercase tracking-widest text-sm mb-4">家具包含在价格中吗？</h4>
+<p class="text-villa-soft/80 leading-relaxed">是的。该物业随其家具一起出售。这是古董和古董家具，尊重其风格的件。这一物质遗产在销售中是强制性的，使整个报价成为高档次"钥匙交付"。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END FAQ ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/investimento.html', en: 'https://www.villaottelio.it/investment.html', fr: 'https://www.villaottelio.it/fr/investissement.html', de: 'https://www.villaottelio.it/de/investition.html', nl: 'https://www.villaottelio.it/nl/investering.html', zh: 'https://www.villaottelio.it/zh/investment.html' };
+---
+<Layout
+  lang="zh"
+  pageKey="investment"
+  title={`投资和商业 | Villa Ottelio de Carvalho`}
+  description={`Villa Ottelio de Carvalho作为投资：受保护的历史资产、钥匙交付式接待潜力、税收激励和按需索取的技术资料夹。`}
+  canonical="https://www.villaottelio.it/zh/investment.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

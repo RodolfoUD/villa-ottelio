@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="article" property="og:type"/>
+<meta content="https://www.villaottelio.it/blog/safety-quality-life-friuli.html" property="og:url"/>
+<meta content="Safety and Quality of Life: Why Choose Friuli | Villa Ottelio" property="og:title"/>
+<meta content="Friuli-Venezia Giulia is one of the safest regions in Italy with the highest quality of life. An ideal place for a family investment." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/blog/safety-quality-life-friuli.html" property="twitter:url"/>
+<meta content="Safety and Quality of Life: Why Choose Friuli | Villa Ottelio" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog/sicurezza-qualita-vita-friuli.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/safety-quality-life-friuli.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog/securite-qualite-vie-frioul.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog/sicherheit-lebensqualitat-friaul.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog/veiligheid-levenskwaliteit-friuli.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog/anquan-shenghuo-zhiliang-friuli.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/safety-quality-life-friuli.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== ARTICOLO ========== -->
+<main class="pt-32 pb-24 max-w-4xl mx-auto px-6">
+<div class="mb-12">
+<a class="text-villa-gold hover:opacity-70 transition-opacity flex items-center gap-2 uppercase tracking-widest text-sm" href="/blog.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> Back to Diary</a>
+</div>
+<article class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+
+<p>When choosing a residence of prestige, the context is as important as the architecture. Friuli-Venezia Giulia consistently ranks at the top of national statistics for safety, social services, and environmental quality. It is a region where the human scale is still the norm.</p>
+<h2 class="text-villa-gold font-serif">A Secure Haven for the Future</h2>
+<p>The discrete wealth of the region, combined with an efficient administrative system and a welcoming population, makes Friuli a safe haven for international families. Investing in a property like Villa Ottelio means choosing a context where your family can grow in peace, protected by a solid and respectful social fabric.</p>
+</article>
+</main>
+<!-- ========== END ARTICOLO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog/sicurezza-qualita-vita-friuli.html', en: 'https://www.villaottelio.it/blog/safety-quality-life-friuli.html', fr: 'https://www.villaottelio.it/fr/blog/securite-qualite-vie-frioul.html', de: 'https://www.villaottelio.it/de/blog/sicherheit-lebensqualitat-friaul.html', nl: 'https://www.villaottelio.it/nl/blog/veiligheid-levenskwaliteit-friuli.html', zh: 'https://www.villaottelio.it/zh/blog/anquan-shenghuo-zhiliang-friuli.html' };
+---
+<Layout
+  lang="en"
+  pageKey="blog"
+  title={`Safety and Quality of Life: Why Choose Friuli | Villa Ottelio`}
+  description={`Friuli-Venezia Giulia is one of the safest regions in Italy with the highest quality of life. An ideal place for a family investment.`}
+  canonical="https://www.villaottelio.it/blog/safety-quality-life-friuli.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

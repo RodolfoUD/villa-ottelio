@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/the-estate.html" property="og:url"/>
+<meta content="庄园 | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="三个世纪的贵族优雅，历史大厅、贵族房间和建筑秘密。" property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/the-estate.html" property="twitter:url"/>
+<meta content="庄园 | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/dimora.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-manoir.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/anwesen.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/landhuis.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-estate.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Villa Ottelio de Carvalho优雅的贵族餐厅，有历史木桌和自然光" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/dimora/sala-pranzo-nobile.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">主庄园</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">穿越三个世纪贵族优雅的旅程。</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. Le Radici -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. Ottelio伯爵的遗产（根源）</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>别墅的根源追溯到17世纪末（1670-1690），为de Marchi家族建造，后来传给Ottelio家族。起源于巴萨诺，在16世纪来到乌迪内，Ottelios是公证人、法学家，最终成为伯爵（从1703年起），将资产阶级的勤奋与贵族的优雅结合在一起。</p>
+<p>这种双重灵魂反映在建筑中：像弗留利房子一样坚固和实用，但像威尼斯别墅一样优雅通风。在这里，您不会找到冷大理石的炫耀奢侈，而是古老陶土的贵族温暖、露梁的温馨和经历了几个世纪的石头。</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Villa Ottelio的历史客厅，有古老肖像、古董家具和珍贵吊灯" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salotto-storico-ritratti.webp"/>
+</div>
+</div>
+<!-- 2. Il Salone Passante -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. 穿堂大厅（客厅区）</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>庄园的中心是穿堂大厅。内部是光线和视角的序列。超过100扇窗户不仅仅是开口，而是对公园和Colli Orientali的活动框架，保证了与自然的持续联系，在绝对的寂静中，只有历史的呼吸打破。</p>
+<p>这是一个宏伟的空间，今天和以前一样，非常适合举办招待会或作为寻求灵感的艺术家的工作室。一个独特的细节会吸引您客人的好奇心：古老的地板舱口。曾经用于直接将葡萄和葡萄酒降低到下面300平方米的"Cantinone"，今天它们仍然是几个世纪葡萄酒传统的沉默见证。周围是散发历史气息的房间，由功能壁炉供暖，但也由暖气片供暖，邀请冬季夜晚的欢乐。</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Villa Ottelio光线充足的穿堂大厅，有古代银器和拱形大窗户" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salone-centrale.webp"/>
+</div>
+</div>
+<!-- 3. Zona Notte -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. 寂静作为日常奢侈品（卧室区）</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>上楼到上层，卧室区域在中心主体中提供4间卧室，在附属建筑中提供2间，隐私绝对。在这里醒来意味着打开窗户，看到一幅活的画面。一侧是受保护的内院，另一侧是视野延伸到葡萄园直至雪覆盖的山脉，在晴朗空气的日子里，可以看到海的闪闪发光的地平线。</p>
+<p>没有城市噪音，只有自然的声音：鸟鸣、风吹，对于那些懂得观察的人来说，是公园里兔子、松鼠和鹿的羞怯通过。知道自己沉浸在这种绝对的和平中，距离乌迪内中心仅10分钟，是Villa Ottelio真正的特权。</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Villa Ottelio优雅的主卧室，蓝色调、古董衣柜和古画" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/camera-padronale.webp"/>
+</div>
+</div>
+<!-- 4. I Segreti -->
+<div class="text-center max-w-4xl mx-auto mb-32">
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">4. 别墅的秘密</h2>
+<p class="text-xl leading-relaxed text-villa-soft/90 italic">
+        庄园仅向生活在其中的人揭示其游戏和战略性质：您将发现隐藏的通道，如附属建筑中的"秘密楼梯"，隐藏在一扇毫不起眼的门后，或中心主体中的"图书馆门"，一条狭窄的通道，在古代通向音乐家的阁楼。
+      </p>
+</div>
+<!-- 5. L'Appartamento Segreto -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">5. 全景避难所（秘密公寓）</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>顶层隐藏着一颗罕见亲密的珍珠：一个完全用木材覆盖的迷你独立公寓，让人想起豪华山间小屋的魅力，但具有弗留利历史的温暖。地铺古老的红陶土，配有完整厨房（感应炉、烤箱、洗碗机）、起居区、带衣柜的卧室和带浴缸的浴室。</p>
+<p>这是别墅中唯一三侧有窗户的环境：从黎明到黄昏，光线从四面八方进来。特权位置提供了无限的地平线视野，为早晨提供了在葡萄园上日出升起的无价奇观。这是管家的完美巢穴、特殊客人或业主的私人套房。</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Villa Ottelio的秘密公寓" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/placeholders/interno-segreto.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/dimora.html', en: 'https://www.villaottelio.it/the-manor.html', fr: 'https://www.villaottelio.it/fr/le-manoir.html', de: 'https://www.villaottelio.it/de/anwesen.html', nl: 'https://www.villaottelio.it/nl/landhuis.html', zh: 'https://www.villaottelio.it/zh/the-estate.html' };
+---
+<Layout
+  lang="zh"
+  pageKey="manor"
+  title={`庄园 | Villa Ottelio de Carvalho`}
+  description={`探索Villa Ottelio de Carvalho的主庄园：三个世纪的贵族优雅，历史大厅、贵族房间和建筑秘密。`}
+  canonical="https://www.villaottelio.it/zh/the-estate.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

@@ -1,0 +1,42 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+const headExtra = `<meta content="article" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/blog/hunli-changsuo-mingwang.html" property="og:url"/>
+<meta content="婚礼场地：尊贵场地市场 | Villa Ottelio" property="og:title"/>
+<meta content="Villa Ottelio的接待与活动潜力：针对高端婚礼市场的交钥匙商业模式。" property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/blog/hunli-changsuo-mingwang.html" property="twitter:url"/>
+<meta content="婚礼场地：尊贵场地市场 | Villa Ottelio" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog/wedding-venue-location-prestigio.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/wedding-venue-prestigious-location.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog/lieu-mariage-prestige.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog/hochzeitslocation-prestige.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog/hunli-changsuo-mingwang.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog/hunli-changsuo-mingwang.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/wedding-venue-prestigious-location.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<main class="pt-32 pb-24 max-w-4xl mx-auto px-6">
+<div class="mb-12">
+<a class="text-villa-gold hover:opacity-70 transition-opacity flex items-center gap-2 uppercase tracking-widest text-sm" href="/zh/blog.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 返回日志</a>
+</div>
+<article class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+
+<p>Villa Ottelio de Carvalho 不仅是一处住宅，也是一项高潜力的商业资产。高端婚礼市场不断寻找具有真实性、历史感且后勤设施完善的场地。别墅凭借其经过祝圣的礼拜堂、纪念性的大厅以及专业的厨房，为这一领域做好了充分的准备。</p>
+<h2 class="text-villa-gold font-serif">交钥匙商业模式</h2>
+<p>附属建筑（Barchessa）已配备餐饮空间，加上宽敞的户外花园，允许举办数百名宾客参与的活动，而不会干扰主宅的隐私。对于投资者而言，将其转变为“豪华婚礼场地（Luxury Wedding Venue）”代表了在不断增长的市场中一种稳健的投资回报（ROI）策略。</p>
+</article>
+</main>`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog/wedding-venue-location-prestigio.html', en: 'https://www.villaottelio.it/blog/wedding-venue-prestigious-location.html', fr: 'https://www.villaottelio.it/fr/blog/lieu-mariage-prestige.html', de: 'https://www.villaottelio.it/de/blog/hochzeitslocation-prestige.html', nl: 'https://www.villaottelio.it/nl/blog/hunli-changsuo-mingwang.html', zh: 'https://www.villaottelio.it/zh/blog/hunli-changsuo-mingwang.html' };
+---
+<Layout
+  lang="zh"
+  pageKey="blog"
+  title={`婚礼场地：尊贵场地市场 | Villa Ottelio`}
+  description={`Villa Ottelio的接待与活动潜力：针对高端婚礼市场的交钥匙商业模式。`}
+  canonical="https://www.villaottelio.it/zh/blog/hunli-changsuo-mingwang.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

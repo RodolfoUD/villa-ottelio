@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/the-manor.html" property="og:url"/>
+<meta content="The Manor | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Three centuries of aristocratic elegance, historic halls, noble bedrooms and architectural secrets." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/the-manor.html" property="twitter:url"/>
+<meta content="The Manor | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/dimora.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-manoir.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/anwesen.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/landhuis.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-estate.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Elegant noble dining room of Villa Ottelio de Carvalho with historic wooden table and natural light" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/dimora/sala-pranzo-nobile.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">The Manor House</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">A journey through three centuries of aristocratic elegance.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. The Roots -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. The Legacy of the Counts Ottelio (The Roots)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>The villa's history begins in the late 17th century (1670-1690), built for the de Marchi family and later passed to the Ottelio house. Originally from Bassano and arriving in Udine in the 1500s, the Ottelio family were notaries, jurists, and eventually Counts (since 1703), blending bourgeois industriousness with aristocratic elegance.</p>
+<p>This dual soul is reflected in the architecture: solid and functional like a Friulian house, yet elegant and airy like a Venetian villa. Here you will not find the ostentatious luxury of cold marble, but the noble warmth of antique terracotta, exposed beams, and stone that has endured for centuries.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Historic sitting room of Villa Ottelio with antique portraits, period furniture, and a fine chandelier" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salotto-storico-ritratti.webp"/>
+</div>
+</div>
+<!-- 2. The Hall -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. The Central Walkthrough Hall (Living Area)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>The centerpiece of the manor is the central walkthrough hall. The interiors are a sequence of light and perspective. The more than 100 windows are not mere openings, but living frames overlooking the park and the Eastern Hills, ensuring a constant connection with nature in absolute silence, broken only by the breath of history.</p>
+<p>It is a majestic space, ideal today as in the past for receptions, or as an artist's studio seeking inspiration. A unique detail will capture your guests' curiosity: the ancient floor hatches. Once used to lower grapes and wine directly into the 300 sqm "Cantinone" below, today they remain silent witnesses to a centuries-old winemaking tradition. All around, rooms scented with history, warmed by functioning fireplaces as well as radiators that invite conviviality on winter evenings.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Bright central hall of Villa Ottelio with historical silverware and large arched windows" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salone-centrale.webp"/>
+</div>
+</div>
+<!-- 3. Sleeping Area -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. Silence as Daily Luxury (Sleeping Area)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Ascending to the upper floors, the sleeping area offers 4 bedrooms in the main body and 2 in the barchessa, where privacy is absolute. Waking up here means opening the windows onto a living painting. On one side, the protected internal courtyard; on the other, a view that stretches over the vineyards to the snow-capped mountains and, on clear days, to the shimmer of the sea on the horizon.</p>
+<p>There is no urban noise, only the sounds of nature: birdsong, the rustle of the wind, and for those who know how to observe, the timid passage of hares, squirrels, and roe deer in the park. Knowing you are immersed in this absolute peace, just 10 minutes from the center of Udine, is the true privilege of Villa Ottelio.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Elegant master bedroom in blue tones with antique wardrobe and period painting at Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/camera-padronale.webp"/>
+</div>
+</div>
+<!-- 4. The Secrets -->
+<div class="text-center max-w-4xl mx-auto mb-32">
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">4. The Secrets of the Villa</h2>
+<p class="text-xl leading-relaxed text-villa-soft/90 italic">
+        The manor reveals its playful and strategic nature only to those who live it: you will discover hidden passages like the "Secret Staircase" in the Barchessa, concealed behind an unsuspecting door, or the "Library Door" in the main body, a small opening that once led to a musicians' gallery.
+      </p>
+</div>
+<!-- 5. The Secret Apartment -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">5. The Panoramic Retreat (The Secret Apartment)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>On the top floor lies a pearl of rare intimacy: an independent mini-apartment entirely paneled in wood, reminiscent of the charm of a luxury chalet but with the warmth of Friulian history. Paved in antique red terracotta, it features a full kitchen (induction, oven, dishwasher), living area, bedroom with wardrobe, and bathroom with tub.</p>
+<p>It is the only room in the villa with windows on three sides: here the light enters from dawn to dusk. The privileged position allows for an unobstructed and boundless horizon, offering every morning the priceless spectacle of the sun rising over the vineyards. A perfect nest for a caretaker, a special guest, or as a private suite for the owner.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Mysterious detail of the secret apartment at Villa Ottelio de Carvalho" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/placeholders/interno-segreto.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/dimora.html', en: 'https://www.villaottelio.it/the-manor.html', fr: 'https://www.villaottelio.it/fr/le-manoir.html', de: 'https://www.villaottelio.it/de/anwesen.html', nl: 'https://www.villaottelio.it/nl/landhuis.html', zh: 'https://www.villaottelio.it/zh/the-estate.html' };
+---
+<Layout
+  lang="en"
+  pageKey="manor"
+  title={`The Manor | Villa Ottelio de Carvalho`}
+  description={`Explore the manor house of Villa Ottelio de Carvalho: three centuries of aristocratic elegance, historic halls, noble bedrooms and architectural secrets.`}
+  canonical="https://www.villaottelio.it/the-manor.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

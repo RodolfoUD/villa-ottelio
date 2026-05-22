@@ -1,0 +1,112 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/nl/landhuis.html" property="og:url"/>
+<meta content="La Dimora | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Tre secoli di eleganza aristocratica tra saloni storici, camere nobili e segreti architettonici." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/nl/landhuis.html" property="twitter:url"/>
+<meta content="La Dimora | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/dimora.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-manoir.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/anwesen.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/landhuis.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-estate.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Elegante sala da pranzo nobile di Villa Ottelio de Carvalho con storico tavolo in legno e luce naturale" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/dimora/sala-pranzo-nobile.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Het Landhuis Padronale</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Een reis door drie eeuwen aristocratische elegantie.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. Le Radici -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. De Erfenis van de Graven Ottelio (De Wortels)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>De villa vindt haar oorsprong aan het einde van de 17e eeuw (1670-1690), gebouwd voor de familie de Marchi en vervolgens overgegaan naar het geslacht Ottelio. Oorspronkelijk afkomstig uit Bassano en in de 16e eeuw naar Udine gekomen, waren de Ottelio's notarissen, juristen en uiteindelijk graven (vanaf 1703), waarbij zij burgerlijke vlijt combineerden met aristocratische elegantie.</p>
+<p>Deze dubbele ziel weerspiegelt zich in de architectuur: solide en functioneel als een huis in Friuli, maar elegant en luchtig als een Venetiaanse villa. Hier vindt u geen uiterlijk vertoon van koud marmer, maar de adellijke warmte van antieke terracotta, zichtbare balken en steen die de eeuwen heeft getrotseerd.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Historische salon van Villa Ottelio met oude portretten, antieke meubels en kostbare kroonluchter" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salotto-storico-ritratti.webp"/>
+</div>
+</div>
+<!-- 2. Il Salone Passante -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. De Doorloophal (Het Woongedeelte)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Het middelpunt van het landhuis is de centrale doorloophal. Het interieur is een opeenvolging van licht en perspectief. De meer dan 100 ramen zijn geen eenvoudige openingen, maar levende lijsten die uitkijken op het park en de Colli Orientali, en garanderen een constante verbinding met de natuur in een absolute stilte, slechts onderbroken door de adem van de geschiedenis.</p>
+<p>Het is een majestueuze ruimte, vandaag de dag net zo ideaal als vroeger voor recepties, of als atelier voor een kunstenaar die inspiratie zoekt. Een uniek detail zal de nieuwsgierigheid van uw gasten wekken: de antieke vloerluiken. Ooit gebruikt om druiven en wijn rechtstreeks in het onderliggende "Cantinone" van 300 m² te laten zakken, blijven zij vandaag de dag stille getuigen van een eeuwenoude wijntraditie. Rondom bevinden zich kamers die naar geschiedenis geuren, verwarmd door werkende haarden maar ook door radiatoren die uitnodigen tot gezelligheid op winteravonden.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Lichtrijke centrale doorloophal van Villa Ottelio met historisch zilverwerk en grote boogvensters" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salone-centrale.webp"/>
+</div>
+</div>
+<!-- 3. Zona Notte -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. Stilte als Dagelijkse Luxe (Het Slaapgedeelte)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Op de bovenverdiepingen biedt het slaapgedeelte 4 slaapkamers in het hoofdgebouw en 2 in de barchessa, waar privacy absoluut is. Hier wakker worden betekent de ramen openen naar een levend schilderij. Aan de ene kant de beschermde binnenplaats, aan de andere kant het uitzicht dat reikt over de wijngaarden tot aan de besneeuwde bergen en, op heldere dagen, tot aan de schittering van de zee aan de horizon.</p>
+<p>Er zijn geen stedelijke geluiden, alleen de geluiden van de natuur: het gezang van vogels, het ruisen van de wind en, voor wie weet waar hij moet kijken, de schuwe doortocht van hazen, eekhoorns en reeën in het park. Weten dat u ondergedompeld bent in deze absolute rust, op slechts 10 minuten van het centrum van Udine, is het ware voorrecht van Villa Ottelio.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Elegante hoofdslaapkamer in blauwtinten met antieke kast en oud schilderij in Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/camera-padronale.webp"/>
+</div>
+</div>
+<!-- 4. I Segreti -->
+<div class="text-center max-w-4xl mx-auto mb-32">
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">4. De Geheimen van de Villa</h2>
+<p class="text-xl leading-relaxed text-villa-soft/90 italic">
+        Het landhuis onthult zijn speelse en strategische aard alleen aan hen die er wonen: u zult verborgen doorgangen ontdekken zoals de "Geheime Trap" in de Barchessa, verscholen achter een onopvallende deur, of de "Bibliotheekdeur" in het hoofdgebouw, een smalle doorgang die vroeger leidde naar een vide voor muzikanten.
+      </p>
+</div>
+<!-- 5. L'Appartamento Segreto -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">5. Het Panoramisch Toevluchtsoord (Het Geheime Appartement)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Op de bovenste verdieping schuilt een parel van zeldzame intimiteit: een klein onafhankelijk appartement volledig bekleed met hout, dat herinnert aan de charme van een luxe chalet maar met de warmte van de geschiedenis van Friuli. Geplaveid met antiek rood terracotta, is het uitgerust met een volledige keuken (inductie, oven, vaatwasser), woonkamer, slaapkamer met inloopkast en badkamer met ligbad.</p>
+<p>Het is de enige ruimte in de villa met ramen aan drie zijden: hier valt het licht binnen van zonsopgang tot zonsondergang. De bevoorrechte positie biedt een vrije en eindeloze horizon, wat in de ochtend het onbetaalbare schouwspel oplevert van de zon die opkomt boven de wijngaarden. Een perfect nest voor een beheerder, voor een speciale gast of als privésuite voor de eigenaar.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Het Geheime Appartement van Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/placeholders/interno-segreto.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->
+<link href="/src/style.css" rel="stylesheet"/>`;
+const alternates = { it: 'https://www.villaottelio.it/it/dimora.html', en: 'https://www.villaottelio.it/the-manor.html', fr: 'https://www.villaottelio.it/fr/le-manoir.html', de: 'https://www.villaottelio.it/de/anwesen.html', nl: 'https://www.villaottelio.it/nl/landhuis.html', zh: 'https://www.villaottelio.it/zh/the-estate.html' };
+---
+<Layout
+  lang="nl"
+  pageKey="manor"
+  title={`Het Landhuis | Villa Ottelio de Carvalho`}
+  description={`Ontdek het hoofdgebouw van Villa Ottelio de Carvalho: drie eeuwen aristocratische elegantie tussen historische zalen, adellijke kamers en architectonische geheimen.`}
+  canonical="https://www.villaottelio.it/nl/landhuis.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

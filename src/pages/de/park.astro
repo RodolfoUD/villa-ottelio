@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/de/park.html" property="og:url"/>
+<meta content="Außenanlagen und Garten | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Eine geschützte Oase zwischen Olivenbäumen, jahrhundertealten Linden und den Panoramen der Colli Orientali del Friuli." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/de/park.html" property="twitter:url"/>
+<meta content="Außenanlagen und Garten | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Eine geschützte Oase zwischen Olivenbäumen, jahrhundertealten Linden and den Panoramen der Colli Orientali del Friuli." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/parco.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-parc.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/park.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/park.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-garden.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Winteransicht der Villa Ottelio de Carvalho mit jahrhundertealten Bäumen und monumentalem Garten" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/esterni/villa-giardino-inverno.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Außenanlagen und Garten</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Der Luxus der Stille: eine geschützte Oase zwischen Olivenbäumen, jahrhundertealten Linden und den Panoramen der Colli Orientali.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. Der Garten und der Innenhof -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Der Luxus der Stille</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. Der Garten und der Innenhof</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80 mb-8">
+<p>Eine Oase der Privatsphäre. Die tiefergelegte, ein Hektar große und vollständig ummauerte Grünanlage fungiert als natürliches Diaphragma zwischen der Außenwelt und dem Anwesen. Hier ist Privatsphäre keine Option, sondern der natürliche Zustand des Wohnens, was die Villa zu einem sicheren und unantastbaren Rückzugsort macht.</p>
+<p>Die Ankunft auf dem Anwesen ist ein Präludium des Friedens: Auf dem Weg, der zur Villa hinaufführt, begegnet man nicht selten Eichhörnchen, Hasen und Rehen. Sobald man den Eingang durchschreitet, verschwindet die Außenwelt. Man betritt den Innenhof, in dem absolute Ruhe im Schatten der jahrhundertealten Linden herrscht, die das Areal dominieren.</p>
+</div>
+<a class="text-villa-gold hover:underline font-bold uppercase tracking-widest text-xs" href="/de/botanik.html">👉 Entdecken Sie die Flora: Von den jahrhundertealten Linden zum historischen Olivenhain</a>
+</div>
+<div class="md:w-1/2">
+<img alt="Der historische Brunnen im Garten der Villa Ottelio mit herbstlichem Panoramablick auf die Weinberge" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/giardino-pozzo-vigneto.webp"/>
+</div>
+</div>
+<!-- 2. Das Panorama -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Eingebettet in die Colli Orientali</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. Das Panorama: Weinberge bis zum Horizont</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Die dominante Lage der Villa bietet eine Naturkulisse von seltener Schönheit. Der Blick trifft auf keine Hindernisse, sondern schweift frei über den Alpenbogen, der im Winter mit seinen schneebedeckten Gipfeln majestätisch erscheint, und verliert sich in den umliegenden Hügeln. Wir befinden uns im Herzen der Colli Orientali: Das Anwesen ist von einem Territorium mit Weinbergen verschiedener Besitzer umgeben – eine Landschaft, die mit den Jahreszeiten ihre Farben wechselt.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Hügelpanorama der Weinberge und Olivenhaine im Besitz der Villa Ottelio bei Sonnenuntergang" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/panorama-vigneti-tramonto.webp"/>
+</div>
+</div>
+<!-- 3. Die Barchessa -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Räume für Geselligkeit und Business</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. Die Barchessa und der Ostflügel</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Kein Fremdkörper, sondern eine natürliche Erweiterung des Hauses. Die Barchessa erstreckt sich in L-Form direkt am Hauptgebäude und ist bequem über einen internen Durchgang erreichbar. Ausgestattet mit einer monumentalen Feuerstelle und einer für 200 Gedecke dimensionierten Serviceküche, ist sie das pulsierende Herz der Gastlichkeit.</p>
+<p>Ein strategischer Hub für das Luxussegment: Mit insgesamt über 1.800 m² Fläche und diesem bereits integrierten, vielseitigen Raum eignet sich die Villa hervorragend als repräsentativer Firmensitz oder exklusives Boutique-Hotel, nur 40 Minuten vom Flughafen entfernt.</p>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3a. Das Ritual des Feuers</h4>
+<p class="text-sm">Das Herzstück der Barchessa ist das „Kaminzimmer“. Kein bloßes Dekorationselement, sondern eine monumentale, voll funktionsfähige Feuerstelle, die es ermöglicht, direkt im und um das Feuer herum zu sitzen. Es ist die Rückkehr zu einer heute äußerst seltenen Form der Geselligkeit: die Gäste beim Knistern des Holzes zu empfangen, sich an der Glut gewärmt zu unterhalten und eine menschliche Wärme wiederzuentdecken, welche die Moderne vergessen hat.</p>
+</div>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3b. Der Brunnen und die Olivenbäume</h4>
+<p class="text-sm">Der Innenhof wird durch einen der schönsten historischen Brunnen ganz Friulis veredelt, ein steinernes Kunstwerk, das den Außenraum dominiert. Rund um die Villa bilden über 200 Olivenbäume einen silbrigen und produktiven Rahmen: Die Ernte liefert jedes Jahr ein privates Extra Vergine Olivenöl von exzellenter Qualität.</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Rückfassade der Barchessa der Villa Ottelio, beleuchtet für Veranstaltungen und Business" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/barchessa-facciata-luci.webp"/>
+</div>
+</div>
+<!-- 4. Die Kapelle -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Ein exklusives Juwel</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">4. Die Kapelle San Gaetano</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Im Westen, als integraler Bestandteil des Komplexes und zum Hof hin ausgerichtet, erhebt sich die Privatkapelle San Gaetano (bereits in den Pastoralvisiten vom 13. Mai 1701 dokumentiert). Sie ist kein bloßes Nebengebäude, sondern ein privater und geweihter Ort der Andacht.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Seitenfassade und Glockenturm der privaten Kapelle der Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/cappella-gentilizia.webp"/>
+</div>
+</div>
+<!-- 5. Internationaler Hub -->
+<div class="bg-villa-gold text-villa-black p-12 shadow-2xl">
+<div class="max-w-4xl mx-auto">
+<div class="mb-4 text-villa-black/70 font-bold uppercase tracking-widest text-sm text-center">Ein strategischer internationaler Hub</div>
+<h2 class="font-serif text-3xl mb-8 uppercase tracking-widest text-center">5. Im Zentrum Europas und des exzellenten Weins</h2>
+<p class="text-xl mb-12 text-center">Villa Ottelio liegt nicht nur isoliert im Grünen, sondern befindet sich im Zentrum eines der bekanntesten Weinbaugebiete Friulis. Umgeben von den Weinbergen der weltweit besten Produzenten der Colli Orientali, garantiert die Villa eine unmittelbare Anbindung an Europa:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Venedig</h4>
+<p class="text-sm">1 Stunde und 15 Min. (Kultur und interkontinentaler Flughafen).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Triest / Adriaküste</h4>
+<p class="text-sm">40 Min. (Flughafen und Meer).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Österreichische/Slowenische Grenze</h4>
+<p class="text-sm">45 Min.</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Udine</h4>
+<p class="text-sm">10 Min. (Wichtige Dienstleistungen, Gesundheitswesen, internationale Schulen).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/parco.html', en: 'https://www.villaottelio.it/the-park.html', fr: 'https://www.villaottelio.it/fr/le-parc.html', de: 'https://www.villaottelio.it/de/park.html', nl: 'https://www.villaottelio.it/nl/park.html', zh: 'https://www.villaottelio.it/zh/the-garden.html' };
+---
+<Layout
+  lang="de"
+  pageKey="park"
+  title={`Außenanlagen und Garten | Villa Ottelio de Carvalho`}
+  description={`Der Park und die Außenanlagen der Villa Ottelio de Carvalho: eine geschützte oase zwischen Olivenbäumen, jahrhundertealten Linden, Privatkapelle und Panoramablick auf die Colli Orientali del Friuli.`}
+  canonical="https://www.villaottelio.it/de/park.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

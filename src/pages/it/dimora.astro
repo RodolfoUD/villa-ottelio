@@ -1,0 +1,112 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/it/dimora.html" property="og:url"/>
+<meta content="La Dimora | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Tre secoli di eleganza aristocratica tra saloni storici, camere nobili e segreti architettonici." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/it/dimora.html" property="twitter:url"/>
+<meta content="La Dimora | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Tre secoli di eleganza aristocratica tra saloni storici, camere nobili e segreti architettonici." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/dimora/sala-pranzo-nobile.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/dimora.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-manoir.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/anwesen.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/landhuis.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-estate.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-manor.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Elegante sala da pranzo nobile di Villa Ottelio de Carvalho con storico tavolo in legno e luce naturale" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/dimora/sala-pranzo-nobile.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">La Dimora Padronale</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Un viaggio attraverso tre secoli di eleganza aristocratica.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. Le Radici -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. L'Eredità dei Conti Ottelio (Le Radici)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>La villa affonda le sue radici alla fine del XVII secolo (1670-1690), costruita per la famiglia de Marchi è poi passata alla casata Ottelio. Originari di Bassano e giunti a Udine nel '500, gli Ottelio furono notai, giuristi e infine Conti (dal 1703), unendo l'operosità borghese all'eleganza aristocratica.</p>
+<p>Questa doppia anima si riflette nell'architettura: solida e funzionale come una casa friulana, ma elegante e ariosa come una villa veneta. Qui non troverete il lusso ostentato dei marmi freddi, ma il calore nobile del cotto antico, delle travi a vista e della pietra che ha resistito ai secoli.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Salotto storico di Villa Ottelio con antichi ritratti, mobili d'epoca e lampadario di pregio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salotto-storico-ritratti.webp"/>
+</div>
+</div>
+<!-- 2. Il Salone Passante -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. Il Salone Passante (Zona Giorno)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Il fulcro della dimora è il salone centrale passante. Gli interni sono una sequenza di luce e prospettiva. Le oltre 100 finestre non sono semplici aperture, ma cornici vive sul parco e sui Colli Orientali, che garantiscono una connessione costante con la natura in un silenzio assoluto, interrotto solo dal respiro della storia.</p>
+<p>È uno spazio maestoso, ideale oggi come ieri per ricevimenti, o come atelier per un artista che cerca ispirazione. Un dettaglio unico catturerà la curiosità dei vostri ospiti: le antiche botole. Un tempo usate per calare l'uva e il vino direttamente nel "Cantinone" sottostante di 300 mq, oggi restano testimoni silenziosi di una tradizione enologica secolare. Tutto intorno, stanze che profumano di storia, riscaldate da camini funzionanti ma anche da termosifoni che invitano alla convivialità nelle sere d'inverno.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Luminoso salone centrale passante di Villa Ottelio con argenteria storica e ampie finestre ad arco" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/salone-centrale.webp"/>
+</div>
+</div>
+<!-- 3. Zona Notte -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. Il Silenzio come Lusso Quotidiano (Zona Notte)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Salendo ai piani superiori, la zona notte offre 4 camere nel corpo centrale e 2 nella barchessa dove la privacy è assoluta. Svegliarsi qui significa aprire le finestre su un quadro vivente. Da un lato la corte interna protetta, dall'altro la vista che spazia sui vigneti fino alle montagne innevate e, nelle giornate di aria limpida, fino al luccichio del mare all'orizzonte.</p>
+<p>Non ci sono rumori urbani, solo i suoni della natura: il canto degli uccelli, il fruscio del vento e, per chi sa osservare, il passaggio timido di lepri, scoiattoli e caprioli nel parco. Sapere di essere immersi in questa pace assoluta, a soli 10 minuti dal centro di Udine, è il vero privilegio di Villa Ottelio.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Elegante camera da letto padronale sui toni del blu con armadio d'epoca e quadro antico a Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/dimora/camera-padronale.webp"/>
+</div>
+</div>
+<!-- 4. I Segreti -->
+<div class="text-center max-w-4xl mx-auto mb-32">
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">4. I Segreti della Villa</h2>
+<p class="text-xl leading-relaxed text-villa-soft/90 italic">
+        La dimora svela la sua natura giocosa e strategica solo a chi la vive: scoprirete passaggi nascosti come la "Scala Segreta" nella Barchessa, celata dietro una porta insospettabile, o la "Porta Libreria" nel corpo centrale, un varco ridotto che conduceva anticamente a un soppalco per musicisti.
+      </p>
+</div>
+<!-- 5. L'Appartamento Segreto -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">5. Il Rifugio Panoramico (L'Appartamento Segreto)</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>All'ultimo piano si nasconde una perla di rara intimità: un mini-appartamento indipendente completamente rivestito in legno, che ricorda lo charme di uno chalet di lusso ma con il calore della storia friulana. Pavimentato in cotto rosso antico, è dotato di cucina completa (induzione, forno, lavastoviglie), zona living, camera con guardaroba e bagno con vasca.</p>
+<p>È l'unico ambiente della villa con finestre su tre lati: qui la luce entra dall'alba al tramonto. La posizione privilegiata permette di godere di un orizzonte libero e sconfinato, regalando al mattino lo spettacolo impagabile del sole che sorge sui vigneti. Un nido perfetto per il custode, per un ospite speciale o come suite privata per il proprietario.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="L'Appartamento Segreto di Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/placeholders/interno-segreto.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/dimora.html', en: 'https://www.villaottelio.it/the-manor.html', fr: 'https://www.villaottelio.it/fr/le-manoir.html', de: 'https://www.villaottelio.it/de/anwesen.html', nl: 'https://www.villaottelio.it/nl/landhuis.html', zh: 'https://www.villaottelio.it/zh/the-estate.html' };
+---
+<Layout
+  lang="it"
+  pageKey="manor"
+  title={`La Dimora | Villa Ottelio de Carvalho`}
+  description={`Esplora la dimora padronale di Villa Ottelio de Carvalho: tre secoli di eleganza aristocratica tra saloni storici, camere nobili e segreti architettonici.`}
+  canonical="https://www.villaottelio.it/it/dimora.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

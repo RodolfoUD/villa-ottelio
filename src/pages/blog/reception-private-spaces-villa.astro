@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="article" property="og:type"/>
+<meta content="https://www.villaottelio.it/blog/reception-private-spaces-villa.html" property="og:url"/>
+<meta content="Reception vs Private Spaces: Living in a Historic Villa Today | Villa Ottelio" property="og:title"/>
+<meta content="How to organize the volumes of a 17th-century manor: the balance between public representation and contemporary private comfort." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/blog/reception-private-spaces-villa.html" property="twitter:url"/>
+<meta content="Reception vs Private Spaces: Living in a Historic Villa Today | Villa Ottelio" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog/spazi-rappresentanza-privati-villa.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/reception-private-spaces-villa.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog/espaces-representation-prives-villa.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog/repraesentations-private-raeume-villa.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog/representatieve-prive-ruimtes-villa.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog/daibiao-siren-kongjian-bieshu.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/reception-private-spaces-villa.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== ARTICOLO ========== -->
+<main class="pt-32 pb-24 max-w-4xl mx-auto px-6">
+<div class="mb-12">
+<a class="text-villa-gold hover:opacity-70 transition-opacity flex items-center gap-2 uppercase tracking-widest text-sm" href="/blog.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> Back to Diary</a>
+</div>
+<article class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+
+<p>The architecture of a noble manor like Villa Ottelio de Carvalho was born from a precise social and functional logic: the clear separation between representation and private life. This 17th-century layout, far from being obsolete, offers a sophisticated solution to the needs of the modern owner seeking a home that is both a social stage and an intimate refuge.</p>
+<h2 class="text-villa-gold font-serif">The Logic of the Central Hall</h2>
+<p>In the Venetian-Friulian tradition, the ground floor and the first noble floor are dominated by the central hall. These are the spaces of representation, designed to welcome, impress, and celebrate. The through-hall, with its over four-meter ceilings and large windows overlooking the garden, is the heart of the villa's social life.</p>
+<h2 class="text-villa-gold font-serif">Contemporary Comfort in Private Wings</h2>
+<p>While the central halls preserve their historical majesty, the side wings of the villa lend themselves to being lived in with contemporary intimacy. These spaces, smaller in volume and more easily heated, are ideal for creating modern suites, private studies, and cozy family lounges. Living in a historic villa today means knowing how to inhabit these two dimensions: the grandeur of the hall for formal occasions and the refined comfort of the side rooms for daily life.</p>
+</article>
+</main>
+<!-- ========== END ARTICOLO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog/spazi-rappresentanza-privati-villa.html', en: 'https://www.villaottelio.it/blog/reception-private-spaces-villa.html', fr: 'https://www.villaottelio.it/fr/blog/espaces-representation-prives-villa.html', de: 'https://www.villaottelio.it/de/blog/repraesentations-private-raeume-villa.html', nl: 'https://www.villaottelio.it/nl/blog/representatieve-prive-ruimtes-villa.html', zh: 'https://www.villaottelio.it/zh/blog/daibiao-siren-kongjian-bieshu.html' };
+---
+<Layout
+  lang="en"
+  pageKey="blog"
+  title={`Reception vs Private Spaces: Living in a Historic Villa Today | Villa Ottelio`}
+  description={`How to organize the volumes of a 17th-century manor: the balance between public representation and contemporary private comfort.`}
+  canonical="https://www.villaottelio.it/blog/reception-private-spaces-villa.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

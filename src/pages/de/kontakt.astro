@@ -1,0 +1,112 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/de/kontakt.html" property="og:url"/>
+<meta content="Kontakt | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Fordern Sie ein privates Treffen an, um die Villa Ottelio de Carvalho zu erwerben." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/de/kontakt.html" property="twitter:url"/>
+<meta content="Kontakt | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Fordern Sie ein privates Treffen an, um die Villa Ottelio de Carvalho zu erwerben. Privater Verkauf, Besichtigungen nach Vereinbarung." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/contatti.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/contact.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/contact.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/kontakt.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/contact.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/contact.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/contact.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[40vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Kontakt Villa Ottelio de Carvalho" class="absolute inset-0 w-full h-full object-cover opacity-40" src="/assets/placeholders/contact-hero.png"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-5xl text-villa-gold mb-4 uppercase tracking-widest">Diskrete Verhandlungen</h1>
+<p class="text-sm md:text-base italic max-w-xl mx-auto text-villa-soft opacity-80">Drei Jahrhunderte Geschichte warten auf eine neue Vision. Beginnen Sie Ihren Erwerbsprozess mit der Anfrage nach einem privaten Treffen mit der Eigentümerschaft.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== FORM ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<!-- Info -->
+<div>
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-wide">Dossier anfordern</h2>
+<div class="space-y-6 text-lg text-villa-soft/70 mb-10 leading-relaxed">
+<p>Der Verkauf wird persönlich von der Eigentümerfamilie betreut. Besichtigungen werden ausschließlich privat und nach vorheriger Terminvereinbarung organisiert.</p>
+<div class="bg-villa-gold/5 p-6 border border-villa-gold/20">
+<h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-4">Logistik und Entfernungen:</h4>
+<ul class="text-sm space-y-2 text-villa-soft/90">
+<li>• Flughafen Triest (Ronchi dei Legionari): 25 Minuten.</li>
+<li>• Flughafen Venedig (Marco Polo): 1 Stunde 15 Minuten.</li>
+<li>• Udine Zentrum: 10 Minuten.</li>
+</ul>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">📞 Telefon</h4>
+<p class="text-villa-soft opacity-80">0039 334 8919985</p>
+</div>
+<div>
+<h4 class="text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2">📍 Adresse</h4>
+<p class="text-villa-gold opacity-80 italic">Località Ottelio 1, 33044 Manzano (UD)</p>
+</div>
+</div>
+</div>
+<!-- Form -->
+<div class="w-full bg-villa-gold/5 p-8 md:p-10 border border-villa-gold/20 shadow-xl">
+<form action="https://api.web3forms.com/submit" class="space-y-6" id="contactForm" method="POST">
+<input name="access_key" type="hidden" value="826dec24-6fad-4c3b-8062-1492d727e686"/>
+<input name="subject" type="hidden" value="Neue Besichtigungsanfrage - Villa Ottelio (Site DE)"/>
+<input class="hidden" name="botcheck" style="display: none;" type="checkbox"/>
+<div>
+<label class="block text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2" for="name">Vor- und Nachname</label>
+<input class="w-full bg-transparent border-b border-villa-gold/30 py-3 text-villa-soft focus:outline-none focus:border-villa-gold transition-colors placeholder-villa-soft/30" id="name" name="Vorname_Nachname" placeholder="Ihr Name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2" for="email">E-Mail</label>
+<input class="w-full bg-transparent border-b border-villa-gold/30 py-3 text-villa-soft focus:outline-none focus:border-villa-gold transition-colors placeholder-villa-soft/30" id="email" name="Email" placeholder="Ihre E-Mail-Adresse" required="" type="email"/>
+</div>
+<div>
+<label class="block text-villa-gold text-xs uppercase tracking-[0.2em] font-bold mb-2" for="message">Nachricht</label>
+<textarea class="w-full bg-transparent border-b border-villa-gold/30 py-3 text-villa-soft focus:outline-none focus:border-villa-gold transition-colors placeholder-villa-soft/30 resize-none" id="message" name="Nachricht" placeholder="Schreiben Sie hier Ihre Anfrage..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-start space-x-3 pt-2">
+<input class="mt-1 w-4 h-4 accent-[#c5a059] cursor-pointer" id="privacy" name="Datenschutz-Einwilligung" required="" type="checkbox"/>
+<label class="text-xs text-villa-soft/80 leading-relaxed cursor-pointer" for="privacy">
+              Ich habe die Bestimmungen der <a class="text-villa-gold hover:text-white transition-colors underline decoration-villa-gold/50 underline-offset-4" href="/de/datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere diese *
+            </label>
+</div>
+<div class="pt-4">
+<button class="w-full block text-center px-8 py-4 bg-villa-gold text-villa-black text-xs uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity duration-300" type="submit">
+              Anfrage senden
+            </button>
+</div>
+<p class="text-center text-sm font-bold tracking-wider mt-4 h-6 opacity-0 transition-opacity duration-300" id="formResult"></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END FORM ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/contatti.html', en: 'https://www.villaottelio.it/contact.html', fr: 'https://www.villaottelio.it/fr/contact.html', de: 'https://www.villaottelio.it/de/kontakt.html', nl: 'https://www.villaottelio.it/nl/contact.html', zh: 'https://www.villaottelio.it/zh/contact.html' };
+---
+<Layout
+  lang="de"
+  pageKey="contact"
+  title={`Kontakt | Villa Ottelio de Carvalho`}
+  description={`Fordern Sie ein privates Treffen an, um die Villa Ottelio de Carvalho zu erwerben. Privater Verkauf, Besichtigungen nach Vereinbarung.`}
+  canonical="https://www.villaottelio.it/de/kontakt.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

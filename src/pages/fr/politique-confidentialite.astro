@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/fr/politique-confidentialite.html" property="og:url"/>
+<meta content="Politique de Confidentialité | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Politique de confidentialité conformément au RGPD." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/fr/politique-confidentialite.html" property="twitter:url"/>
+<meta content="Politique de Confidentialité | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Politique de confidentialité conformément au RGPD." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/privacy.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/politique-confidentialite.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/datenschutz.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/privacybeleid.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/privacy-policy.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== CONTENU ========== -->
+<main class="pt-32 pb-24 bg-villa-black min-h-screen">
+<div class="max-w-4xl mx-auto px-6">
+<h1 class="font-serif text-3xl md:text-4xl text-villa-gold mb-4 uppercase tracking-widest text-center">Politique de Confidentialité</h1>
+<p class="text-center text-villa-soft/60 text-sm mb-16 tracking-wider">Conformément à l'art. 13 du Règlement (UE) 2016/679 (RGPD)</p>
+<div class="space-y-12 text-villa-soft/80 leading-relaxed text-sm md:text-base">
+<section>
+<p>Bienvenue sur le site de <strong>Villa Ottelio de Carvalho</strong>. La protection de votre vie privée est fondamentale pour nous. Par la présente politique, nous souhaitons vous expliquer comment nous collectons, gérons et conservons vos données personnelles conformément au Règlement Européen 2016/679 (RGPD).</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">1. Responsable du Traitement</h2>
+<p>Le Responsable du traitement des données personnelles est :<br/>
+<strong>Rodolfo de Carvalho</strong><br/>
+        Siège : Località Ottelio 1, 33044 Manzano (UD), Italie.<br/>
+        Contacts : <strong>rdcservizi [at] gmail [dot] com</strong></p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">2. Type de Données Traitées</h2>
+<p>Via le formulaire de contact présent sur le Site, nous collectons exclusivement les données personnelles que vous décidez volontairement de nous fournir pour transmettre votre demande. Plus précisément :</p>
+<ul class="list-disc list-inside mt-2 space-y-1 text-villa-soft/70">
+<li>Nom et Prénom</li>
+<li>Adresse E-mail</li>
+<li>Éventuelles données personnelles insérées dans le texte du message.</li>
+</ul>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">3. Finalités et Base Juridique</h2>
+<p>Vos données personnelles seront traitées exclusivement pour répondre à vos demandes d'informations, organiser des visites privées de la Demeure ou vous fournir le dossier informatif.</p>
+<p class="mt-2">La <strong>base juridique</strong> qui légitime ce traitement est votre consentement explicite, donné via la case à cocher correspondante au moment de l'envoi du formulaire (Art. 6, par. 1, let. a du RGPD).</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">4. Modalités et Conservation</h2>
+<p>Le traitement est effectué à l'aide d'outils informatiques et télématiques, en adoptant toutes les mesures de sécurité nécessaires pour prévenir la perte ou l'accès non autorisé aux données.</p>
+<p class="mt-2">Vos données seront conservées pendant le temps strictement nécessaire pour traiter votre demande. Par la suite, sauf obligations légales contraires ou instauration d'une négociation, les données seront effacées de manière sécurisée dans les 24 mois suivant le dernier contact.</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">5. Communication à des Tiers</h2>
+<p>Vos données ne seront en aucun cas diffusées ou vendues à des tiers. Seules les personnes autorisées par le Responsable ou les sous-traitants externes strictement nécessaires au fonctionnement technique du service pourront avoir accès à vos données (par exemple, le fournisseur d'hébergement du site ou le service Web3Forms utilisé pour l'envoi des e-mails depuis le formulaire de contact).</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">6. Vos Droits</h2>
+<p>À tout moment, conformément aux art. 15-22 du RGPD, vous avez le droit de demander l'accès à vos données, leur rectification, leur suppression (Droit à l'oubli), la limitation ou de vous opposer à leur traitement. Vous pouvez également retirer votre consentement à tout moment.</p>
+<p class="mt-2">Pour exercer vos droits, vous pouvez envoyer une communication écrite à l'adresse e-mail du Responsable indiquée au point 1.</p>
+<p class="mt-2">Vous avez également le droit de déposer une réclamation auprès de l'Autorité Garante pour la Protection des Données Personnelles (<a class="text-villa-gold hover:text-white transition-colors underline decoration-villa-gold/50 underline-offset-4" href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>) si vous estimez que le traitement viole les réglementations en vigueur.</p>
+</section>
+<div class="pt-8 border-t border-villa-gold/20 text-xs text-villa-soft/50">
+<p>Dernière mise à jour : Mars 2026</p>
+</div>
+</div>
+</div>
+</main>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/privacy.html', en: 'https://www.villaottelio.it/privacy-policy.html', fr: 'https://www.villaottelio.it/fr/politique-confidentialite.html', de: 'https://www.villaottelio.it/de/datenschutz.html', nl: 'https://www.villaottelio.it/nl/privacybeleid.html', zh: 'https://www.villaottelio.it/zh/privacy-policy.html' };
+---
+<Layout
+  lang="fr"
+  pageKey=""
+  title={`Politique de Confidentialité | Villa Ottelio de Carvalho`}
+  description={`Politique de confidentialité de Villa Ottelio de Carvalho conformément au RGPD (Règlement UE 2016/679).`}
+  canonical="https://www.villaottelio.it/fr/politique-confidentialite.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

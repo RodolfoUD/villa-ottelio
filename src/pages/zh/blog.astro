@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/blog.html" property="og:url"/>
+<meta content="别墅日记 | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="关于Villa Ottelio、弗留利生活方式和历史投资价值的深入探讨。" property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/blog.html" property="twitter:url"/>
+<meta content="别墅日记 | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== CONTENUTO ========== -->
+<main class="pt-32 pb-24 max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h1 class="text-4xl md:text-5xl font-serif text-villa-gold mb-6 uppercase tracking-widest">故事、领地和展望</h1>
+<p class="text-lg md:text-xl text-villa-soft italic max-w-3xl mx-auto">关于Villa Ottelio、弗留利生活方式和历史投资价值的深入探讨。</p>
+</div>
+<div class="space-y-20">
+<!-- 1. La Villa -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">1. 别墅（历史、建筑、自然）</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">讲述房子的灵魂，让它引发爱意。</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/jinbi-huayuan-luxe.html">寂静作为资产：为什么围栏花园是真正的奢侈品</a></li>
+<li><span class="text-villa-soft/50 font-medium border-b border-villa-gold/40 cursor-not-allowed">历史植物学：见证世纪的椴树和树木</span></li>
+<li><span class="text-villa-soft/50 font-medium border-b border-villa-gold/40 cursor-not-allowed">弗留利的Brolo：远不止一个简单的花园</span></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/qiuji-chunjie-huayuan-secai.html">秋季vs春季：公园颜色的壮观</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/zhuyao-liguan-bieshu.html">主立面：一个帝王般的欢迎</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/bihua-liang-lishi.html">壁画和梁：抬起眼睛阅读历史</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/daibiao-siren-kongjian-bieshu.html">代表性空间与私人空间：如何在今日生活在别墅中</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/juda-jiu-jiao.html">宏伟的地窖：为何4米10的高度改变一切</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/gefei-louge-cang-kongjian.html">阁楼与外露横梁：待重新发明的隐藏空间</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/yongyou-lishi-pian.html">1670-2025：拥有一片历史意味着什么</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/ottelio-jiazu-gongjue.html">Ottelio家族：从巴萨诺公证人到弗留利伯爵</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/baohu-xiu-fu.html">保守性修复：保留了什么以及原因</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/hunhe-jianzhu-fenni-weini.html">混合建筑：威尼托-弗留利设计的独特性</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/shitou-dicang-putao-jiu.html">稀有石制地板舱口：当葡萄酒直接从沙龙降入地窖</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/sheng-gaetano-jiaotang-lishi.html">圣盖塔诺教堂：私人神圣场所的历史</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/teji-chuzhen-olive-you.html">特级初榨橄榄油"单一庄园"：当150棵橄榄树成为传统</a></li></ul>
+</section>
+<!-- 2. La Location -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">2. 地点（领地和生活方式）</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">推销弗留利和战略位置。</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/fangdichan-shichang-fenxi.html">距离一切一小时：在威尼斯、阿尔卑斯山和维也纳之间生活</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/zhuming-linju-collio-putaojiu.html">著名的邻居：Collio、葡萄酒和卓越</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/anquan-shenghuo-zhiliang-friuli.html">安全和生活质量：为什么选择弗留利</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/hai-shan-zhongxin-weizhi.html">海和山在一天内：中心位置的特权</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/colli-orientali-terroir.html">Colli Orientali del Friuli：世界羡慕的"风土"</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/jijing-xin-shehuo-man-shenghuo.html">寂静作为新奢侈：历史庄园中的慢生活</a></li></ul>
+</section>
+<!-- 3. Investimento -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">3. 投资和财务</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">为投资者和企业家提供理性的数据。</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/qiye-zongbu-mingwang-dizhi.html">从住宅到企业总部：公司总部的新趋势</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/yishujia-gongzuoshi-guangxian.html">艺术家工作室：光线、空间和灵感</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/baohu-jianzhu-shuishou-youhui.html">购买受保护的资产：税收优势和保护</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/xiufu-jiangjin-lishi-bieshu.html">翻新奖金和历史别墅：对历史房产的改变</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/baohu-jianzhu-weihu-koushui.html">受保护建筑：维护费用的可扣除性</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/lüse-jiangjin-lishi-zhuangyuan.html">绿色奖金与历史庄园：如何回收高达65%的费用</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/fangtonghuo-zichan-wenhua-yichan.html">抗通胀资产：为何文化遗产保护资本</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/lishi-bieshu-touzi-huibao.html">案例研究：历史别墅改造为Relais的投资回报</a></li><li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/hunli-changsuo-mingwang.html">婚礼场地：高端场所市场</a></li></ul>
+</section>
+<!-- 4. Arte e Creatività -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">4. 特别艺术与创意</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">面向艺术家和收藏家的内容。</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/shi-ge-lishi-bieshu-yishu.html">10座启发伟大艺术作品的历史别墅</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/yishujia-zuojia-lishi-zhuangyuan.html">为什么艺术家和作家选择历史住宅作为工作室</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/siren-bieshu-yishu-juzhu.html">从私人别墅到艺术住地：文化商业模式</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/siren-jiaotang-shensheng.html">私人教堂：独家神圣空间的稀有性和价值</a></li>
+</ul>
+</section>
+</div>
+</main>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog.html', en: 'https://www.villaottelio.it/blog.html', fr: 'https://www.villaottelio.it/fr/blog.html', de: 'https://www.villaottelio.it/de/blog.html', nl: 'https://www.villaottelio.it/nl/blog.html', zh: 'https://www.villaottelio.it/zh/blog.html' };
+---
+<Layout
+  lang="zh"
+  pageKey="blog"
+  title={`别墅日记 | Villa Ottelio de Carvalho`}
+  description={`关于Villa Ottelio、弗留利生活方式和Colli Orientali del Friuli历史投资价值的深入探讨。`}
+  canonical="https://www.villaottelio.it/zh/blog.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

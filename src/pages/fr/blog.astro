@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/fr/blog.html" property="og:url"/>
+<meta content="Le Journal de la Villa | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Approfondissements sur la Villa Ottelio, le style de vie frioulan et la valeur de l'investissement historique." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/fr/blog.html" property="twitter:url"/>
+<meta content="Le Journal de la Villa | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== CONTENUTO ========== -->
+<main class="pt-32 pb-24 max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h1 class="text-4xl md:text-5xl font-serif text-villa-gold mb-6 uppercase tracking-widest">Histoires, Territoire et Visions</h1>
+<p class="text-lg md:text-xl text-villa-soft italic max-w-3xl mx-auto">Approfondissements sur la Villa Ottelio, le style de vie frioulan et la valeur de l'investissement historique.</p>
+</div>
+<div class="space-y-20">
+<!-- 1. La Villa -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">1. La Villa (Histoire, Architecture, Nature)</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">Raconter l'âme de la maison pour en tomber amoureux.</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/silence-jardin-clos-luxe.html">Le Silence comme Atout : Pourquoi le jardin clos est le vrai luxe</a></li>
+<li><span class="text-white/40 font-bold border-b border-white/20 cursor-default">Botanique Historique : Les Platanes et les arbres qui ont vu les siècles</span></li>
+<li><span class="text-white/40 font-bold border-b border-white/20 cursor-default">Le Brolo Frioulan : Bien plus qu'un simple jardin</span></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/automne-printemps-couleurs-jardin.html">Automne vs Printemps : Le spectacle des couleurs dans le parc</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/facade-principale-villa.html">La Façade Principale : Une bienvenue impériale</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/fresques-poutres-histoire.html">Fresques et Poutres : Lire l'histoire en levant les yeux</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/espaces-representation-prives-villa.html">Espaces de Représentation vs Espaces Privés : Comment vivre la villa aujourd'hui</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/cave-monumentale.html">La Cave Monumentale : Pourquoi 4 mètres et 10 de hauteur changent tout</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/grenier-poutres-apparentes.html">Le Grenier et les Poutres Apparentes : Des volumes cachés à réinventer</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/posseder-morceau-histoire.html">1670-2025 : Ce que signifie posséder un morceau d'histoire</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/famille-ottelio-notaires-comtes.html">La Famille Ottelio : Des notaires de Bassano aux comtes frioulans</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/restauration-conservative.html">Restauration Conservative : Ce qui a été maintenu et pourquoi</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/architecture-hybride-venitienne-frioulane.html">Architecture Hybride : L'unicité du projet Vénitien-Frioulan</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/trappes-pierre-vin-salon.html">Les rares Trappes en Pierre : Quand le vin descendait directement du salon</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/chapelle-san-gaetano-histoire.html">La Chapelle San Gaetano : Histoire d'un lieu sacré privé</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/huile-olive-single-estate.html">Huile d'Olive Extra Vierge "Single Estate" : Quand 150 oliviers deviennent tradition</a></li>
+</ul>
+</section>
+<!-- 2. L'Emplacement -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">2. L'Emplacement (Territoire et Lifestyle)</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">Vendre le Frioul et sa position stratégique.</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/analyse-marche-immobilier.html">À une heure de tout : Vivre entre Venise, les Alpes et Vienne</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/voisins-celebres-collio-vins.html">Les Voisins Célèbres : Le Collio, les Vins et l'excellence</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/securite-qualite-vie-frioul.html">Sécurité et Qualité de Vie : Pourquoi choisir le Frioul</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/mer-montagne-position-centrale.html">Mer et Montagne dans la journée : Le privilège de la position centrale</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/colli-orientali-frioul-terroir.html">Colli Orientali du Frioul : Le "Terroir" que le monde nous envie</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/silence-nouveau-luxe-vie-lente.html">Le Silence comme nouveau luxe : La vie lente dans une demeure historique</a></li>
+</ul>
+</section>
+<!-- 3. Investissement -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">3. Investissement et Fiscalité</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">Données rationnelles pour investisseurs et entrepreneurs.</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/siege-social-entreprise-prestige.html">De Résidence à Siège Social : La nouvelle tendance des sièges d'entreprise</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/atelier-artiste-lumiere-inspiration.html">Atelier d'Artiste : La lumière, l'espace et l'inspiration</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/bien-classe-avantages-fiscaux.html">Acheter un Bien Classé : Avantages fiscaux et protections</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/prime-restauration-villas-historiques.html">Prime de Restauration et Rénovation : Ce qui change pour les villas historiques</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/deductibilite-maintenance-biens-classes.html">Biens Classés : La déductibilité des frais d'entretien</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/ecobonus-demeures-historiques.html">Ecobonus et Demeures Historiques : Comment récupérer jusqu'à 65 % des coûts</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/actif-anti-inflation-patrimoine-culturel.html">Actif Anti-Inflation : Pourquoi les Biens Culturels protègent le capital</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/roi-villa-historique-relais.html">Étude de Cas : Le ROI d'une villa historique transformée en Relais</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/lieu-mariage-prestige.html">Lieu de Mariage : Le marché des lieux de prestige</a></li>
+</ul>
+</section>
+<!-- 4. Art et Créativité -->
+<section>
+<h2 class="text-2xl font-serif text-villa-gold border-b border-villa-gold/30 pb-4 mb-4 uppercase tracking-wider">4. Spécial Art &amp; Créativité</h2>
+<p class="text-sm text-villa-soft/60 mb-8 italic">Pour la cible des artistes et collectionneurs.</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-villa-soft">
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/dix-villas-historiques-oeuvres-art.html">Les 10 villas historiques qui ont inspiré de grandes œuvres d'art</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/artistes-ecrivains-demeures-historiques.html">Pourquoi artistes et écrivains choisissent les demeures historiques comme studio</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/villa-privee-residence-artistique.html">De villa privée à Résidence Artistique : Modèles de business culturels</a></li>
+<li><a class="text-villa-gold font-bold hover:opacity-70 transition-opacity border-b border-villa-gold/40" href="blog/chapelles-privees-espace-sacre.html">Chapelles Privées : La rareté et la valeur d'un espace sacré exclusif</a></li>
+</ul>
+</section>
+</div>
+</main>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog.html', en: 'https://www.villaottelio.it/blog.html', fr: 'https://www.villaottelio.it/fr/blog.html', de: 'https://www.villaottelio.it/de/blog.html', nl: 'https://www.villaottelio.it/nl/blog.html', zh: 'https://www.villaottelio.it/zh/blog.html' };
+---
+<Layout
+  lang="fr"
+  pageKey="blog"
+  title={`Le Journal de la Villa | Villa Ottelio de Carvalho`}
+  description={`Approfondissements sur la Villa Ottelio, le style de vie frioulan et la valeur de l'investissement historique dans les Colli Orientali du Frioul.`}
+  canonical="https://www.villaottelio.it/fr/blog.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

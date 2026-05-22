@@ -1,0 +1,102 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/" property="og:url"/>
+<meta content="Villa Ottelio de Carvalho | 弗留利出售的历史庄园" property="og:title"/>
+<meta content="超过100扇窗户俯视历史。一个完整的房地产套件，介于威尼斯贵族和弗留利传统之间。" property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/" property="twitter:url"/>
+<meta content="Villa Ottelio de Carvalho | 弗留利出售的历史庄园" property="twitter:title"/>
+<meta content="获取三个世纪历史的特权。" property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/index.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/index.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/index.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/index.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/index.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/index.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/index.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-screen w-full overflow-hidden">
+<img alt="Villa Ottelio de Carvalho的优雅内部 - 弗留利历史庄园" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" src="/assets/images/shared/villa-ottelio-hero.webp"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 pt-20">
+<h1 class="font-serif text-5xl md:text-7xl text-villa-gold mb-4 uppercase tracking-widest leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      Villa Ottelio de Carvalho
+    </h1>
+<p class="text-xl md:text-2xl italic mb-4 max-w-2xl mx-auto text-villa-soft drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      17世纪Colli Orientali中心的贵族庄园。
+    </p>
+<p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-villa-soft drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-bold italic">
+      超过100扇窗户俯视历史。一个完整的房地产套件，介于威尼斯贵族和弗留利传统之间。
+    </p>
+<a class="inline-flex items-center justify-center border border-villa-gold text-villa-gold px-10 py-4 hover:bg-villa-gold hover:text-villa-black transition-all duration-500 uppercase tracking-widest text-sm font-bold bg-black/20 backdrop-blur-sm" href="/zh/contact.html">
+      探索遗产
+    </a>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== 4 PILASTRI ========== -->
+<section class="py-24 bg-villa-black border-t border-villa-gold/30">
+<div class="container mx-auto px-6">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-16 text-center uppercase tracking-widest">四大支柱</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<div>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">1. 独特和功能建筑</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">17世纪威尼斯-弗留利混合设计，特色穿堂大厅和无法找到的细节，如古老石制地板舱口。超过100个窗户，其中96%已配备百叶窗和双层玻璃。</p>
+</div>
+<div>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">2. 钥匙交付式接待潜力</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">不仅是住宅，还是活动引擎。附属建筑拥有可容纳200客人的厨房和宏伟的社交壁炉。已准备在财务和物流上成为Relais或高端活动地点。</p>
+</div>
+<div>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">3. 土地和私人教堂</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">约5,300平方米的土地，包括草坪、小葡萄园、150棵橄榄树和百年椴树。私人奉献San Gaetano教堂（17世纪），完全可用。</p>
+</div>
+<div>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">4. 经过认证的健康状况</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">10年前屋顶完全翻新，保持原始风格。电气系统已检查（可用21kW），Starlink连接。无地震结构损害：一个坚固安全的家。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END 4 PILASTRI ========== -->
+<!-- ========== EREDITÀ ========== -->
+<section class="py-24 bg-villa-black text-villa-soft">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2">
+<img alt="Villa Ottelio de Carvalho的贵族餐厅，有古代吊灯和拱形窗户" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/interni-nobile-villa-ottelio.webp"/>
+</div>
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-8 uppercase tracking-wide">石头和记忆的遗产</h2>
+<div class="space-y-6 text-lg leading-relaxed opacity-90">
+<p>建立于17世纪末，为de Marchi家族建造，后来由Ottelio伯爵改进，随后由Papafava dei Carraresi伯爵保管，由Gianguido de Carvalho侯爵翻新，这座庄园不仅仅是一个不动产，而是弗留利历史的一章，寻求它的下一个保管人。</p>
+<p>位于Manzano，位置显眼但保留，Villa Ottelio提供了罕见的历史真实性和结构坚固性的结合：最近翻新的屋顶和排水槽保护内部，其中时间停止了，在总是燃烧的壁炉和原始陶土地板之间。</p>
+<p>以"钥匙交付"的方式出售，配备其古董家具，Villa Ottelio de Carvalho已准备好立即居住或转变为国际级代表处。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END EREDITÀ ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/index.html', en: 'https://www.villaottelio.it/index.html', fr: 'https://www.villaottelio.it/fr/index.html', de: 'https://www.villaottelio.it/de/index.html', nl: 'https://www.villaottelio.it/nl/index.html', zh: 'https://www.villaottelio.it/zh/index.html' };
+---
+<Layout
+  lang="zh"
+  pageKey="home"
+  title={`Villa Ottelio de Carvalho | 弗留利出售的历史庄园`}
+  description={`获取三个世纪历史的特权。Villa Ottelio de Carvalho：17世纪Colli Orientali del Friuli中心的贵族住宅。保留销售。`}
+  canonical="https://www.villaottelio.it/zh/index.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

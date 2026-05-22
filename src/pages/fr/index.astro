@@ -1,0 +1,242 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/fr/index.html" property="og:url"/>
+<meta content="Villa Ottelio de Carvalho | Demeure Historique de Prestige au Frioul" property="og:title"/>
+<meta content="Plus de 100 fenêtres ouvertes sur l'histoire. Un domaine intact entre noblesse vénitienne et tradition frioulane." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/fr/index.html" property="twitter:url"/>
+<meta content="Villa Ottelio de Carvalho | Demeure Historique à Vendre" property="twitter:title"/>
+<meta content="Acquérez le privilège de trois siècles d'histoire dans les Colli Orientali du Frioul." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["RealEstateListing", "Place"],
+    "name": "Villa Ottelio de Carvalho",
+    "description": "Nobile Dimora del XVII Secolo nel cuore dei Colli Orientali in Friuli.",
+    "url": "https://www.villaottelio.it/fr/index.html",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Località Ottelio 1",
+      "addressLocality": "Manzano",
+      "addressRegion": "UD",
+      "postalCode": "33044",
+      "addressCountry": "IT"
+    },
+    "offers": {
+      "@type": "Offer",
+      "businessFunction": "http://purl.org/goodrelations/v1#Sell",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": {
+        "@type": "SingleFamilyResidence",
+        "numberOfRooms": 35,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 1880,
+          "unitCode": "MTK"
+        },
+        "yearBuilt": 1670
+      }
+    }
+  }
+  </script>
+<link href="https://www.villaottelio.it/it/index.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/index.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/index.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/index.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/index.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/index.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/index.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-screen w-full overflow-hidden">
+<img alt="Intérieurs de prestige de la Villa Ottelio de Carvalho - Demeure Historique au Frioul" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" src="/assets/images/shared/villa-ottelio-hero.webp"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 pt-20">
+<h1 class="font-serif text-5xl md:text-7xl text-villa-gold mb-4 uppercase tracking-widest leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      Villa Ottelio de Carvalho
+    </h1>
+<p class="text-xl md:text-2xl italic mb-4 max-w-2xl mx-auto text-villa-soft drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      Noble Demeure du XVIIe Siècle au cœur des Colli Orientali.
+    </p>
+<p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-villa-soft drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-bold italic">
+      Plus de 100 fenêtres ouvertes sur l'histoire. Un domaine immobilier intact, entre noblesse vénitienne et tradition frioulane.
+    </p>
+<a class="inline-flex items-center justify-center border border-villa-gold text-villa-gold px-10 py-4 hover:bg-villa-gold hover:text-villa-black transition-all duration-500 uppercase tracking-widest text-sm font-bold bg-black/20 backdrop-blur-sm" href="/fr/contact.html">
+      Explorez l'Héritage
+    </a>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== 4 PILASTRI ========== -->
+<section class="py-24 bg-villa-black border-t border-villa-gold/30">
+<div class="container mx-auto px-6">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-16 text-center uppercase tracking-widest">Les 4 Piliers de la Valeur</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<div class="group">
+<a data-fslightbox="main-showcase" href="/assets/images/shared/architettura-facciata-villa-ottelio.webp">
+<img alt="Architecture Unique et Fonctionnelle de la Villa Ottelio" class="w-full h-48 object-cover rounded-sm border border-villa-gold/10 hover:border-villa-gold hover:scale-105 hover:brightness-105 transition-all duration-500 cursor-pointer mb-6" src="/assets/images/shared/architettura-facciata-villa-ottelio.webp"/>
+</a>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">1. Architecture Unique et Fonctionnelle</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Une structure du XVIIe siècle hybride vénitienne-frioulane, caractérisée par un salon traversant et des détails rares comme les trappes en pierre pour le transvasement direct du vin depuis le salon de foulage jusqu'à la cave enterrée. La propriété se distingue par ses murs en pierre de 40 cm d'épaisseur garantissant une absence d'humidité et par ses plus de 100 fenêtres, dont 96 % sont déjà équipées de volets en bois et de double vitrage dans le corps central.</p>
+</div>
+<div class="group">
+<a data-fslightbox="main-showcase" href="/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp">
+<img alt="Salon noble avec table et lustre d'époque - Villa Ottelio de Carvalho" class="w-full h-48 object-cover rounded-sm border border-villa-gold/10 hover:border-villa-gold hover:scale-105 hover:brightness-105 transition-all duration-500 cursor-pointer mb-6" src="/assets/images/shared/salone-nobile-centrale-villa-ottelio.webp"/>
+</a>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">2. Potentiel Hôtelier "Clé en Main"</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Pas seulement une résidence, mais un moteur pour l'événementiel. La Barchessa abrite une cuisine équipée capable de servir jusqu'à 200 repas et un foyer monumental convivial. Avec trois unités d'habitation déjà indépendantes et le rez-de-chaussée classé commercial, la structure est préparée fiscalement et logistiquement pour devenir un Relais, un lieu de mariage ou une activité de haut profil.</p>
+</div>
+<div class="group">
+<a data-fslightbox="main-showcase" href="/assets/images/shared/cappella-consacrata-san-gaetano.webp">
+<img alt="Façade de la Chapelle Consacrée de la Villa Ottelio" class="w-full h-48 object-cover rounded-sm border border-villa-gold/10 hover:border-villa-gold hover:scale-105 hover:brightness-105 transition-all duration-500 cursor-pointer mb-6" src="/assets/images/shared/cappella-consacrata-san-gaetano.webp"/>
+</a>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">3. Le Terrain et la Chapelle</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Le terrain attenant est entretenu en prairie avec un petit vignoble ancien, 200 oliviers et la cour intérieure où trônent deux tilleuls centenaires (environ 300 m² au total). Pour compléter la noblesse du lieu, la Chapelle de San Gaetano (XVIIe s.), embellie par la copie du retable de Carneo, est un lieu de paix idéal pour des cérémonies privées.</p>
+</div>
+<div class="group">
+<a data-fslightbox="main-showcase" href="/assets/images/shared/tetto-restaurato-struttura-certificata.webp">
+<img alt="Toit Restauré et Structure Certifiée Villa Ottelio" class="w-full h-48 object-cover rounded-sm border border-villa-gold/10 hover:border-villa-gold hover:scale-105 hover:brightness-105 transition-all duration-500 cursor-pointer mb-6" src="/assets/images/shared/tetto-restaurato-struttura-certificata.webp"/>
+</a>
+<h3 class="font-serif text-villa-gold text-2xl mb-4">4. État de Santé Certifié</h3>
+<p class="text-sm leading-relaxed text-villa-soft/80">Acquérir une demeure historique sans surprises. Le toit a été intégralement refait il y a 10 ans en respectant le style original, l'installation électrique est révisée (avec 21 kW disponibles au total) et la connectivité est garantie par le système Starlink. Aucun dommage structurel lié aux séismes passés : une demeure solide et sûre.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END 4 PILASTRI ========== -->
+<!-- ========== EREDITÀ ========== -->
+<section class="py-24 bg-villa-black text-villa-soft">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2">
+<div class="relative">
+<a class="block overflow-hidden group" data-fslightbox="main-showcase" href="/assets/images/shared/interni-nobile-villa-ottelio.webp">
+<img alt="Salle à manger noble avec lustre d'époque et fenêtres en arc - Villa Ottelio de Carvalho" class="w-full h-auto border border-villa-gold/20 shadow-2xl transition-all duration-700 hover:scale-105 hover:brightness-105 cursor-pointer" src="/assets/images/shared/interni-nobile-villa-ottelio.webp"/>
+</a>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 border-b-2 border-r-2 border-villa-gold opacity-30"></div>
+</div>
+</div>
+<div class="md:w-1/2">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-8 uppercase tracking-wide">Un Héritage de Pierre et de Mémoire</h2>
+<div class="space-y-6 text-lg leading-relaxed opacity-90">
+<p>Édifiée à la fin du XVIIe siècle pour la famille de Marchi et embellie au fil du temps par les Comtes Ottelio, puis préservée par les Comtes Papafava dei Carraresi et restaurée par le marquis Gianguido de Carvalho, cette demeure n'est pas simplement un immeuble, mais un chapitre de l'histoire friulane qui cherche son prochain gardien.</p>
+<p>Située à Manzano, en position dominante mais confidentielle, la Villa offre la rare combinaison d'authenticité historique et de solidité structurelle : les toits et les gouttières récemment rénovés protègent des intérieurs où le temps s'est arrêté, entre cheminées toujours allumées et sols en terre cuite d'origine.</p>
+<p>Vendue "portes closes" avec ses meubles d'époque, la Villa Ottelio de Carvalho est prête à être habitée immédiatement ou transformée en un siège de représentation de niveau international.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END EREDITÀ ========== -->
+<!-- ========== CITAZIONE ========== -->
+<section class="py-24 bg-villa-soft text-villa-black text-center">
+<div class="container mx-auto px-6 max-w-4xl">
+<div class="space-y-6 text-lg md:text-xl leading-relaxed italic opacity-90">
+<p>Vous n'acquerrez pas seulement une propriété, mais le privilège de protéger trois siècles d'histoire friulane. La Villa Ottelio est une demeure qui a déjà surmonté l'épreuve du temps : solide, élégante, prête à devenir l'héritage de votre famille.</p>
+<p>Villa Ottelio de Carvalho : La rareté d'une œuvre intacte. Plus de trois siècles d'histoire enfermés dans une architecture qui ne suit pas le temps, mais le domine. Ce n'est pas une propriété, c'est une distinction.</p>
+</div>
+</div>
+</section>
+<!-- ========== END CITAZIONE ========== -->
+<!-- ========== NUMERI ========== -->
+<section class="relative py-24 bg-villa-black overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-30">
+<img alt="" class="w-full h-full object-cover" src="/assets/placeholders/numeri-villa.png"/>
+<div class="absolute inset-0 bg-gradient-to-b from-villa-black via-transparent to-villa-black"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10 text-center">
+<h2 class="font-serif text-3xl md:text-4xl text-villa-gold mb-16 uppercase tracking-widest">Les Chiffres du Prestige</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="p-8 border border-villa-gold/20 bg-villa-black/50 backdrop-blur-sm hover:border-villa-gold transition-colors">
+<span class="block font-serif text-4xl text-villa-gold">35.000</span>
+<span class="text-[10px] uppercase tracking-widest opacity-70">m² de Parc</span>
+</div>
+<div class="p-8 border border-villa-gold/20 bg-villa-black/50 backdrop-blur-sm hover:border-villa-gold transition-colors">
+<span class="block font-serif text-4xl text-villa-gold">4.000</span>
+<span class="text-[10px] uppercase tracking-widest opacity-70">m² Couverts</span>
+</div>
+<div class="p-8 border border-villa-gold/20 bg-villa-black/50 backdrop-blur-sm hover:border-villa-gold transition-colors">
+<span class="block font-serif text-4xl text-villa-gold">35</span>
+<span class="text-[10px] uppercase tracking-widest opacity-70">Pièces</span>
+</div>
+<div class="p-8 border border-villa-gold/20 bg-villa-black/50 backdrop-blur-sm hover:border-villa-gold transition-colors">
+<span class="block font-serif text-4xl text-villa-gold">100%</span>
+<span class="text-[10px] uppercase tracking-widest opacity-70">Toit Refait</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END NUMERI ========== -->
+<!-- ========== SPAZI ========== -->
+<section class="py-24 bg-villa-soft text-villa-black">
+<div class="container mx-auto px-6">
+<div class="text-center max-w-4xl mx-auto mb-16">
+<h2 class="font-serif text-3xl md:text-4xl mb-4 uppercase tracking-widest">Des Espaces pour des Passions sans Limites</h2>
+<p class="italic opacity-80 text-lg">La structure de la villa révèle une conception ingénieuse, offrant deux environnements distincts et reliés, prêts à être réinterprétés :</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-24">
+<div class="bg-white border border-villa-gold/10 shadow-lg overflow-hidden">
+<a class="block overflow-hidden" data-fslightbox="main-showcase" href="/assets/images/shared/cantina-storica-pietra-villa-ottelio.webp">
+<img alt="Cave historique semi-enterrée avec pierres apparentes et voûtes d'arêtes - Villa Ottelio de Carvalho" class="w-full h-80 object-cover transition-all duration-700 hover:scale-105 hover:brightness-105 cursor-pointer" src="/assets/images/shared/cantina-storica-pietra-villa-ottelio.webp"/>
+</a>
+<div class="p-8">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">Le "Cantinone" Semi-enterré (Le Caveau)</h3>
+<div class="text-sm text-left text-gray-700 space-y-4">
+<p>C'est l'âme ancienne de la maison. Pavé avec les galets d'origine et partiellement enterré, il garantit une température naturelle constante tout au long de l'année.</p>
+<p>Avec une hauteur monumentale de 4,10 mètres et ses voûtes d'arêtes d'origine, cet espace n'est pas une simple cave, mais une cathédrale souterraine prête à accueillir des événements. C'est l'endroit parfait pour le vieillissement de vins prestigieux ou pour une cave de conservation professionnelle, reliée fonctionnellement aux espaces supérieurs.</p>
+</div>
+</div>
+</div>
+<div class="bg-white border border-villa-gold/10 shadow-lg overflow-hidden">
+<a class="block overflow-hidden" data-fslightbox="main-showcase" href="/assets/images/shared/salone-eventi-relais-friuli.webp">
+<img alt="Grande salle de réception avec poutres apparentes et comptoir de bar - Villa Ottelio de Carvalho" class="w-full h-80 object-cover transition-all duration-700 hover:scale-105 hover:brightness-105 cursor-pointer" src="/assets/images/shared/salone-eventi-relais-friuli.webp"/>
+</a>
+<div class="p-8">
+<h3 class="font-serif text-2xl text-villa-gold mb-4 uppercase">La Grande Salle au Rez-de-chaussée (La Scène)</h3>
+<div class="text-sm text-left text-gray-700 space-y-4">
+<p>Surplombant la cave, un volume de 300 m² s'ouvre. Caractérisé par les trappes historiques au sol (qui relient visuellement et fonctionnellement le niveau inférieur), cet environnement se prête à toute vision ambitieuse : une salle de dégustation, une galerie d'art privée, un showroom exclusif ou un SPA de luxe ouvert sur la verdure.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-villa-black text-villa-soft p-12 border border-villa-gold/20 shadow-2xl">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-serif text-3xl text-villa-gold mb-8 uppercase tracking-widest">Vision Intérieure : Design ou Tradition ?</h2>
+<p class="text-lg mb-12 opacity-90">La propriété comprend un patrimoine de meubles d'époque, mais n'impose pas de style de vie. La villa se prête à une double interprétation :</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+<div>
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Conservatrice</h4>
+<p class="text-sm leading-relaxed opacity-80">Maintenir l'atmosphère muséale intacte.</p>
+</div>
+<div>
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Contemporaine</h4>
+<p class="text-sm leading-relaxed opacity-80">Le choix le plus audacieux. Déplacer ou céder une partie des meubles anciens pour insérer des pièces de design moderne et minimaliste. Les volumes du XVIIe s., avec leurs hauts plafonds et leurs sols en terre cuite, sont le cadre parfait pour le contraste avec l'ameublement contemporain (style "Architectural Digest").</p>
+</div>
+</div>
+<p class="mt-12 font-serif text-2xl text-villa-gold italic">La maison est une toile blanche prête pour votre vision.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END SPAZI ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/index.html', en: 'https://www.villaottelio.it/index.html', fr: 'https://www.villaottelio.it/fr/index.html', de: 'https://www.villaottelio.it/de/index.html', nl: 'https://www.villaottelio.it/nl/index.html', zh: 'https://www.villaottelio.it/zh/index.html' };
+---
+<Layout
+  lang="fr"
+  pageKey="home"
+  title={`Villa Ottelio de Carvalho | Demeure Historique de Prestige à Vendre Frioul`}
+  description={`Découvrez Villa Ottelio de Carvalho : une demeure noble du XVIIe siècle au cœur du Frioul. Trois siècles d'histoire et de prestige. Vente confidentielle.`}
+  canonical="https://www.villaottelio.it/fr/index.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

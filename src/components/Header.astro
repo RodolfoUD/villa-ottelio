@@ -1,0 +1,107 @@
+---
+import { site, langMeta, LANGS } from '../data/site.js';
+
+// props: lang (es 'en'), pageKey (es 'home'), alternates { en:url, it:url, ... }
+const { lang, pageKey, alternates = {} } = Astro.props;
+const cfg = site[lang];
+const nav = cfg.nav;
+const homeHref = nav[0].href;
+const me = langMeta[lang];
+// URL della pagina in ciascuna lingua (per il selettore); fallback: home lingua
+const langUrl = (l) => alternates[l] || site[l].nav[0].href;
+---
+<header class="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a class="text-2xl font-serif tracking-widest text-gray-900 uppercase" href={homeHref}>Villa Ottelio</a>
+
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-gray-600 uppercase">
+      {nav.map((item) => (
+        item.key === pageKey ? (
+          <a class="text-villa-gold font-bold pointer-events-none" href={item.href}>{item.label}</a>
+        ) : (
+          <a class="hover:text-gray-900 transition-colors" href={item.href}>{item.label}</a>
+        )
+      ))}
+      <div class="relative inline-block text-left ml-4">
+        <button class="flex items-center text-gray-600 hover:text-villa-gold transition-colors focus:outline-none" id="lang-selector-btn" type="button">
+          <span><span class={`fi ${me.flag} rounded-sm mr-1`}></span> {me.label}</span>
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        </button>
+        <div class="hidden absolute right-0 mt-2 w-24 bg-white border border-gray-100 shadow-lg rounded-sm z-50" id="lang-dropdown">
+          <div class="py-1">
+            {LANGS.map((l) => (
+              <a
+                class={l === lang
+                  ? 'block px-4 py-2 text-xs font-bold text-villa-gold bg-gray-50'
+                  : 'block px-4 py-2 text-xs text-gray-600 hover:bg-gray-50 hover:text-villa-gold transition-colors'}
+                href={langUrl(l)}>
+                <span class={`fi ${langMeta[l].flag} rounded-sm mr-1`}></span> {langMeta[l].label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex items-center space-x-4 md:hidden">
+      <div class="relative inline-block text-left">
+        <button class="flex items-center text-gray-900 focus:outline-none text-sm font-bold" id="lang-mobile-btn" type="button">
+          <span><span class={`fi ${me.flag} rounded-sm mr-1`}></span> {me.label}</span>
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+        </button>
+        <div class="hidden absolute right-0 mt-6 w-24 bg-white border border-gray-100 shadow-lg rounded-sm z-50" id="lang-mobile-dropdown">
+          <div class="py-1">
+            {LANGS.map((l) => (
+              <a
+                class={l === lang
+                  ? 'block px-4 py-2 text-xs font-bold text-villa-gold bg-gray-50'
+                  : 'block px-4 py-2 text-xs text-gray-600 hover:bg-gray-50 hover:text-villa-gold transition-colors'}
+                href={langUrl(l)}>
+                <span class={`fi ${langMeta[l].flag} rounded-sm mr-1`}></span> {langMeta[l].label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+      <button aria-label="Menu" class="text-gray-900 focus:outline-none" id="mobile-menu-button" type="button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4" id="mobile-menu">
+    <nav class="flex flex-col space-y-4 text-sm font-medium tracking-wide text-gray-600 uppercase">
+      {nav.map((item) => (
+        item.key === pageKey ? (
+          <a class="text-villa-gold font-bold pointer-events-none" href={item.href}>{item.label}</a>
+        ) : (
+          <a class="hover:text-gray-900 transition-colors" href={item.href}>{item.label}</a>
+        )
+      ))}
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  (function () {
+    var mb = document.getElementById('mobile-menu-button');
+    var mm = document.getElementById('mobile-menu');
+    if (mb && mm) {
+      mb.addEventListener('click', function () { mm.classList.toggle('hidden'); });
+      mm.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { mm.classList.add('hidden'); });
+      });
+    }
+    function dropdown(btnId, ddId) {
+      var btn = document.getElementById(btnId);
+      var dd = document.getElementById(ddId);
+      if (!btn || !dd) return;
+      btn.addEventListener('click', function (e) { e.stopPropagation(); dd.classList.toggle('hidden'); });
+      document.addEventListener('click', function (e) {
+        if (!dd.contains(e.target) && !btn.contains(e.target)) dd.classList.add('hidden');
+      });
+    }
+    dropdown('lang-selector-btn', 'lang-dropdown');
+    dropdown('lang-mobile-btn', 'lang-mobile-dropdown');
+  })();
+</script>

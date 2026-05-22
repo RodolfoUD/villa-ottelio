@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/it/vegetazione.html" property="og:url"/>
+<meta content="La Vegetazione (Flora) | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Platani secolari, uliveto storico, cipressi e giardino produttivo nel cuore dei Colli Orientali del Friuli." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/it/vegetazione.html" property="twitter:url"/>
+<meta content="La Vegetazione (Flora) | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Platani secolari, uliveto storico, cipressi e giardino produttivo nel cuore dei Colli Orientali del Friuli." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/vegetazione.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/nature.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/nature.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/botanik.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/botanica.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/nature.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/nature.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Splendido panorama collinare con prati e alberi in veste autunnale che circondano Villa Ottelio" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Il Giardino sul Retro: Oasi di Pace</h1>
+<p class="text-lg md:text-xl italic max-w-3xl mx-auto text-villa-soft">Il giardino sul retro di Villa Ottelio è un invito alla quiete assoluta. Un ampio spazio verde dove il silenzio è interrotto solo dal fruscio delle foglie, offrendo una privacy totale e una vista rigenerante sulla natura circostante.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black text-villa-soft">
+<div class="container mx-auto px-6 max-w-4xl">
+<div class="space-y-24">
+<!-- 1. I Platani -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">1. I Giganti del Tempo: I Platani Secolari <em>(Platanus × acerifolia)</em></h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>Appena varcato il cancello, lo sguardo è catturato dai veri padroni di casa: i Platani monumentali che dominano la corte interna.</p>
+<p><strong>La Funzione:</strong> Non sono lì per caso. Nelle ville venete, i platani venivano piantati per creare una "tettoia naturale" (il folador verde) dove svolgere le attività agricole al riparo dal sole estivo.</p>
+<p><strong>L'Impatto:</strong> Le loro chiome immense creano un microclima unico nella corte, abbassando la temperatura di 3-4 gradi rispetto all'esterno durante l'estate. La loro corteccia "mimetica" è una scultura naturale che cambia colore con la pioggia.</p>
+</div>
+</div>
+<!-- 2. I Cipressi -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">2. Le Sentinelle: I Cipressi <em>(Cupressus sempervirens)</em></h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>A segnare le prospettive e i confini della proprietà si ergono i Cipressi.</p>
+<p><strong>Il Segno Grafico:</strong> Con il loro portamento colonnare e sempreverde, queste piante non solo offrono privacy e protezione dal vento, ma disegnano linee verticali eleganti che dialogano con l'orizzontalità dei vigneti circostanti, richiamando la classica estetica del paesaggio toscano e veneto.</p>
+</div>
+</div>
+<!-- 3. L'Uliveto -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">3. L'Uliveto Storico: L'Oro Verde</h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>Sulla parte più soleggiata e drenata del terreno, dimorano oltre 150 piante di Ulivo.</p>
+<p><strong>Il Paesaggio:</strong> Queste piante non offrono solo una preziosa produzione di olio extravergine, ma disegnano il paesaggio con il loro fogliame argenteo che brilla al vento, creando un contrasto cromatico elegante con il verde scuro dei cipressi e dei boschi.</p>
+</div>
+</div>
+<!-- 4. Il Brolo -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-8 uppercase text-center">4. Il "Brolo" e il Giardino sul Retro: Frutti e Colori</h2>
+<p class="text-center text-lg mb-12 opacity-80">Nel giardino cintato e nell'area sul retro della villa, la vegetazione esplode nella sua funzione produttiva e decorativa, tipica del "giardino utile" friulano:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Il Pero Antico</h4>
+<p class="text-sm opacity-80">Nel giardino posteriore, più intimo e riservato, spicca un Pero. Un albero da frutto della tradizione, posizionato strategicamente per godere della giusta esposizione solare. In primavera offre una fioritura bianca candida, mentre a fine estate regala frutti a km zero, simbolo della vita autosufficiente di villa.</p>
+</div>
+<div class="bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Il Prunus Ornamentale</h4>
+<p class="text-sm opacity-80">A portare il colore delle stagioni c'è un magnifico esemplare simile al ciliegio (Prunus). La sua presenza è fondamentale per l'estetica del parco: è il primo ad annunciare la primavera con una nuvola di fiori delicati, creando una macchia di colore poetica che spezza il verde dominante del prato.</p>
+</div>
+<div class="md:col-span-2 bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase text-center">I Frutti Minori</h4>
+<p class="text-sm opacity-80 text-center">Non mancano essenze come il Fico (spesso cresciuto vicino ai muri per il calore) e il Caco, che in autunno, quando il parco si spoglia, rimane carico di frutti arancioni brillanti come lanterne naturali nel giardino invernale.</p>
+</div>
+</div>
+</div>
+<!-- 5. Il Contesto -->
+<div class="bg-villa-soft/5 p-12 border border-villa-gold/20">
+<h2 class="font-serif text-2xl text-villa-gold mb-8 uppercase text-center">5. Il Contesto: La Vigna e il Bosco</h2>
+<p class="text-center text-lg mb-12 opacity-80">Villa Ottelio non è un'isola. Il suo parco sfuma senza barriere visive nel paesaggio circostante:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-sm opacity-80">
+<div>
+<h4 class="font-bold uppercase tracking-widest text-villa-gold mb-2">La Vigna</h4>
+<p>I filari geometrici che circondano la proprietà (Merlot, Friulano, Picolit) cambiano la scenografia ogni mese: nudi e scultorei d'inverno, verde brillante in primavera, dorati e rossi in autunno (il foliage famoso in tutto il mondo).</p>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-villa-gold mb-2">La Macchia Boschiva</h4>
+<p>Ai margini della proprietà, macchie di arbusti spontanei garantiscono la biodiversità necessaria all'ecosistema, offrendo rifugio alla piccola fauna locale.</p>
+</div>
+</div>
+</div>
+<!-- Nota investitore -->
+<div class="text-center pt-12 border-t border-villa-gold/20 text-villa-gold italic text-lg">
+        Nota per l'investitore: Questa varietà botanica (dai Cipressi ornamentali al Pero produttivo) è un indicatore biologico della qualità del terreno e dell'assenza di ristagni d'acqua, confermando la salubrità del luogo per chi ci abita.
+      </div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/vegetazione.html', en: 'https://www.villaottelio.it/nature.html', fr: 'https://www.villaottelio.it/fr/nature.html', de: 'https://www.villaottelio.it/de/botanik.html', nl: 'https://www.villaottelio.it/nl/botanica.html', zh: 'https://www.villaottelio.it/zh/nature.html' };
+---
+<Layout
+  lang="it"
+  pageKey="nature"
+  title={`La Vegetazione (Flora) | Villa Ottelio de Carvalho`}
+  description={`La flora di Villa Ottelio de Carvalho: platani secolari, uliveto storico, cipressi e giardino produttivo nel cuore dei Colli Orientali del Friuli.`}
+  canonical="https://www.villaottelio.it/it/vegetazione.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

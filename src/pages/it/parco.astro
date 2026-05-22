@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/it/parco.html" property="og:url"/>
+<meta content="Esterni e Giardino | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Un'oasi protetta tra ulivi, tigli secolari e i panorami dei Colli Orientali del Friuli." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/it/parco.html" property="twitter:url"/>
+<meta content="Esterni e Giardino | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Il parco e gli esterni di Villa Ottelio de Carvalho: un'oasi protetta tra ulivi, tigli secolari, cappella gentilizia e panorami sui Colli Orientali del Friuli." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/villa-giardino-inverno.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/parco.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/le-parc.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/park.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/park.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/the-garden.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/the-park.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Vista invernale di Villa Ottelio de Carvalho con alberi secolari e giardino monumentale" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/esterni/villa-giardino-inverno.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Esterni e Giardino</h1>
+<p class="text-lg md:text-xl italic max-w-2xl mx-auto text-villa-soft">Il lusso del silenzio: un'oasi protetta tra ulivi, tigli secolari e i panorami dei Colli Orientali.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black">
+<div class="container mx-auto px-6">
+<!-- 1. Il Giardino e la Corte Interna -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Il lusso del Silenzio</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">1. Il Giardino e la Corte Interna</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80 mb-8">
+<p>Un'oasi di riservatezza. Il prato interrato di un ettaro, interamente cintato, funge da diaframma naturale tra il mondo esterno e la dimora. Qui, la privacy non è un'opzione, ma la condizione naturale dell'abitare, rendendo la Villa un rifugio sicuro e impenetrabile.</p>
+<p>L'arrivo alla proprietà è un preludio di pace: percorrendo la strada che sale verso la villa, non è raro incontrare scoiattoli, lepri e caprioli. Una volta varcato l'ingresso, il mondo scompare. Si entra nella corte interna, dove regna una quiete assoluta all'ombra dei Tigli Secolari che dominano il cortile.</p>
+</div>
+<a class="text-villa-gold hover:underline font-bold uppercase tracking-widest text-xs" href="vegetazione.html">👉 Scopri la Flora: Dai Tigli Secolari all'Uliveto storico</a>
+</div>
+<div class="md:w-1/2">
+<img alt="Il pozzo storico nel giardino di Villa Ottelio con vista panoramica autunnale sui vigneti" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/giardino-pozzo-vigneto.webp"/>
+</div>
+</div>
+<!-- 2. Il Panorama -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Immersi nei Colli Orientali</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">2. Il Panorama: Vigneti a perdita d'occhio</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>La posizione dominante della Villa regala uno scenario naturale di rara bellezza. Lo sguardo non incontra ostacoli, ma spazia liberamente sull'arco alpino, maestoso d'inverno con le cime innevate, e si perde sulle colline circostanti. Siamo nel cuore dei Colli Orientali: la proprietà è circondata da un territorio con vigneti di vari proprietari, un paesaggio che cambia colore con le stagioni.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Panorama collinare dei vigneti e uliveti di proprietà di Villa Ottelio al tramonto" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/panorama-vigneti-tramonto.webp"/>
+</div>
+</div>
+<!-- 3. La Barchessa -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Spazi per la Convivialità e Affari</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">3. La Barchessa e l'Ala Est</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>Non un corpo estraneo, ma un'estensione naturale della dimora. La Barchessa si sviluppa a forma di "L" direttamente attaccata al corpo padronale, accessibile comodamente tramite un passaggio interno. Dotata di un monumentale focolare e di una cucina di servizio dimensionata per 200 coperti, è il cuore pulsante della convivialità.</p>
+<p>Un hub strategico per il business del lusso: con oltre 1.800 mq totali e questo spazio versatile già integrato, la Villa si presta a diventare una sede aziendale di prestigio o un boutique hotel esclusivo a soli 40 minuti dall'aeroporto.</p>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3a. Il Rito del Fuoco</h4>
+<p class="text-sm">Il cuore della Barchessa è la "Stanza del Caminetto". Non un semplice elemento d'arredo, ma un monumentale focolare perfettamente funzionante, capace di ospitare le persone sedute proprio dentro e attorno al fuoco. È il ritorno a un'esperienza conviviale ormai rarissima: accogliere gli ospiti con il crepitio della legna, chiacchierare scaldati dalla brace e riscoprire un calore umano che la modernità ha dimenticato.</p>
+</div>
+<div class="pt-6 border-t border-villa-gold/20">
+<h4 class="font-serif text-xl text-villa-gold mb-2 uppercase">3b. Il Pozzo e gli Ulivi</h4>
+<p class="text-sm">La corte interna è impreziosita da uno dei pozzi storici più belli di tutto il Friuli, un'opera d'arte in pietra che domina lo spazio esterno. Tutt'intorno alla villa, oltre 200 piante di ulivo creano una cornice argentea e produttiva: la raccolta regala ogni anno una produzione di olio extravergine privato di ottima qualità.</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Facciata posteriore della Barchessa di Villa Ottelio illuminata per eventi e business" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/barchessa-facciata-luci.webp"/>
+</div>
+</div>
+<!-- 4. La Cappella -->
+<div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+<div class="md:w-1/2">
+<div class="mb-4 text-villa-gold font-bold uppercase tracking-widest text-sm">Un Gioiello Esclusivo</div>
+<h2 class="font-serif text-3xl text-villa-gold mb-6 uppercase tracking-wide">4. La Cappella di San Gaetano</h2>
+<div class="space-y-4 text-lg leading-relaxed text-villa-soft/80">
+<p>A ovest, parte integrante del complesso e affacciata sulla corte, sorge la Cappella gentilizia di San Gaetano (già documentata nelle visite pastorali del 13 maggio 1701). Non è un semplice annesso, ma un luogo di culto privato e disponibile.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Facciata laterale e campanile della cappella gentilizia privata di Villa Ottelio" class="w-full h-auto border border-villa-gold/20 shadow-2xl" src="/assets/images/shared/esterni/cappella-gentilizia.webp"/>
+</div>
+</div>
+<!-- 5. Hub Internazionale -->
+<div class="bg-villa-gold text-villa-black p-12 shadow-2xl">
+<div class="max-w-4xl mx-auto">
+<div class="mb-4 text-villa-black/70 font-bold uppercase tracking-widest text-sm text-center">Un Hub Strategico Internazionale</div>
+<h2 class="font-serif text-3xl mb-8 uppercase tracking-widest text-center">5. Al centro dell'Europa e del Vino d'Eccellenza</h2>
+<p class="text-xl mb-12 text-center">Villa Ottelio non è solo isolata nel verde, è al centro di una delle aree vinicole più note del Friuli. Circondata dai vigneti dei migliori produttori globali dei Colli Orientali, la Villa garantisce una connessione immediata con l'Europa:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Venezia</h4>
+<p class="text-sm">1 ora e 15 min (Cultura e Aeroporto Intercontinentale).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Trieste / Riviera Adriatica</h4>
+<p class="text-sm">40 min (Aeroporto e Mare).</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Confine Austriaco/Sloveno</h4>
+<p class="text-sm">45 min.</p>
+</div>
+<div class="border-l-2 border-villa-black/20 pl-6">
+<h4 class="font-bold uppercase tracking-widest text-sm mb-2">Udine</h4>
+<p class="text-sm">10 min (Servizi essenziali, Sanità, Scuole Internazionali).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/parco.html', en: 'https://www.villaottelio.it/the-park.html', fr: 'https://www.villaottelio.it/fr/le-parc.html', de: 'https://www.villaottelio.it/de/park.html', nl: 'https://www.villaottelio.it/nl/park.html', zh: 'https://www.villaottelio.it/zh/the-garden.html' };
+---
+<Layout
+  lang="it"
+  pageKey="park"
+  title={`Esterni e Giardino | Villa Ottelio de Carvalho`}
+  description={`Il parco e gli esterni di Villa Ottelio de Carvalho: un'oasi protetta tra ulivi, tigli secolari, cappella gentilizia e panorami sui Colli Orientali del Friuli.`}
+  canonical="https://www.villaottelio.it/it/parco.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

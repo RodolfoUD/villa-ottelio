@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/de/datenschutz.html" property="og:url"/>
+<meta content="Datenschutzerklärung | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Datenschutzerklärung gemäß DSGVO." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="Datenschutzerklärung | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="Datenschutzerklärung der Villa Ottelio de Carvalho gemäß DSGVO." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/de/datenschutz.html" property="twitter:url"/>
+<link href="https://www.villaottelio.it/it/privacy.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/politique-confidentialite.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/datenschutz.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/privacybeleid.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/privacy-policy.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== CONTENUTO ========== -->
+<main class="pt-32 pb-24 bg-villa-black min-h-screen">
+<div class="max-w-4xl mx-auto px-6">
+<h1 class="font-serif text-3xl md:text-4xl text-villa-gold mb-4 uppercase tracking-widest text-center">Datenschutzerklärung</h1>
+<p class="text-center text-villa-soft/60 text-sm mb-16 tracking-wider">Gemäß Art. 13 der Verordnung (EU) 2016/679 (DSGVO)</p>
+<div class="space-y-12 text-villa-soft/80 leading-relaxed text-sm md:text-base">
+<section>
+<p>Willkommen auf der Website der <strong>Villa Ottelio de Carvalho</strong>. Der Schutz Ihrer Privatsphäre ist für uns von grundlegender Bedeutung. Mit dieser Erklärung möchten wir erläutern, wie wir Ihre personenbezogenen Daten gemäß der EU-Verordnung 2016/679 (DSGVO) erheben, verwalten und speichern.</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">1. Verantwortlicher der Verarbeitung</h2>
+<p>Verantwortlicher für die Verarbeitung personenbezogener Daten ist:<br/>
+<strong>Rodolfo de Carvalho</strong><br/>
+        Sitz: Località Ottelio 1, 33044 Manzano (UD), Italien.<br/>
+        Kontakt: <strong>rdcservizi [at] gmail [dot] com</strong></p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">2. Art der verarbeiteten Daten</h2>
+<p>Über das Kontaktformular auf der Website erheben wir ausschließlich die personenbezogenen Daten, die Sie uns freiwillig zur Bearbeitung Ihrer Anfrage zur Verfügung stellen. Insbesondere:</p>
+<ul class="list-disc list-inside mt-2 space-y-1 text-villa-soft/70">
+<li>Vor- und Nachname</li>
+<li>E-Mail-Adresse</li>
+<li>Etwaige personenbezogene Daten, die im Text der Nachricht enthalten sind.</li>
+</ul>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">3. Zweck und Rechtsgrundlage</h2>
+<p>Ihre personenbezogenen Daten werden ausschließlich verarbeitet, um auf Ihre Informationsanfragen zu antworten, private Besichtigungen des Anwesens zu organisieren oder Ihnen das Informationsdossier zur Verfügung zu stellen.</p>
+<p class="mt-2">Die <strong>Rechtsgrundlage</strong> für diese Verarbeitung ist Ihre ausdrückliche Einwilligung, die Sie durch das entsprechende Kontrollkästchen beim Absenden des Formulars erteilen (Art. 6 Abs. 1 lit. a DSGVO).</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">4. Modalitäten und Speicherung</h2>
+<p>Die Verarbeitung erfolgt mit IT- und Telematik-Werkzeugen unter Anwendung aller erforderlichen Sicherheitsmaßnahmen, um den Verlust oder den unbefugten Zugriff auf die Daten zu verhindern.</p>
+<p class="mt-2">Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage unbedingt erforderlich ist. Danach werden die Daten, sofern keine gesetzlichen Verpflichtungen bestehen oder Verhandlungen aufgenommen wurden, innerhalb von 24 Monaten nach dem letzten Kontakt sicher gelöscht.</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">5. Weitergabe an Dritte</h2>
+<p>Ihre Daten werden in keiner Weise an Dritte weitergegeben oder verkauft. Nur vom Verantwortlichen autorisierte Personen oder externe Auftragsverarbeiter, die für den technischen Betrieb des Dienstes unbedingt erforderlich sind (z. B. der Hosting-Provider der Website oder der für die E-Mail-Weiterleitung verwendete Dienst Web3Forms), können Zugriff auf Ihre Daten haben.</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">6. Ihre Rechte</h2>
+<p>Sie haben jederzeit gemäß den Artt. 15-22 DSGVO das Recht auf Auskunft über Ihre Daten, auf Berichtigung, Löschung (Recht auf Vergessenwerden), Einschränkung der Verarbeitung oder Widerspruch gegen deren Verarbeitung. Sie können zudem Ihre Einwilligung jederzeit widerrufen.</p>
+<p class="mt-2">Zur Ausübung Ihrer Rechte können Sie eine schriftliche Mitteilung an die unter Punkt 1 angegebene E-Mail-Adresse des Verantwortlichen senden.</p>
+<p class="mt-2">Sie haben zudem das Recht, eine Beschwerde bei einer Datenschutz-Aufsichtsbehörde (<a class="text-villa-gold hover:text-white transition-colors underline decoration-villa-gold/50 underline-offset-4" href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>) einzureichen, falls Sie der Ansicht sind, dass die Verarbeitung gegen geltende Vorschriften verstößt.</p>
+</section>
+<div class="pt-8 border-t border-villa-gold/20 text-xs text-villa-soft/50">
+<p>Zuletzt aktualisiert: März 2026</p>
+</div>
+</div>
+</div>
+</main>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/privacy.html', en: 'https://www.villaottelio.it/privacy-policy.html', fr: 'https://www.villaottelio.it/fr/politique-confidentialite.html', de: 'https://www.villaottelio.it/de/datenschutz.html', nl: 'https://www.villaottelio.it/nl/privacybeleid.html', zh: 'https://www.villaottelio.it/zh/privacy-policy.html' };
+---
+<Layout
+  lang="de"
+  pageKey=""
+  title={`Datenschutzerklärung | Villa Ottelio de Carvalho`}
+  description={`Datenschutzerklärung der Villa Ottelio de Carvalho gemäß DSGVO (EU-Verordnung 2016/679).`}
+  canonical="https://www.villaottelio.it/de/datenschutz.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

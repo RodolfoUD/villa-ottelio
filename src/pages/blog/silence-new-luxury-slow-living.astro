@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="article" property="og:type"/>
+<meta content="https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html" property="og:url"/>
+<meta content="Silence as the New Luxury: Slow Living in a Manor | Villa Ottelio" property="og:title"/>
+<meta content="In a hyper-connected world, silence and time have become the ultimate luxuries. Villa Ottelio offers a sanctuary for the art of slow living." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html" property="twitter:url"/>
+<meta content="Silence as the New Luxury: Slow Living in a Manor | Villa Ottelio" property="twitter:title"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/villa-ottelio-hero.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/blog/silenzio-nuovo-lusso-vita-lenta.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/blog/silence-nouveau-luxe-vie-lente.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/blog/stille-neuer-luxus-langsames-leben.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/blog/stilte-nieuwe-luxe-langzaam-leven.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/blog/jijing-xin-shehuo-man-shenghuo.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== ARTICOLO ========== -->
+<main class="pt-32 pb-24 max-w-4xl mx-auto px-6">
+<div class="mb-12">
+<a class="text-villa-gold hover:opacity-70 transition-opacity flex items-center gap-2 uppercase tracking-widest text-sm" href="/blog.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> Back to Diary</a>
+</div>
+<article class="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+
+<p>In the twenty-first century, luxury is no longer defined by excess, but by the availability of space, time, and silence. Villa Ottelio de Carvalho, with its massive stone walls and its three-hectare park, is a monument to these contemporary needs.</p>
+<h2 class="text-villa-gold font-serif">The Art of Slow Living</h2>
+<p>Living in the manor allows you to regain a natural pace. The silence of the walled garden is not just the absence of noise; it is a space where thoughts can expand. Here, "slow living" is not a trend, but a reality facilitated by an architecture that has successfully crossed centuries, inviting us to look at time with different eyes.</p>
+</article>
+</main>
+<!-- ========== END ARTICOLO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/blog/silenzio-nuovo-lusso-vita-lenta.html', en: 'https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html', fr: 'https://www.villaottelio.it/fr/blog/silence-nouveau-luxe-vie-lente.html', de: 'https://www.villaottelio.it/de/blog/stille-neuer-luxus-langsames-leben.html', nl: 'https://www.villaottelio.it/nl/blog/stilte-nieuwe-luxe-langzaam-leven.html', zh: 'https://www.villaottelio.it/zh/blog/jijing-xin-shehuo-man-shenghuo.html' };
+---
+<Layout
+  lang="en"
+  pageKey="blog"
+  title={`Silence as the New Luxury: Slow Living in a Manor | Villa Ottelio`}
+  description={`In a hyper-connected world, silence and time have become the ultimate luxuries. Villa Ottelio offers a sanctuary for the art of slow living.`}
+  canonical="https://www.villaottelio.it/blog/silence-new-luxury-slow-living.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

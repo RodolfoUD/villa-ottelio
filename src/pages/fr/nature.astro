@@ -1,0 +1,118 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/fr/nature.html" property="og:url"/>
+<meta content="La Botanique (Flore) | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="Platanes centenaires, oliverie historique, cyprès et jardin productif au cœur des Colli Orientali du Frioul." property="og:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp" property="og:image"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/fr/nature.html" property="twitter:url"/>
+<meta content="La Botanique (Flore) | Villa Ottelio de Carvalho" property="twitter:title"/>
+<meta content="La flore de Villa Ottelio de Carvalho : platanes centenaires et oliverie historique." property="twitter:description"/>
+<meta content="https://www.villaottelio.it/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp" property="twitter:image"/>
+<link href="https://www.villaottelio.it/it/vegetazione.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/nature.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/nature.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/botanik.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/botanica.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/nature.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/nature.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== HERO ========== -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden pt-24">
+<img alt="Splendide vue collinaire avec prairies et arbres en habits d'automne entourant Villa Ottelio" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/assets/images/shared/esterni/panorama-autunnale-vegetazione.webp"/>
+<div class="relative z-10 text-center px-4 mt-20">
+<h1 class="font-serif text-4xl md:text-6xl text-villa-gold mb-4 uppercase tracking-widest leading-tight">Le Jardin à l'Arrière : Oasis de Paix</h1>
+<p class="text-lg md:text-xl italic max-w-3xl mx-auto text-villa-soft">Le jardin à l'arrière de Villa Ottelio est une invitation à la quiétude absolue. Un vaste espace vert où le silence n'est interrompu que par le bruissement des feuilles, offrant une intimité totale et une vue régénérante sur la nature environnante.</p>
+</div>
+</section>
+<!-- ========== END HERO ========== -->
+<!-- ========== CONTENUTO ========== -->
+<section class="py-24 bg-villa-black text-villa-soft">
+<div class="container mx-auto px-6 max-w-4xl">
+<div class="space-y-24">
+<!-- 1. I Platani -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">1. Les Géants du Temps : Les Platanes Centenaires <em>(Platanus × acerifolia)</em></h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>Dès le portail franchi, le regard est captivé par les véritables maîtres des lieux : les Platanes monumentaux qui dominent la cour intérieure.</p>
+<p><strong>La Fonction :</strong> Ils ne sont pas là par hasard. Dans les villas vénitiennes, les platanes étaient plantés pour créer un « auvent naturel » (le folador vert) où se déroulaient les activités agricoles à l'abri du soleil estival.</p>
+<p><strong>L'Impact :</strong> Leurs frondaisons immenses créent un microclimat unique dans la cour, abaissant la température de 3 à 4 degrés par rapport à l'extérieur durant l'été. Leur écorce « caméléon » est une sculpture naturelle qui change de couleur avec la pluie.</p>
+</div>
+</div>
+<!-- 2. I Cipressi -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">2. Les Sentinelles : Les Cyprès <em>(Cupressus sempervirens)</em></h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>Pour marquer les perspectives et les limites de la propriété s'élèvent les Cyprès.</p>
+<p><strong>Le Signe Graphique :</strong> Avec leur port colonnaire et persistant, ces arbres offrent non seulement intimité et protection contre le vent, mais dessinent également des lignes verticales élégantes qui dialoguent avec l'horizontalité des vignobles environnants, rappelant l'esthétique classique des paysages toscans et vénitiens.</p>
+</div>
+</div>
+<!-- 3. L'Uliveto -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-6 uppercase">3. L'Oliveraie Historique : L'Or Vert</h2>
+<div class="space-y-4 text-lg opacity-80">
+<p>Sur la partie la plus ensoleillée et la mieux drainée du terrain, se trouvent plus de 150 oliviers.</p>
+<p><strong>Le Paysage :</strong> Ces arbres n'offrent pas seulement une précieuse production d'huile d'olive extra vierge, ils façonnent également le paysage de leur feuillage argenté qui brille au vent, créant un contraste chromatique élégant avec le vert sombre des cyprès et des bois.</p>
+</div>
+</div>
+<!-- 4. Il Brolo -->
+<div>
+<h2 class="font-serif text-2xl text-villa-gold mb-8 uppercase text-center">4. Le « Brolo » et le Jardin à l'Arrière : Fruits et Couleurs</h2>
+<p class="text-center text-lg mb-12 opacity-80">Dans le jardin clos et dans la zone à l'arrière de la villa, la végétation explose dans sa fonction productive et décorative, typique du « jardin utile » frioulan :</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Le Poirier Ancien</h4>
+<p class="text-sm opacity-80">Dans le jardin postérieur, plus intime et réservé, se distingue un Poirier. Un arbre fruitier de tradition, positionné stratégiquement pour bénéficier d'une exposition solaire idéale. Au printemps, il offre une floraison d'un blanc pur, tandis qu'à la fin de l'été, il donne des fruits à « zéro kilomètre », symbole de la vie autosuffisante en villa.</p>
+</div>
+<div class="bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase">Le Prunus Ornemental</h4>
+<p class="text-sm opacity-80">Pour apporter la couleur des saisons, il y a un magnifique spécimen semblable au cerisier (Prunus). Sa présence est fondamentale pour l'esthétique du parc : il est le premier à annoncer le printemps avec un nuage de fleurs délicates, créant une tache de couleur poétique qui rompt le vert dominant de la pelouse.</p>
+</div>
+<div class="md:col-span-2 bg-villa-soft/5 p-8 border border-villa-gold/10">
+<h4 class="font-serif text-xl text-villa-gold mb-4 uppercase text-center">Les Petits Fruits</h4>
+<p class="text-sm opacity-80 text-center">On y trouve également des essences comme le Figuier (souvent planté près des murs pour la chaleur) et le Plaqueminier, qui en automne, quand le parc se dépouille, reste chargé de kakis orange vif tels des lanternes naturelles dans le jardin d'hiver.</p>
+</div>
+</div>
+</div>
+<!-- 5. Il Contesto -->
+<div class="bg-villa-soft/5 p-12 border border-villa-gold/20">
+<h2 class="font-serif text-2xl text-villa-gold mb-8 uppercase text-center">5. Le Contexte : La Vigne et le Bois</h2>
+<p class="text-center text-lg mb-12 opacity-80">Villa Ottelio n'est pas une île. Son parc se fond sans barrière visuelle dans le paysage environnant :</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-sm opacity-80">
+<div>
+<h4 class="font-bold uppercase tracking-widest text-villa-gold mb-2">La Vigne</h4>
+<p>Les rangs géométriques qui entourent la propriété (Merlot, Friulano, Picolit) changent la scénographie chaque mois : nus et sculturaux en hiver, vert éclatant au printemps, dorés et rouges en automne (le célèbre foliage connu dans le monde entier).</p>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-villa-gold mb-2">La Zone Boisée</h4>
+<p>Aux abords de la propriété, des massifs d'arbustes spontanés garantissent la biodiversité nécessaire à l'écosystème, offrant un refuge à la petite faune locale.</p>
+</div>
+</div>
+</div>
+<!-- Nota investitore -->
+<div class="text-center pt-12 border-t border-villa-gold/20 text-villa-gold italic text-lg">
+        Note pour l'investisseur : Cette variété botanique (des Cyprès ornementaux au Poirier productif) est un indicateur biologique de la qualité du terrain et de l'absence de stagnation d'eau, confirmant la salubrité des lieux pour ses résidents.
+      </div>
+</div>
+</div>
+</section>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/vegetazione.html', en: 'https://www.villaottelio.it/nature.html', fr: 'https://www.villaottelio.it/fr/nature.html', de: 'https://www.villaottelio.it/de/botanik.html', nl: 'https://www.villaottelio.it/nl/botanica.html', zh: 'https://www.villaottelio.it/zh/nature.html' };
+---
+<Layout
+  lang="fr"
+  pageKey="nature"
+  title={`La Botanique (Flore) | Villa Ottelio de Carvalho`}
+  description={`La flore de Villa Ottelio de Carvalho : platanes centenaires, oliverie historique, cyprès et jardin productif au cœur du Frioul.`}
+  canonical="https://www.villaottelio.it/fr/nature.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>

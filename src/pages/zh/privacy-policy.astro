@@ -1,0 +1,86 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const headExtra = `<meta content="website" property="og:type"/>
+<meta content="https://www.villaottelio.it/zh/privacy-policy.html" property="og:url"/>
+<meta content="隐私政策 | Villa Ottelio de Carvalho" property="og:title"/>
+<meta content="符合GDPR的隐私政策。" property="og:description"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.villaottelio.it/zh/privacy-policy.html" property="twitter:url"/>
+<link href="https://www.villaottelio.it/it/privacy.html" hreflang="it" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="en" rel="alternate"/>
+<link href="https://www.villaottelio.it/fr/politique-confidentialite.html" hreflang="fr" rel="alternate"/>
+<link href="https://www.villaottelio.it/de/datenschutz.html" hreflang="de" rel="alternate"/>
+<link href="https://www.villaottelio.it/nl/privacybeleid.html" hreflang="nl" rel="alternate"/>
+<link href="https://www.villaottelio.it/zh/privacy-policy.html" hreflang="zh" rel="alternate"/>
+<link href="https://www.villaottelio.it/privacy-policy.html" hreflang="x-default" rel="alternate"/>`;
+const content = `<!-- ========== NAVBAR ========== -->
+
+<!-- ========== END NAVBAR ========== -->
+<!-- ========== CONTENUTO ========== -->
+<main class="pt-32 pb-24 bg-villa-black min-h-screen">
+<div class="max-w-4xl mx-auto px-6">
+<h1 class="font-serif text-3xl md:text-4xl text-villa-gold mb-4 uppercase tracking-widest text-center">隐私政策</h1>
+<p class="text-center text-villa-soft/60 text-sm mb-16 tracking-wider">根据欧盟法规(EU) 2016/679（GDPR）第13条</p>
+<div class="space-y-12 text-villa-soft/80 leading-relaxed text-sm md:text-base">
+<section>
+<p>欢迎来到<strong>Villa Ottelio de Carvalho</strong>网站。保护您的隐私对我们至关重要。本隐私政策旨在解释我们如何按照欧盟法规2016/679（GDPR）收集、管理和保存您的个人数据。</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">1. 数据控制者</h2>
+<p>个人数据的控制者是：<br/>
+<strong>Rodolfo de Carvalho</strong><br/>
+        地址：Località Ottelio 1, 33044 Manzano (UD), 意大利。<br/>
+        联系方式：<strong>rdcservizi [at] gmail [dot] com</strong></p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">2. 处理的数据类型</h2>
+<p>通过网站上的联系表格，我们仅收集您自愿提供的个人数据以提交您的请求。具体来说：</p>
+<ul class="list-disc list-inside mt-2 space-y-1 text-villa-soft/70">
+<li>姓名和名字</li>
+<li>电子邮件地址</li>
+<li>任何在消息文本中包含的个人数据。</li>
+</ul>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">3. 目的和法律依据</h2>
+<p>您的个人数据将仅用于回应您的信息请求、安排对庄园的私人访问或为您提供信息资料。</p>
+<p class="mt-2"><strong>法律依据</strong>是您的明确同意，通过在提交表格时勾选相应的复选框（GDPR第6条第1款a项）。</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">4. 处理方式和保留</h2>
+<p>处理是通过信息和远程通信工具进行的，采用必要的所有安全措施来防止数据丢失或未授权访问。</p>
+<p class="mt-2">您的数据将保留处理您请求所需的时间。之后，除非有不同的法律义务或正在进行谈判，否则数据将在最后联系后24个月内安全删除。</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">5. 与第三方的沟通</h2>
+<p>您的数据不会以任何方式向第三方披露或出售。只有经过数据控制者授权的人或外部处理责任人可以访问您的数据，这些人只有在服务技术运行所需的情况下（例如，网站的主机提供商或用于从联系表格发送电子邮件的Web3Forms服务）。</p>
+</section>
+<section>
+<h2 class="text-villa-gold text-lg uppercase tracking-widest font-serif mb-4">6. 您的权利</h2>
+<p>根据GDPR第15-22条，您随时可以要求访问您的数据、更正、删除（遗忘权）、限制或反对其处理。您也可以随时撤回同意。</p>
+<p class="mt-2">要行使您的权利，您可以向第1点所示的数据控制者的电子邮件地址发送书面通知。</p>
+<p class="mt-2">如果您认为处理违反了现行法规，您也有权向数据保护机构（<a class="text-villa-gold hover:text-white transition-colors underline decoration-villa-gold/50 underline-offset-4" href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>）提出投诉。</p>
+</section>
+<div class="pt-8 border-t border-villa-gold/20 text-xs text-villa-soft/50">
+<p>最后更新：2026年3月</p>
+</div>
+</div>
+</div>
+</main>
+<!-- ========== END CONTENUTO ========== -->
+<!-- ========== FOOTER ========== -->
+
+<!-- ========== END FOOTER ========== -->`;
+const alternates = { it: 'https://www.villaottelio.it/it/privacy.html', en: 'https://www.villaottelio.it/privacy-policy.html', fr: 'https://www.villaottelio.it/fr/politique-confidentialite.html', de: 'https://www.villaottelio.it/de/datenschutz.html', nl: 'https://www.villaottelio.it/nl/privacybeleid.html', zh: 'https://www.villaottelio.it/zh/privacy-policy.html' };
+---
+<Layout
+  lang="zh"
+  pageKey=""
+  title={`隐私政策 | Villa Ottelio de Carvalho`}
+  description={`Villa Ottelio de Carvalho的隐私政策，符合GDPR（欧盟法规2016/679）。`}
+  canonical="https://www.villaottelio.it/zh/privacy-policy.html"
+  alternates={alternates}
+  headExtra={headExtra}
+>
+  <Fragment set:html={content} />
+</Layout>
